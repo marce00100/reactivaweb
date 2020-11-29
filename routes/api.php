@@ -45,3 +45,8 @@ Route::get('obtener-todos-los-contenidos', 'Administracion\ContenidosController@
 Route::post('guardar-empresa', 'Administracion\EmpresasController@guardarEmpresa');
 
 
+/* ------------- Indice Riesgo --------------*/
+Route::get('obtener-arbol-preguntas-riesgo', 'Administracion\EvalController@obtenerArbolPreguntasRiesgo');
+Route::post('guardar-respuestas-preguntas-riesgo', 'Administracion\EvalController@guardarRespuestasPreguntasRiesgo');
+
+

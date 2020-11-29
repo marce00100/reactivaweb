@@ -56,6 +56,7 @@ class EmpresasController extends MasterController
         return response()->json([
             'data'   => $empresaQ,
             'estado' => 'ok',
+            'mensaje' => 'Se guardo correctamente'
         ]);
     }
 

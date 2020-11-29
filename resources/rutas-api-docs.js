@@ -515,7 +515,7 @@ RUTA-GUARDAR-EMPRESA = {
 	{
 		id: "123456",   /* generado con UID, OBLIGATORIO, varchar*/
 		nombre: "Helados DELIZIA", /* varchar , OBLIGATORIO*/
-		id:rubro: 3,  /* varchar , OBLIGATORIO*/
+		id_rubro: 3,  /* int , OBLIGATORIO, id del rubro*/
 		direccion : "Calle Olivos N 54",
 		responsable_nombre : "Jorge Raul",
 		responsable_ap : "Lopez Quinteros",
@@ -537,8 +537,104 @@ RUTA-GUARDAR-EMPRESA = {
 
 
 
+RUTA_OBTENER_PREGUNTAS_CON_RRSPUESTAS = { 
+	ruta: "http://localhost/www/laravel7/api/obtener-arbol-preguntas-riesgo",
+	metodo: "get",
+	comentarios:"devuelve un array con las preguntas del indice de riesgo; y cada uno compuesto por un array de sus opciones de respuesta con sus valor e id correspondientes",
+	respuesta: 
+	{
+		"data": [
+					{
+						"id": 14,
+						"nombre": "Interacción cara a cara con gente por más de 15 minutos",
+						"orden": 1,
+						"opciones": [
+							{
+								"id": 22,
+								"nombre": "Sin filtro sindrómico",
+								"valor": "70"
+							},
+							{
+								"id": 23,
+								"nombre": "Con filtro sindrómico",
+								"valor": "50"
+							},
+							{
+								"id": 24,
+								"nombre": "< 15 minutos",
+								"valor": "10"
+							}
+						]
+					},
+					{
+						"id": 15,
+						"nombre": "Interacción con más de una persona * hora",
+						"orden": 2,
+						"opciones": [
+							{
+								"id": 25,
+								"nombre": "≥ 10 personas por hora sin filtro",
+								"valor": "25"
+							},
+							{
+								"id": 26,
+								"nombre": "≥ 10 personas por hora con filtro",
+								"valor": "20"
+							},
+							{
+								"id": 27,
+								"nombre": "< 10 personas por hora sin filtro",
+								"valor": "15"
+							},
+							{
+								"id": 28,
+								"nombre": "< 10 personas por hora con filtro",
+								"valor": "10"
+							}
+						]
+					},
+					{"etc etc....":"etc"},
+	
+				]
+	}
+}
 
+RUTA-GUARDAR-RESPUESTAS-PREGUNTAS-RIESGO = {
+	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/guardar-respuestas-preguntas-riesgo",
+	metodo: "POST",
+	comentarios:"Sirve para guardar las respuestas seleccionadas (el id de la opcion y el valor) de las preguntas del indice de riesgo",
+	envia_al_server: /* Se envia el id_empresa y un array con Ids de todas las respuestas seleccionadas y su valor, ya no es necesario el id de la pregunta */
+	{
+		id_empresa:'12345', /* */
+		respuestas:[
+			{id_opcion:22, valor: 10}, /* id de la opcion seleccionada, valor asignado */
+			{id_opcion:23, valor: 25},
+			{id_opcion:24, valor: 70},
+			{id_opcion:26, valor: 20},
+			{id_opcion:27, valor: 15},
+			{id_opcion:28, valor: 50},
+		]
+
+	}
+	respuesta_server:  /* Devuelve el array que se envio, pero con un elemento mas en cada item, el id de respuesta del registro generado*/
+	{
+		data: [
+			{id_opcion: "22", valor: "10", id_respuesta: 55},  /* id_respuesta es el id en la tabla donde se almacenan las respuestas realizas, sirve para las actualizaciones (update), si no esta contemplado realizar modificaciones en las respuestas (asumiendo que se introdujo una respuesta por error), entonces no tomar en cuenta   */
+			{id_opcion: "23", valor: "25", id_respuesta: 56},
+			{id_opcion: "24", valor: "70", id_respuesta: 57},
+			{id_opcion: "26", valor: "20", id_respuesta: 58},
+			{id_opcion: "28", valor: "50", id_respuesta: 60},
+			{id_opcion: "27", valor: "15", id_respuesta: 59},
+		],
+		mensaje:"Se ingreso correctamente o Error: error generado por el server ", 
+		estado: "ok o error"
+	}
 
 }
+
+
+
+
+
 
 
