@@ -86,6 +86,24 @@ class GeneralController extends MasterController
 		]);
 	}
 
+	/* API POST*/
+	/* para subir archivos a la carpeta Uploads, solo sube archivos con su nombre original, lo nos almacena en BD, tener en cuenta eso con otros metodos para almacenar el nombre del archivo*/
+	public function uploadFile(Request $req){
+
+		$file = $req->archivo;
+
+		$extension = $file->getClientOriginalExtension();
+	    $localizacionArchTemp = $file->getPathName();
+	    $archivo_nombre_orig =  $req->archivo_nombre_orig;
+	    $rutaDestino = 'public/img/uploads/';
+	    move_uploaded_file($localizacionArchTemp, $rutaDestino . $archivo_nombre_orig);
+
+		return response()->json([
+			'mensaje'=>'El archivo se subio correctamente',
+			'estado' => 'ok'
+		]);
+	}
+
 
 
 

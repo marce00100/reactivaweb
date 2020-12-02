@@ -17,14 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
+/* Ruta para visualizar imagenenes guardadas o archivos en uploads*/
+Route::get('show-imagen/{imagen}', 	'Administracion\GeneralController@showImagen'); 
 
 
 /* ========================== VISTAS ==========================*/
-Route::get('contenidos', 'Administracion\ContenidosController@showContenidos');
 
-Route::get('show-imagen/{imagen}', 	'Administracion\GeneralController@showImagen'); 
+
+/* ************ CONTENIDOS ********************/
+Route::get('contenidos', 'Administracion\ContenidosController@showContenidos');
+Route::get('gestion-noticias', 'Administracion\ContenidosController@showNoticias');
+
+
+Route::get('empresas', 'Administracion\EmpresasController@showEmpresas');
 
 
 

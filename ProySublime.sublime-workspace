@@ -1,0 +1,1430 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"ali",
+				"align-left"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"clo",
+				"close"
+			],
+			[
+				"text",
+				"texto_fila"
+			],
+			[
+				"filaA",
+				"$filaAgre〔variable〕"
+			],
+			[
+				"texto",
+				"textofilas"
+			],
+			[
+				"resp",
+				"resptabla"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"titu",
+				"titulo1"
+			],
+			[
+				"shee",
+				"$sheet〔variable〕"
+			],
+			[
+				"Scop",
+				"scopeModels"
+			],
+			[
+				"requ",
+				"$reques〔variable〕"
+			],
+			[
+				"formu",
+				"formularioObject"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"nota",
+				"notacontrol"
+			],
+			[
+				"estado",
+				"estadonuevo"
+			],
+			[
+				"dark",
+				"darker"
+			],
+			[
+				"car",
+				"cargarDatos"
+			],
+			[
+				"scope",
+				"scopeMethods〔variable〕"
+			],
+			[
+				"para",
+				"parametros"
+			],
+			[
+				"form",
+				"form1"
+			],
+			[
+				"conte",
+				"contenedor"
+			],
+			[
+				"row",
+				"rowData"
+			],
+			[
+				"getio",
+				"gestion"
+			],
+			[
+				"opcio",
+				"opcionesMensaje"
+			],
+			[
+				"usuar",
+				"$usuario〔variable〕"
+			],
+			[
+				"cade",
+				"$cadenaDecrypt〔variable〕"
+			],
+			[
+				"cadena",
+				"$cadenaCrypt〔variable〕"
+			],
+			[
+				"secco",
+				"seccion_notas"
+			],
+			[
+				"seccion",
+				"seccion_notas"
+			],
+			[
+				"not",
+				"notas_seccion"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"par",
+				"parent〔function〕"
+			],
+			[
+				"light",
+				"lighter\t admin-forms.css"
+			],
+			[
+				"sw",
+				"sweetalert.min.js"
+			],
+			[
+				"tipoda",
+				"tipodatoError"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"ma",
+				"maxlength\tAttr"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"actu",
+				"actualizaAgregacion"
+			],
+			[
+				"focus",
+				"focusout\t.focusout()"
+			],
+			[
+				"tipo",
+				"tipo_agregacion"
+			],
+			[
+				"actuali",
+				"actualizaAgragacion"
+			],
+			[
+				"tabla-",
+				"tabla-row"
+			],
+			[
+				"__tipo",
+				"__tipo_agregacion"
+			],
+			[
+				"table-",
+				"table-footer-group\tdisplay"
+			],
+			[
+				"ele",
+				"elementoDom〔argument〕"
+			],
+			[
+				"te",
+				"text-danger"
+			],
+			[
+				"ge",
+				"getScript〔function〕"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"ex",
+				"export"
+			],
+			[
+				"in",
+				"indexOf"
+			],
+			[
+				"pre",
+				"prepend\t.prepend()"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"sco",
+				"scopeModels〔variable〕"
+			],
+			[
+				"regiones",
+				"regionesHijas"
+			],
+			[
+				"carga",
+				"cargaRegionesEn"
+			],
+			[
+				"regio",
+				"regionesHijas"
+			],
+			[
+				"cha",
+				"change"
+			],
+			[
+				"lista",
+				"listaOpciones"
+			],
+			[
+				"inli",
+				"inline-block\tdisplay"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"panel-",
+				"panel-heading"
+			],
+			[
+				"bg",
+				"bg-light\t admin-forms.css"
+			],
+			[
+				"id_",
+				"id_formulario"
+			],
+			[
+				"mi",
+				"min-height\tproperty"
+			],
+			[
+				"codigo",
+				"codigo_entidad"
+			],
+			[
+				"funci",
+				"funcionReactiva"
+			],
+			[
+				"ov",
+				"overflow-y"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"id",
+				"id_padre"
+			],
+			[
+				"codi",
+				"$codigo_entidad_usuario〔variable〕"
+			],
+			[
+				"formulario",
+				"formularioActual"
+			],
+			[
+				"obtener",
+				"obtenerFormularioDatos"
+			],
+			[
+				"idF",
+				"$idFormulario〔variable〕"
+			],
+			[
+				"ml",
+				"ml10\t urban.css"
+			],
+			[
+				"nombre",
+				"nombre_archivo"
+			],
+			[
+				"carg",
+				"cargarArchivos"
+			],
+			[
+				"scopeM",
+				"scopeModels"
+			],
+			[
+				"archi",
+				"archivos"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"tipo_",
+				"tipo_contenido"
+			],
+			[
+				"columna",
+				"columna_orden"
+			],
+			[
+				"nom",
+				"nomre_archivo"
+			],
+			[
+				"ad",
+				"addClass〔function〕"
+			],
+			[
+				"obj",
+				"objCol"
+			],
+			[
+				"oblit",
+				"obligatorios〔variable〕"
+			],
+			[
+				"obliga",
+				"obligatorios"
+			],
+			[
+				"quest-",
+				"quest-input-validate"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"tip",
+				"tipoDato"
+			],
+			[
+				"inp",
+				"input:first"
+			],
+			[
+				"input",
+				"inputDate"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"__cl",
+				"__cl_config"
+			],
+			[
+				"tala",
+				"tabla-row"
+			],
+			[
+				"contenido",
+				"contenido-horizontal"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"acciones_",
+				"acciones_secc_orden"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"ob",
+				"objSend"
+			],
+			[
+				"esta",
+				"estadoPassword"
+			],
+			[
+				"fun",
+				"funcionPersistente"
+			],
+			[
+				"modal",
+				"modal-us"
+			],
+			[
+				"con",
+				"contenedor"
+			],
+			[
+				"ro",
+				"rowData"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"op",
+				"opacity\tproperty"
+			],
+			[
+				"Route",
+				"Route::group\tCreate a Group of Routes"
+			],
+			[
+				"valO",
+				"valObligatorio〔variable〕"
+			],
+			[
+				"col-sm",
+				"col-sm-12"
+			],
+			[
+				"form-",
+				"form-horizontal\t urban.css"
+			],
+			[
+				"pt",
+				"pt30\t urban.css"
+			],
+			[
+				"quest",
+				"quest-h2\t app.css"
+			],
+			[
+				"teto",
+				"texto_fila"
+			],
+			[
+				"fila",
+				"fila_agregada"
+			],
+			[
+				"mod",
+				"modFrm"
+			],
+			[
+				"bolque",
+				"bloqueDom"
+			],
+			[
+				"se",
+				"setData"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"filas",
+				"filasPredef"
+			],
+			[
+				"planill",
+				"plantillaData"
+			],
+			[
+				"plant",
+				"plantillaData"
+			],
+			[
+				"__o",
+				"__op"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "routes/api.php",
+			"settings":
+			{
+				"buffer_size": 1956,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "@extends('layouts.principal_tpl')\n\n\n\n@section('header')\n\n<link rel=\"stylesheet\" href=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/styles/jqx.base.css\" type=\"text/css\" />\n\n<style media=\"screen\">\n.popup-basic {\n  position: relative;\n  background: #FFF;\n  width: auto;\n  max-width: 900px;\n  margin: 40px auto;\n}\n##.admin-form .panel-heading{\n    background-color: #fafafa;\n    border-color: transparent -moz-use-text-color #ddd;\n    border-radius: 0;\n    border-style: solid none;\n    border-width: 1px 0;\n    color: #999;\n    height: auto;\n    overflow: hidden;\n    padding: 3px 15px 2px;\n    position: relative;\n}\n\n</style>\n@endsection\n\n@section('content')\n\n    <!--  ===========================================    begin: .tray-center    =============================================================== -->\n    <div class=\"tray tray-center p40 va-t posr\" id=\"div_politicas\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"panel panel-visible\" id=\"spy2\">\n                    <div class=\"panel-heading  bg-dark \">\n                        <div class=\"panel-title \">\n                            <i class=\"fa fa-puzzle-piece fa-2x\" ></i><span class=\"sp_politica\"></span> <span class=\"sp_est_politica\"></span>\n                        </div>\n                    </div>\n                    <div class=\"panel-body pn\">\n                        <div class=\"row\">\n                            <div  class=\"col-md-12\" >\n                                <button id=\"pol_nuevo\" type=\"button\" class=\"btn btn-sm btn-success dark m5 br4\"><i class=\"fa fa-plus-circle text-white\"></i> Agregar </button>\n                                <button id=\"pol_editar\" type=\"button\" class=\"btn btn-sm btn-warning dark m5 br4\"><i class=\"fa fa-edit text-white\"></i> Editar</button>\n                                <button id=\"pol_eliminar\" type=\"button\" class=\"btn btn-sm btn-danger dark m5 br4\"><i class=\"fa fa-minus-circle text-white\"></i> Eliminar</button>                                \n                                \n                            </div>\n                        </div>\n                        <div id=\"dataT\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n      <!-- end: .tray-center -->\n\n\n\n\n    <!-- -----------------------------------------          Modal  --------------------------------------------------- -->\n    <div id=\"modal-basico\"  class=\"white-popup-block popup-basic admin-form mfp-with-anim mfp-hide\">\n        <div class=\"panel\">\n            <div class=\"panel-heading bg-dark\">\n                <span class=\"panel-title text-white\" id=\"tituloModal\"><i class=\"fa fa-pencil\"></i> <span>__</span></span>\n            </div>\n            <!-- end .panel-heading section -->\n            <form method=\"post\" action=\"/\" id=\"form-pol\" name=\"form-pol\">\n                {{-- <input type=\"hidden\" name=\"mod_id\" id=\"mod_id\" value=\"\"> --}}\n\n                <div class=\"panel-body mnw700 of-a\">\n                    <div class=\"row\">\n\n                            <input class=\"hidden\" name=\"id_pol\" id=\"id_pol\" >\n                            <div class=\"row\">\n                                <div class=\" pl5 br-r mvn15\">\n                                    <h5 class=\"ml5 mt20 ph10 pb5 br-b fw700\">Defina su <span class=\"sp_politica\"></span><small class=\"pull-right fw600\"> <span class=\"text-primary\">-</span> </small> </h5>\n                                    <div class=\"section\">\n                                        <label class=\"field-label sp_politica\" for=\"atribucion\"></label>\n                                        <label for=\"politica\" class=\"field prepend-icon\">\n                                            <input type=\"text\" class=\"gui-input\" id=\"politica\" name=\"politica\" placeholder=\"Politica sectorial / institucional \">\n                                            <label for=\"politica\" class=\"field-icon\"><i class=\"glyphicons glyphicons-riflescope\"></i>\n                                            </label>\n                                        </label>\n                                    </div>\n\n                                    <div class=\"section\">\n                                        <label class=\"field-label\" for=\"ids_pilares\">Pilares según sus atribuciones </label>\n                                        <label class=\"field select\">\n                                            <select id=\"ids_pilares\" name=\"ids_pilares\" class=\"required\" multiple=\"multiple\"  style=\"width:100%;\">\n                                                {{-- <option value=\"\">...</option> --}}\n                                            </select>\n                                            <i class=\"arrow\"></i>                  \n                                        </label>\n                                    </div>\n                                </div>\n                            </div>\n                    </div>\n                </div>\n                <div class=\"panel-footer\">\n                    <button type=\"submit\" class=\"button btn-primary\">Guardar</button>\n                    <a href=\"#\"  id=\"atr_cancelar\"  class=\"button btn-danger ml25 sp_cancelar\">Cancelar</a>\n                </div>\n            </form>\n        </div>\n        <!-- end: .panel -->\n    </div>\n\n\n@endsection\n\n@push('script-head')\n\n\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxcore.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxbuttons.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxscrollbar.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdata.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdatatable.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdraw.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxchart.core.js\"> </script>\n\n<script src=\"./public/js/jqwidgets-localization.js\"></script>\n<script type=\"text/javascript\">\n$(function(){\n    let conT = {\n        dataTable : $(\"#dataT\"),\n        source : {},\n\n        fillTable : function() {\n            $.get(globalApp.urlBaseApi + 'obtener-todos-los-contenidos', function(resp)\n            {\n                conT.source =\n                {\n                    dataType: \"json\",\n                    localdata: resp.data,\n                    dataFields: [\n                        { name: 'id', type: 'number' },\n                        { name: 'politica', type: 'string' },\n                        { name: 'ids_pilares', type: 'string' },\n                        { name: 'pilares', type: 'object' },\n                    ],\n                    id: 'id',\n                };\n                var dataAdapter = new $.jqx.dataAdapter(conT.source);\n                var editDelRenderer = function (row, columnfield, value, defaulthtml, rowData) {\n                    html = `<a href=\"#\"  class=\"m-l-10 m-r-10 m-t-10 sel_edit\" title=\"Editar \" ><i class=\"fa fa-edit fa-lg text-warning \"></i></a>\n                            <a href=\"#\"  class=\"m-l-10 m-r-10 m-t-10 sel_delete\" title=\"Eliminar\" ><i class=\"fa fa-minus-circle fa-lg text-danger \"></i></a>`\n                    return html;\n                };\n                conT.dataTable.jqxDataTable({\n                    source: dataAdapter,\n                    altRows: false,\n                    sortable: true,\n                    width: \"100%\",\n                    filterable: false,\n                    filterMode: 'simple',\n                    selectionMode: 'singleRow',\n                    localization: getLocalization('es'),\n                    columns: [\n                        { text: 'Política ', dataField: 'politica', align:'center'},\n                        { text: 'Pilares Asociados', dataField: 'id', align:'center',\n                                cellsrenderer: function(row, column, value, rowData){\n                                    var pilares = rowData.pilares;\n                                    html = \"\";\n                                    pilares.forEach(function(pilar){\n                                        html += `<div class='br-b m10 pv5 row'>\n                                                    <div class=\"col-md-2\"><img width=\"40\" class=\"\"  src=\"/img/${pilar.logo}\"/></div>\n                                                    <div class=\"col-md-10\"><b>${pilar.nombre}</b> - ${pilar.descripcion}</div>\n                                                </div>`\n                                    });\n                                   return html;\n                            } \n                        },\n                        { text: ' ', width: 50, cellsrenderer: editDelRenderer},\n                    ]\n                });\n                funciones.estadistics();\n            });\n        },\n        refreshList: function(){\n            $.get(globalSP.urlApi + 'listPoliticasPilares', {p:globalSP.idPlanActivo}, function(resp) {\n                conT.source.localdata = resp.data;\n                conT.dataTable.jqxDataTable(\"updateBoundData\");\n                funciones.estadistics()\n            })   \n        },\n        init : function(){\n            $.get(globalSP.urlApi + \"getPilaresVinculadosAlPlan\", {p:globalSP.idPlanActivo}, function(res){\n                opts = res.data;\n                opts.forEach(function(op){\n                    $(\"#ids_pilares\").append('<option value=\"' + op.id + '\">' + op.nombre + ' - ' + op.descripcion + '</option>');\n                });\n                $(\"#ids_pilares\").select2({\n                    placeholder: 'Seleccione los pilares de la política',\n                    dropdownParent: $('#form-pol'),\n                    cache: false,\n                    language: \"es\",\n                    templateSelection: function (val) {\n                        return $(\"<div class='list-group-item' style='width:100%;' title ='\" + val.text + \"'>\" +val.text + \"</div>\");\n                    },\n                });\n            });\n\n\n            $(\".sp_politica\").html(funciones.tipoPolitica());\n        },\n        showModal : function(){\n            $(\".state-error\").removeClass(\"state-error\")\n            $(\"#form-pol em\").remove();\n                $.magnificPopup.open({\n                removalDelay: 500, //delay removal by X to allow out-animation,\n                focus: '#politica',\n                items: {\n                    src: \"#modal-pol\"\n                },\n                // overflowY: 'hidden', //\n                callbacks: {\n                    beforeOpen: function(e) {\n                        var Animation = \"mfp-zoomIn\";\n                        this.st.mainClass = Animation;\n                    }\n                },\n                midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.\n            });\n        }, \n        getDataForm: function(){\n            var obj = {\n                id: $(\"#id_pol\").val(),\n                politica: $(\"#politica\").val(),\n                ids_pilares: $(\"#ids_pilares\").val(),\n                _token : $('input[name=_token]').val(),\n                id_plan : globalSP.idPlanActivo,\n                p: globalSP.idPlanActivo\n            }\n            return obj;\n        },\n        setDataForm: function(obj){\n            $(\"#id_pol\").val(obj.id);\n            $(\"#politica\").val(obj.politica);\n            $(\"#ids_pilares\").val(obj.ids_pilares).change();\n        },\n        nuevo: function(){\n            $(\"#tituloModal span\").html(`Agregar ${funciones.tipoPolitica()}`);\n            $('#form-pol input:text').val('');\n            $(\"#ids_pilares\").val('').change();\n            conT.showModal();\n        },\n        editar: function(){\n            var rowSelected = conT.dataTable.jqxDataTable('getSelection');\n            if(rowSelected.length > 0)\n            {\n                var rowSel = rowSelected[0]; \n                conT.setDataForm(rowSel);\n                $(\"#tituloModal span\").html(`Modificar ${funciones.tipoPolitica()}`);\n                conT.showModal();\n            }\n            else{\n                swal(\"Seleccione el registro para modificar.\");\n            }\n        },\n        eliminar: function(){\n            var rowSelected = conT.dataTable.jqxDataTable('getSelection');\n            if(rowSelected.length > 0)\n            {\n                var rowSel = rowSelected[0];\n                conT.delete(rowSel.id);             \n            }\n            else{\n                swal(\"Seleccione el registro que desea eliminar.\");\n            }\n        },\n        validateRules: function(){\n            var reglasVal = {\n                    errorClass: \"state-error\",\n                    validClass: \"state-success\",\n                    errorElement: \"em\",\n\n                    rules: {\n                        politica: { required: true },\n                        ids_pilares:  { required: true },\n                    },\n\n                    messages:{\n                        politica: { required: 'Debe escribir su política sectorial/institucional' },\n                        ids_pilares:  { required: 'Seleccionar los pilares asociados a la política' },\n                    },\n\n                    highlight: function(element, errorClass, validClass) {\n                            $(element).closest('.field').addClass(errorClass).removeClass(validClass);\n                    },\n                    unhighlight: function(element, errorClass, validClass) {\n                            $(element).closest('.field').removeClass(errorClass).addClass(validClass);\n                    },\n                    errorPlacement: function(error, element) {\n                        if (element.is(\":radio\") || element.is(\":checkbox\")) {\n                                element.closest('.option-group').after(error);\n                        } else {\n                                error.insertAfter(element.parent());\n                        }\n                    },\n                    submitHandler: function(form) {\n                        conT.saveData();\n                    }\n            }\n            return reglasVal; \n        }, \n        saveData: function(){\n            var obj = conT.getDataForm();\n            $.post(globalSP.urlApi + 'savePolitica', obj, function(resp){\n                conT.refreshList();\n                new PNotify({\n                            title: resp.estado == 'success' ? 'Guardado' : 'Error',\n                            text: resp.msg,\n                            shadow: true,\n                            opacity: 1,\n                            addclass: noteStack,\n                            type: (resp.estado == 'success') ? \"success\" : \"danger\",\n                            stack: Stacks[noteStack],\n                            width: findWidth(),\n                            delay: 1500\n                        });\n                $.magnificPopup.close();  \n            });\n             \n        },\n        delete: function(id){\n            swal({\n                  title: `Está seguro de eliminar  la ${funciones.tipoPolitica()}?`,\n                  text: \"No podrá recuperar este registro!\",\n                  type: \"warning\",\n                  showCancelButton: true,\n                  confirmButtonColor: \"#DD6B55\",\n                  confirmButtonText: \"Si, eliminar!\",\n                  closeOnConfirm: true\n                }, function(){\n                    $.post(globalSP.urlApi + 'deletePolitica', {'id': id, _token : $('input[name=_token]').val(), }, function(res){\n                        new PNotify({\n                                  title: !res.error ? 'Eliminado' : 'Error!!' ,\n                                  text: res.msg,\n                                  shadow: true,\n                                  opacity: 1,\n                                  addclass: noteStack,\n                                  type: !res.error ? \"success\" : 'danger',\n                                  stack: Stacks[noteStack],\n                                  width: findWidth(),\n                                  delay: 1400\n                              });\n                        conT.refreshList();\n                    });\n                });\n        },\n\n    }\n\n    var funciones = {\n        estadistics : function()\n        {\n            try{ \n                var politicas = conT.source.localdata;\n                $(\".sp_est_politica\").removeClass('badge bg-success bg-danger dark');\n                $(\".sp_est_politica\").addClass( (politicas.length > 0) ? 'badge bg-system dark' : 'badge bg-danger');\n                $(\".sp_est_politica\").html(politicas.length);\n\n                obj ={\n                    id_menu : globalSP.menu.PoliticaSectorial,\n                    p: globalSP.idPlanActivo,\n                    _token : $('input[name=_token]').val(),\n                    agregar: (politicas.length > 0)   ? '1' : '0' ,\n                }\n                $.post(globalSP.urlApi + 'actualizaEtapas', obj, function() {});\n\n            }\n            catch(e){}\n        },\n        tipoPolitica: function(){\n            tipoPolitica = globalSP.planActivo.cod_tipo_plan == 'PSDI' ? 'Política Sectorial' : 'Política Institucional';\n            return tipoPolitica;\n        }\n    }\n\n\n    // globalSP.activarMenu(globalSP.menu.PoliticaSectorial);\n    // globalSP.cargarGlobales(function(){\n    //     conT.init();\n    // });\n    // globalSP.setBreadcrumb('Politica', 'Politica');\n\n    \n\n    //-------------------- de las Politicas --------------------------------\n    conT.fillTable();\n    \n\n    $(\"#form-pol\").validate(conT.validateRules());\n\n    $(\"#pol_nuevo\").click(function(){\n        conT.nuevo();\n    });\n\n    $(\"#div_politicas\").on('click','.sel_edit, #pol_editar', function(){\n        conT.editar();\n    });\n\n    $(\"#div_politicas\").on('click','.sel_delete, #pol_eliminar', function(){\n        conT.eliminar();\n    });\n\n\n\n    $(\".sp_cancelar\").click(function(){\n        $.magnificPopup.close();\n    });\n\n})\n\n\t\n\t\n\n</script>\n\n@endpush",
+			"file": "resources/views/administracion/contenidos.blade.php",
+			"file_size": 18588,
+			"file_write_time": 132511954210057271,
+			"settings":
+			{
+				"buffer_size": 18122,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/layouts/principal_tpl.blade.php",
+			"settings":
+			{
+				"buffer_size": 7530,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inspack",
+				"Package Control: Install Package"
+			],
+			[
+				"inspa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Angular CLI: generate directive --with Options"
+			],
+			[
+				"packen",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"synvu",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"synbab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syncom",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"synmy",
+				"Set Syntax: My_HtmlDentro_JS"
+			],
+			[
+				"synvue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"syn compo",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"code",
+				"CodeFormatter: Show PHP Transformations"
+			],
+			[
+				"show",
+				"CodeFormatter: Show PHP Transformations"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"angu",
+				"Angular CLI: generate component"
+			],
+			[
+				"pick",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"id",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 538.0
+	},
+	"console":
+	{
+		"height": 453.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"dir",
+			"list"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/www/laravel7",
+		"/D/www/laravel7/resources",
+		"/D/www/laravel7/resources/views",
+		"/D/www/laravel7/resources/views/administracion",
+		"/D/www/laravel7/resources/views/layouts",
+		"/D/www/laravel7/routes"
+	],
+	"file_history":
+	[
+		"/D/www/plat_form1 - copia/resources/views/principal_view.blade.php",
+		"/D/www/pipspie_v/app/Http/Controllers/ModuloPlanificacion/PlanesController.php",
+		"/C/Users/marce/AppData/Local/Temp/scp29339/var/www/html/curzar/wp-content/plugins/xyz-cod/xyz-cod.php",
+		"/C/Users/marce/AppData/Local/Temp/scp26245/var/www/html/curzar/wp-content/plugins/xyz-cod/assets/estilo.css",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/includes/gutenberg/blocks/ld-course-list/index.js",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/includes/gutenberg/blocks/ld-course-list/index.php",
+		"/D/www/wp/wdash/wp-includes/plugin.php",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/themes/ld30/templates/shortcodes/course-listing.php",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/includes/shortcodes/ld_course_list.php",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/includes/settings/shortcodes-sections/ld_course_list.php",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/includes/course/ld-course-functions.php",
+		"/D/www/wp/wdash/wp-content/themes/astra/style.css",
+		"/D/www/wp/wdash/wp-content/themes/kadence/inc/components/nav_menus/component.php",
+		"/D/www/wp/wdash/wp-content/plugins/learndash-course-grid/course_list_template.php",
+		"/D/www/wp/wdash/wp-content/themes/kadence/style.css",
+		"/D/www/wp/wdash/wp-content/plugins/xyz-cod/prueba-cod.php",
+		"/D/www/wp/wdash/wp-content/themes/kadence/inc/components/nav_menus/nav-widget-settings.php",
+		"/D/www/wp/wdash/wp-content/plugins/sfwd-lms/themes/ld30/includes/helpers.php",
+		"/D/MisDocs/w_startups bussines/PlataformaE/Landings PAges/lp/cursomoodle/assets/mobirise/css/mbr-additional.css",
+		"/D/MisDocs/w_startups bussines/PlataformaE/Landings PAges/lp/cursomoodle/index.html",
+		"/D/MisDocs/w_startups Desa/plataformaedu/Landings PAges/site.landing.cursomoodle/assets/theme/css/style.css",
+		"/D/MisDocs/w_startups Desa/plataformaedu/Landings PAges/site.landing.cursomoodle/assets/theme/js/script.js",
+		"/D/MisDocs/w_startups Desa/plataformaedu/Landings PAges/site.landing.cursomoodle/assets/mobirise/css/mbr-additional.css",
+		"/D/MisDocs/w_startups Desa/plataformaedu/Landings PAges/site.landing.cursomoodle/index.html",
+		"/D/www/site.landing.test/cursomoodle.html",
+		"/D/www/site.landing.test/index.html",
+		"/D/www/site.landing.test/page1.html",
+		"/D/MisDocs/w_startups Desa/plataformaedu/Landings PAges/wplpForme/One Page Demo – Futurio one Page.htm",
+		"/D/www/plat_form1/.env",
+		"/D/www/plat_form1/package-lock.json",
+		"/D/www/plat_form1/node_modules/laravel-mix/setup/webpack.mix.js",
+		"/D/www/plat_form1/node_modules/webpack/bin/webpack.js",
+		"/D/www/plat_form1/node_modules/laravel-mix/setup/webpack.config.js",
+		"/D/www/plat_form1/resources/js/components/gestion_forms.vue",
+		"/D/www/plat_form1/resources/js/components/formulario.vue",
+		"/D/www/plat_form1/app/Http/Controllers/Formularios/FormulariosController.php",
+		"/D/www/plat_form1/app/Http/Controllers/Formularios/FormularioExcelController.php",
+		"/D/www/plat_form1/routes/web.php",
+		"/D/www/plat_form1/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/D/www/plat_form1/app/Exports/ExportFormulario.php",
+		"/D/www/plat_form1/node_modules/color-convert/route.js",
+		"/D/www/plat_form1/config/app.php",
+		"/D/www/plat_form1/resources/css/style-app.css",
+		"/D/www/plat_form1/public/libs_pub/sty-02/assets/skin/default_skin/css/theme.css",
+		"/D/www/plat_form1/app/Http/Controllers/ContextoUsuarios/ContextoUsuarioController.php",
+		"/D/www/plat_form1/composer.json",
+		"/D/www/plat_form1/resources/js/components/plantillas.vue",
+		"/D/www/plat_form1/resources/js/components/menu_component.vue",
+		"/D/www/pf-frontend/.gitignore",
+		"/D/www/plat_form1/resources/js/app.js",
+		"/D/www/plat_form1/resources/js/components/gestion_usuarios.vue",
+		"/D/www/plat_form1/resources/js/components/iniciar_sesion.vue",
+		"/D/www/plat_form1/resources/views/welcome.blade.php",
+		"/D/www/plat_form1/public/css/style-login.css",
+		"/D/www/plat_form1/resources/views/auth/login.blade.php",
+		"/D/www/plat_form1/resources/views/layouts/auth.blade.php",
+		"/D/www/plat_form1/resources/js/components/formulariocopy.vue",
+		"/D/www/plat_form1/app/Http/Controllers/MasterController.php",
+		"/D/www/plat_form1/app/Http/Controllers/SinglePageController.php",
+		"/D/www/plat_form1/resources/views/principal_view.blade.php",
+		"/D/www/plat_form1/resources/js/config.js",
+		"/D/www/plat_form1/resources/js/bootstrap.js",
+		"/D/www/plat_form1/resources/recursos/recurso_form.js",
+		"/D/www/plat_form1/node_modules/axios/dist/axios.js",
+		"/D/www/plat_form1/node_modules/lodash/lodash.js",
+		"/D/www/plat_form1/node_modules/moment/moment.js",
+		"/D/www/plat_form1/webpack.mix.js",
+		"/D/www/plat_form1/node_modules/axios/dist/axios.min.js",
+		"/D/www/plat_form1/resources/views/layouts/principal_tpl.blade.php",
+		"/D/www/plat_form1/app/Http/Controllers/Auth/LoginController.php",
+		"/D/www/plat_form1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/D/www/plat_form1/public/css/app.css",
+		"/D/www/plat_form1/app/Http/Controllers/ContextoUsuarios/AbmUsuariosController.php",
+		"/D/www/plat_form1/resources/js/components/form_copyaftershowfiles  .vue",
+		"/D/www/plat_form1/resources/js/components/form_copy.vue",
+		"/D/www/plat_form1/node_modules/@babel/generator/lib/node/index.js",
+		"/D/www/plat_form1/resources/libs_pub/select2-4.0.12/dist/js/select2.full.js",
+		"/D/www/plat_form1/resources/js/components/form.vue",
+		"/D/www/plat_form1/resources/js/components/gestion_plantillas.vue",
+		"/D/www/plat_form1/app/User.php",
+		"/D/www/plat_form1/.gitignore",
+		"/D/www/plat_form1/node_modules/commander/Readme.md",
+		"/D/www/plat_form1/public/libs_pub/jqwidgets5.5.0/jqwidgets-react/react_jqxbuttons.js",
+		"/D/www/plat_form1/resources/libs/sty-02/assets/skin/default_skin/css/theme.css",
+		"/D/www/plat_form1/package.json",
+		"/D/www/plat_form1/resources/js/routes.js",
+		"/D/www/plat_form1/routes/api.php",
+		"/D/www/plat_form1/resources/views/home.blade.php",
+		"/D/www/plat_form1/app/Http/Controllers/HomeController.php",
+		"/D/www/plat_form1/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/D/www/plat_form1/app/Http/Controllers/Formularios/AdmFormsController.php",
+		"/D/www/plat_form1/resources/js/components/bandeja_quest.vue",
+		"/D/www/temp_encuestas/resources/views/cuestionarios/simple_encuesta.blade.php",
+		"/D/www/plat_form1/app/Http/Controllers/Cuestionarios/CuestionarioPublicoController.php",
+		"/D/www/plat_form1/app/Http/Controllers/Cuestionarios/CuestionarioController.php",
+		"/D/www/plat_form1/public/libs_pub/bower_components/x-editable/dist/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.js",
+		"/D/www/plat_form1/resources/js/components/form_origCopy.vue",
+		"/D/www/plat_form1/node_modules/jquery/dist/jquery.js",
+		"/D/www/temp_encuestas/app/Http/Controllers/Cuestionarios/CuestionarioPublicoController.php",
+		"/D/www/temp_encuestas/app/Http/Controllers/Cuestionarios/CuestionarioController.php",
+		"/D/www/plat_form1/resources/js/components/usuarios.vue",
+		"/C/Sublime Text Build 3/Data/Packages/User/PersistentRegexHighlight.sublime-settings",
+		"/C/Sublime Text Build 3/Data/Packages/User/HighlightWords.sublime-settings",
+		"/D/www/plat_form1/resources/libs/bower_components/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.js",
+		"/D/www/plat_form1/resources/js/components/adm_formularios.vue",
+		"/C/Sublime Text Build 3/Data/Packages/PersistentRegexHighlight/README.md",
+		"/D/www/temp_encuestas/resources/views/cuestionarios/bandeja_encuestas.blade.php",
+		"/C/Sublime Text Build 3/Data/Packages/PersistentRegexHighlight/PersistentRegexHighlight.sublime-settings",
+		"/D/www/temp_encuestas/public/css/style-quest.css",
+		"/D/www/plat_form1/public/libs_pub/bower_components/typeahead.js-master/dist/typeahead.bundle.js",
+		"/C/Sublime Text Build 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Sublime Text Build 3/Data/Packages/Highlight Build Errors/HighlightBuildErrors.sublime-settings",
+		"/D/www/plat_form1/public/libs_pub/bower_components/bootstrap-urban-master/urban.css",
+		"/C/Sublime Text Build 3/Data/Packages/User/highlighter.sublime-settings",
+		"/C/Sublime Text Build 3/Data/Packages/Highlighter/highlighter.sublime-settings",
+		"/C/Sublime Text Build 3/Data/Packages/HighlightWords/HighlightWords.sublime-settings",
+		"/C/Sublime Text Build 3/Data/Packages/User/formato_myHtmlDentroJS.sublime-syntax",
+		"/C/Sublime Text Build 3/Data/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Sublime Text Build 3/Data/Packages/Babel/JavaScript (Babel).sublime-syntax",
+		"/C/Sublime Text Build 3/Data/Packages/User/formato_html_in_JS.sublime-syntax",
+		"/D/www/plat_form1/node_modules/friendly-errors-webpack-plugin/src/transformers/babelSyntax.js",
+		"/D/www/plat_form1/node_modules/jquery/dist/jquery.slim.js",
+		"/D/www/plat_form1/config/database.php",
+		"/D/www/plat_form1/resources/js/components/elems/thumb_admforms.vue",
+		"/D/www/plat_form1/public/js/app.js",
+		"/D/www/plat_form1/resources/js/components/vw_adm_formularios.vue",
+		"/D/www/plat_form1/resources/js/components/vw_bandeja_quest.vue",
+		"/D/www/plat_form1/resources/js/components/pagina2.vue"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 121.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pol.",
+			"pol",
+			"globalApp",
+			"fillPolitics",
+			"dtPoliticas",
+			"type=\"text/css\"",
+			"lib_pubs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/administracion/contenidos.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6410,
+								6410
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6838,
+										6839
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6409,
+										6410
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1323.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/layouts/principal_tpl.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5643,
+								5643
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5642,
+										5643
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										5535,
+										5536
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1254.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 20.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 84.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.mql4log":
+	{
+		"height": 236.0
+	},
+	"output.paneltranformations":
+	{
+		"height": 460.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "ProySublime.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"laravel-m",
+				"node_modules\\laravel-mix\\setup\\webpack.mix.js"
+			],
+			[
+				"web.",
+				"routes\\web.php"
+			],
+			[
+				"route",
+				"node_modules\\color-convert\\route.js"
+			],
+			[
+				"plan",
+				"resources\\js\\components\\gestion_plantillas.vue"
+			],
+			[
+				"Illuminate\\Foundation\\Auth\\AuthenticatesUsers",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"illuminate/route",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"illuminate/routing/rout",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"illuminate/rout",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"princi",
+				"resources\\views\\principal_view.blade.php"
+			],
+			[
+				"syntax",
+				"node_modules\\friendly-errors-webpack-plugin\\src\\transformers\\babelSyntax.js"
+			],
+			[
+				"illuminate/router",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"cm2",
+				"public\\plugins\\bower_components\\jquery-steps-master\\lib\\modernizr-2.6.2.min.js"
+			],
+			[
+				"selec",
+				"public\\plugins\\bower_components\\datatables-plugins\\pagination\\select.js"
+			],
+			[
+				"colo",
+				"public\\plugins\\bower_components\\colorpicker\\colorpicker.css"
+			],
+			[
+				"",
+				"vendor\\phpunit\\php-code-coverage\\tests\\_files\\NamespaceCoveragePublicTest.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
