@@ -94,7 +94,7 @@ class GeneralController extends MasterController
 
 		$extension = $file->getClientOriginalExtension();
 	    $localizacionArchTemp = $file->getPathName();
-	    $archivo_nombre_orig =  $req->archivo_nombre_orig;
+	    $archivo_nombre_orig =  $req->archivo_nombre;
 	    $rutaDestino = 'public/img/uploads/';
 	    move_uploaded_file($localizacionArchTemp, $rutaDestino . $archivo_nombre_orig);
 

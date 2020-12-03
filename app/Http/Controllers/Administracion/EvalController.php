@@ -24,6 +24,21 @@ class EvalController extends MasterController
     }
 
     /* API de ruta */
+    public function obtenerIndicesEmpresa($id_emp)
+    {
+        $historico = collect(\DB::select("SELECT r.* FROM empresas e, empresas_indice_riesgo r 
+                                            WHERE e.id = r.id_empresa AND e.id = '{$id_emp}' ORDER BY id") );
+
+        return response()->json([
+            'data' => [
+                'id_empresa' => $id_emp,
+                'empresa_indices_riesgo' => $historico
+            ]
+
+        ]);    
+    }
+
+    /* API de ruta */
     /* request es un array con las respuestas */
     public function guardarRespuestasPreguntasRiesgo(Request $request)
     {
@@ -128,10 +143,6 @@ class EvalController extends MasterController
         } catch (Exception $e) {
             return response()->json([ 'estado' =>"error", 'mensaje' => $e->getMessage() ]);
         }
-
-        
-        
-
 
     }
 

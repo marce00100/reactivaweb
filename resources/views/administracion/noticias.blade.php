@@ -195,7 +195,7 @@ $(function(){
         source : {},
 
         fillTable : function() {
-            $.get(globalApp.urlBaseApi + 'obtener-full-noticias', function(resp)
+            $.get(globalApp.urlBase + 'api/obtener-full-noticias', function(resp)
             {
                 conT.source =
                 {
@@ -275,13 +275,13 @@ $(function(){
             });
         },
         refreshDataT: function(){
-            $.get(globalApp.urlBaseApi + 'obtener-full-contenidos', function(resp) {
+            $.get(globalApp.urlBase + 'api/obtener-full-contenidos', function(resp) {
                 conT.source.localdata = resp.data[0].contenidos;
                 conT.dataTableTarget.jqxDataTable("updateBoundData");
             })   
         },
         init : function(){
-            // $.get(globalApp.urlBaseApi + "getPilaresVinculadosAlPlan", {p:globalApp.idPlanActivo}, function(res){
+            // $.get(globalApp.urlBase + "api/getPilaresVinculadosAlPlan", {p:globalApp.idPlanActivo}, function(res){
             //     opts = res.data;
             //     opts.forEach(function(op){
             //         $("#ids_pilares").append('<option value="' + op.id + '">' + op.nombre + ' - ' + op.descripcion + '</option>');
@@ -396,7 +396,7 @@ $(function(){
             let archivo = funciones.obtenerArchivo('[__archivo_up]');
 
             var postDatosContenido = () => {
-            	$.post(globalApp.urlBaseApi + 'guardar-contenido', {contenido : obj}, function(resp){
+            	$.post(globalApp.urlBase + 'api/guardar-contenido', {contenido : obj}, function(resp){
             		conT.refreshDataT();
             		new PNotify({
             			title: resp.estado == 'ok' ? 'Guardado' : 'Error',
@@ -422,7 +422,7 @@ $(function(){
             	$.ajax({
 		            type: "POST",
 		            enctype: 'multipart/form-data',
-		            url: globalApp.urlBaseApi + 'upload-file',
+		            url: globalApp.urlBase + 'api/upload-file',
 		            data: formData,
 		            processData: false,
 		            contentType: false,

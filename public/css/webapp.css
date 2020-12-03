@@ -14,11 +14,38 @@ body {
   background-color: #ffffff;
 }
 
-#menu_principal li span:hover, 
-.texto-hover:hover{
+.menu-principal{
   cursor: pointer;
+  margin-right: 5px;
+  padding: 15px;
   /*font-weight: bold; */
-  color: #222 !important; 
+  color: #FFFFFF !important;
+  background-color:#3b3f4f;
+}
+
+.menu-principal.seleccionado{
+  color: #FFFFFF !important;
+  background-color:#6D7A8A;
+}
+
+.submenu{
+    padding: 5px 10px; 
+    margin:0 12px   ; 
+    font-weight: 700; 
+    font-size: 110%;
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+.submenu:hover{
+    /*color: #1d4568;*/
+    border-bottom: 1px #EF7927 solid  
+
+    
+}
+
+.submenu.seleccionado{
+    border-bottom: 3px #EF7927 solid    
 }
 
 .modal-lg{

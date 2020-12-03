@@ -72,10 +72,11 @@
         </ul> 
         <ul class="nav navbar-nav navbar-right">
             <div class="" style="padding: 15px 0px 0px 0px">
-                <span class="mr10 h-120  p15 bg-dark"><a href="#" class="text-white">Contenidos </a> </span>
-                <span class="mr10 h-120  p15 bg-dark"><a href="#" class="text-white">Noticias </a> </span>
-                <span class="mr10 h-120  p15 bg-dark"><a href="#" class="text-white">Ajustes </a> </span>
-                <span class="mr10 h-120  p15 bg-dark"><a href="#" class="text-white">Estadisticas </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-contenidos" class="text-white">Contenidos </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-noticias" class="text-white">Noticias </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./seguimiento-empresas" class="text-white">ver Empresas </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Ajustes </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Estadisticas </a> </span>
             </div>
             
 
@@ -89,8 +90,10 @@
         <!-- Begin: Content -->
         <!-- =========================== CONTENIDO ============================ -->
         <section id="main_content" class="table-layout_ animated fadeIn col-md-10 col-md-offset-1" style="min-height: 3500px; margin-top: 70px">
-            {{ csrf_field() }}
-            @yield('content')
+            {{-- <div id="appVue"> --}}
+                {{ csrf_field() }}
+                @yield('content')
+            {{-- </div> --}}
         </section>
         <!-- End: Content -->
     </section>
@@ -103,6 +106,7 @@
 
     <!-- BEGIN: PAGE SCRIPTS -->    
 @yield('scriptShift')
+{{-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> --}}
 {{-- <script type="text/javascript" src="./public/libs_pub/sty-02/vendor/jquery/jquery-1.11.1.min.js"></script> --}}
 <script type="text/javascript" src="./public/libs_pub/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="./public/libs_pub/sty-02/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
@@ -132,48 +136,44 @@
 
 <script type="text/javascript">
 
-    /*------------------------------- VARIABLE DE CONFIGURACION ------------------
-    | Configuracion GLOBAL , modificar aqui, en globalAPP
-     */
-window.globalApp = {
-    urlBaseApi: "http://localhost/www/laravel7/api/",
-    urlBaseWeb: "http://localhost/www/laravel7/",
-
-    /* ************ FUNCIONES GLOBALES ******************/
-
-    /* retorna un objeto con los  field:valor*/
-    getData__fields: function(){
-        let campos = $("[__field]");
-        let objeto = {};
-        _.map(campos, function(elem){
-            if($(elem).attr('type') == 'checkbox' )
-                objeto[ $(elem).attr('__field')] = $(elem).prop('checked') ? 1 : 0;
-            else
-                objeto[ $(elem).attr('__field')] = $(elem).val();
-        });
-        return objeto;
-    },
-    generaOpciones: (listaOpciones, key, text) => {
-        return _.reduce(listaOpciones, function(retorno, item){
-            return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
-        } , `<option>-- SELECCIONE --</option>`);
-    },
-
-}
-
-// var _ =  require("lodash");
-$(function(){
+    /*------------------------------- VARIABLE DE CONFIGURACION ------------------*/
     
-    console.log($.now())
-})
 
+
+$(function(){
+
+    var configuracion =  {
+        urlBase: "http://localhost/www/laravel7/",
+
+        /* ************ FUNCIONES GLOBALES ******************/
+
+        /* retorna un objeto con los  field:valor*/
+        getData__fields: function(){
+            let campos = $("[__field]");
+            let objeto = {};
+            _.map(campos, function(elem){
+                if($(elem).attr('type') == 'checkbox' )
+                    objeto[ $(elem).attr('__field')] = $(elem).prop('checked') ? 1 : 0;
+                else
+                    objeto[ $(elem).attr('__field')] = $(elem).val();
+            });
+            return objeto;
+        },
+        generaOpciones: (listaOpciones, key, text) => {
+            return _.reduce(listaOpciones, function(retorno, item){
+                return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
+            } , `<option>-- SELECCIONE --</option>`);
+        },
+
+    }
+
+    globalApp = configuracion;
+
+})
 
 */* *************************** TEST *************************** */
 
 $(function(){
-
-    /******************* INSERTA DATOS EN EMPRESA Y GUARDAR PREGUNTAS ---- TEST DEL PosT -  Crear los botones para probar*/
-    var ruta = "http://localhost/www/laravel7/api/";
 
 
     /* ******* guardar-respuestas-preguntas-riesgo ******/
@@ -256,7 +256,12 @@ $(function(){
     })
 
 
-
+    // var app = new Vue({
+    //       el: '#appVue',
+    //       data: function(){
+    //         return $scope;
+    //     }
+    // })
 
 })
 

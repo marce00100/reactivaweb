@@ -58,6 +58,8 @@ Route::post('guardar-empresa', 'Administracion\EmpresasController@guardarEmpresa
 Route::get('obtener-arbol-preguntas-riesgo', 'Administracion\EvalController@obtenerArbolPreguntasRiesgo');
 Route::post('guardar-respuestas-preguntas-riesgo', 'Administracion\EvalController@guardarRespuestasPreguntasRiesgo');
 
+Route::get('obtener-indices-empresa/{id_emp}', 'Administracion\EvalController@obtenerIndicesEmpresa');
+
 
 /* ------------- EPP --------------*/
 Route::get('obtener-arbol-epp/{normalsalud}', 'Administracion\EvalController@obtenerArbolEpp');

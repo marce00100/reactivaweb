@@ -9,14 +9,14 @@ use Illuminate\Http\Request;
 class ContenidosController extends MasterController
 {
 	/* VISTA */
-  	public function showContenidos()
+  	public function showGestionContenidos()
   	{
   		  return view('administracion.contenidos');
   	}
         
 
     /* VISTA */
-    public function showNoticias()
+    public function showGestionNoticias()
     {
           return view('administracion.noticias');
     }  
@@ -116,7 +116,7 @@ class ContenidosController extends MasterController
 
 
 
-    /* API */
+    /* API  */
     /* Obtiene solo los datos importantes para usuarios del celular */
     public function obtenerTodasLasNoticias()
     {

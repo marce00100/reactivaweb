@@ -7,6 +7,7 @@
 {{-- <link rel="stylesheet" href="./public/libs_pub/jqwidgets5.5.0/jqwidgets/styles/jqx.base.css" type="text/css" /> --}}
 <link rel="stylesheet" href="./public/libs_pub/jqwidgets11/styles/jqx.base.css" type="text/css" />
 
+
 <style media="screen">
 .popup-basic {
   position: relative;
@@ -41,28 +42,13 @@
                 	<div class="titulo-modulo p20 pb30" >
                 		<h1 class="titulo-modulo">Monitor de Empresas</h1>
                 	</div>
-                	{{-- <div style="margin-bottom: 20px; text-align: center ">                		
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700; border-bottom: 3px orange solid ">COVID 19</span>
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700;  ">Riesgos por Rubro</span>
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700;  ">Seguridad Ocupacional</span>
-                	</div> --}}
-                	{{-- <div>
-                		<label class="field-label" for="ids_pilares">Tipo de Contenido </label>
-                		<div class="section">
-                            <label class="field select">
-                                <select id="tipoContenido" name="tipoContenido" class="required" style="width:100%;">
-                                    
-                                </select>
-                                <i class="arrow"></i>                  
-                            </label>
-                        </div>
 
-                    </div> --}}
                     <div class="panel-heading  bg-dark ">
                         <div class="panel-title ">
                             <i class="fa fa-puzzle-piece fa-2x" ></i><span __cabecera_dt>Búsqueda de empresas</span> 
                         </div>
                     </div>
+
                     <div class="panel-body pn">
                         <div class="row">
                             <div  class="col-md-12" >
@@ -74,19 +60,21 @@
                         </div>
                         <div id="dataT"></div>                        
                     </div>
+
                     <div style="margin-top: 15px">
                         <div class="row pt15" style="border-top: solid 3px grey">
-                            <div __emp_info class="col-sm-6">
+                            <div __emp_info class="col-sm-4">
                             </div>
-                            <div __emp_riesgo_now class="col-sm-6">
+                            <div __emp_riesgo_now class="col-sm-8" style="text-align: center;">
+                                <div id="divGraph"></div>
                                 
                             </div>
                                 
                         </div>
-                        <div __emp_tabla_riesgo>
-                            
-                        </div>
-                        
+                        <div __emp_tabla_riesgo class="mt20">
+                            {{-- <h3>Tabla de los indices por fechas</h3> --}}
+                            <div id="indRiesgosDT"></div>
+                        </div>                        
                     </div>
 
                 </div>
@@ -198,12 +186,23 @@
 <script type="text/javascript" src="./public/libs_pub/jqwidgets11/jqxchart.core.js"> </script>
 
 <script src="./public/libs_pub/min/jqwidgets-localization_custom.js"></script>
+
+
+<script type="text/javascript" src="./public/libs_pub/Highcharts-6.0.4/code/highcharts.js"></script>
+<script type="text/javascript" src="./public/libs_pub/Highcharts-6.0.4/code/highcharts-3d.js"></script>
+<script type="text/javascript" src="./public/libs_pub/Highcharts-6.0.4/code/modules/exporting.js"></script>
+{{-- <script type="text/javascript" src="./public/libs_pub/modify/hightcharts/themes/dark-unica_.src.js"></script> --}}
+<script type="text/javascript" src="./public/libs_pub/modify/hightcharts/themes/grid_.src.js"></script>
+
+
 <script type="text/javascript">
 $(function(){
 
-	let state = {
-		actual : 'inicio',
+	var state = {
+        empresa_sel: {},
+        empresa_sel_indices: [],
 	}
+
     let conT = {
     	contenedor: '#contenedor',
     	modal: "#modal",
@@ -211,7 +210,7 @@ $(function(){
         source : {},
 
         fillTable : function() {
-            $.get(globalApp.urlBaseApi + 'obtener-empresas', function(resp)
+            $.get(globalApp.urlBase + 'api/obtener-empresas', function(resp)
             {
                 conT.source =
                 {
@@ -278,13 +277,13 @@ $(function(){
             });
         },
         refreshDataT: function(){
-            $.get(globalApp.urlBaseApi + 'obtener-full-contenidos', function(resp) {
+            $.get(globalApp.urlBase + 'api/obtener-full-contenidos', function(resp) {
                 conT.source.localdata = resp.data[0].contenidos;
                 conT.dataTableTarget.jqxDataTable("updateBoundData");
             })   
         },
         init : function(){
-            // $.get(globalApp.urlBaseApi + "getPilaresVinculadosAlPlan", {p:globalApp.idPlanActivo}, function(res){
+            // $.get(globalApp.urlBase + "api/getPilaresVinculadosAlPlan", {p:globalApp.idPlanActivo}, function(res){
             //     opts = res.data;
             //     opts.forEach(function(op){
             //         $("#ids_pilares").append('<option value="' + op.id + '">' + op.nombre + ' - ' + op.descripcion + '</option>');
@@ -399,7 +398,7 @@ $(function(){
             let archivo = funciones.obtenerArchivo('[__archivo_up]');
 
             var postDatosContenido = () => {
-            	$.post(globalApp.urlBaseApi + 'guardar-contenido', {contenido : obj}, function(resp){
+            	$.post(globalApp.urlBase + 'api/guardar-contenido', {contenido : obj}, function(resp){
             		conT.refreshDataT();
             		new PNotify({
             			title: resp.estado == 'ok' ? 'Guardado' : 'Error',
@@ -425,7 +424,7 @@ $(function(){
             	$.ajax({
 		            type: "POST",
 		            enctype: 'multipart/form-data',
-		            url: globalApp.urlBaseApi + 'upload-file',
+		            url: globalApp.urlBase + 'api/upload-file',
 		            data: formData,
 		            processData: false,
 		            contentType: false,
@@ -448,7 +447,155 @@ $(function(){
 
     }
 
-    var funciones = {
+    var emp = {
+        mostrar_info_empresa: function(){
+            let rowSelected = conT.dataTableTarget.jqxDataTable('getSelection');
+
+            if(rowSelected.length > 0)
+            {
+                let rowSel = rowSelected[0]; 
+                state.empresa_sel = rowSel;                
+
+                let html = `<div>
+                                <h3>Informacion de la Empresa</h3>
+                                <span style="display:block" class="fs14"><b> ${ (rowSel.activo) ? 'Empresa <span class="text-success-darker">ACTIVA</span> en sistema' : 'Empresa <span class="text-danger-darker"> ELIMINADA<span>'}</b></span>
+                                <span style="display:block"><b>Empresa:</b> ${(rowSel.nombre) }</span>
+                                <span style="display:block"><b>Rubro:</b> ${rowSel.rubro }</span>
+                                <span style="display:block"><b>Departamento:</b> ${ rowSel.departamento ? rowSel.departamento : '' }</span>
+                                <span style="display:block"><b>Municipio:</b> ${rowSel.municipio ? rowSel.municipio : ''}</span>
+                                <span style="display:block"><b>Dirección:</b> ${rowSel.direccion ? rowSel.direccion : ''}</span>
+                                <span style="display:block"><b>Responsable:</b> ${rowSel.responsable_nombre ? rowSel.responsable_nombre :''} ${rowSel.responsable_ap?rowSel.responsable_ap:''}</span>
+                                <span style="display:block"><b>Correo electronico:</b> ${rowSel.mail ? rowSel.mail : ''}</span>
+                                <span style="display:block"><b>Fecha registro:</b> ${moment(rowSel.fecha_creacion).format('DD/MM/YYYY') }</span>
+                                <span style="display:block"><b>Fecha última modicicación:</b> ${moment(rowSel.fecha_modificacion).format('DD/MM/YYYY') }</span>
+
+                                </div> ` ;
+
+                $("[__emp_info]").html(html);  
+
+                $.get(globalApp.urlBase + 'api/obtener-indices-empresa/' + rowSel.id, function(res){
+                    state.empresa_sel_indices = res.data.empresa_indices_riesgo;
+
+                    emp.mostrar_chart();
+                    emp.mostrar_indices_tabla()
+                });                
+            }
+
+        },
+        mostrar_chart : ()=>{
+            let objG = 
+                {
+                    title: { 
+                        text: 'Historico: Indices de Riesgo'
+                    },
+                    subtitle: {
+                        text: state.empresa_sel.nombre
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Nivel de Riesgo'
+                        }
+                    },
+                    xAxis: {
+                        categories: funciones.convertirParaGraph(state.empresa_sel_indices, 'fecha'),
+                    },
+                    legend: {
+                        // layout: 'vertical',
+                        // align: 'right',
+                        // verticalAlign: 'middle'
+                    },
+                    plotOptions: {
+                        // series: {
+                        //     label: {
+                        //         connectorAllowed: false
+                        //     },
+                        //     pointStart: 2010
+                        // }
+                    },
+
+                    series: [{
+                        name: state.empresa_sel.nombre,
+                        data: funciones.convertirParaGraph(state.empresa_sel_indices, 'indice_riesgo', 'int'),
+                    },],
+
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+
+                }
+
+                console.log(objG)
+
+                // Highcharts.chart('#divGraph', objG )
+                
+            $('#divGraph').highcharts(objG);
+        },
+        mostrar_indices_tabla: ()=>{
+            sourceInd =
+            {
+                dataType: "json",
+                localdata: state.empresa_sel_indices,
+                dataFields: [
+                    { name: 'fecha', type: 'date' },
+                    { name: 'contacto_con_otros', type: 'string' },
+                    { name: 'proximidad_fisica', type: 'string' },
+                    { name: 'exposicion_enfermedad', type: 'string' },
+                    { name: 'trabajo_ambiente_cerrado', type: 'string' },
+                    { name: 'indice_riesgo', type: 'string' },
+                ],
+                id: 'id',
+            };
+
+            var dataAdapterInd = new $.jqx.dataAdapter(sourceInd);
+            /* Aqui se configura el DT y se le asigna al Contenedor DIV*/
+            $("#indRiesgosDT").jqxDataTable({
+                source: dataAdapterInd,
+                altRows: false,
+                sortable: false,
+                width: "100%",
+                filterable: false,
+                filterMode: 'simple',
+                selectionMode: 'none',
+                localization: getLocalization('es'),
+                columns: [                       
+                    { text: 'Fecha', width: 150, align:'center',  cellsalign: 'center', dataField: 'fecha',
+                        cellsrenderer: function(row, column, value, rowData){
+                                return (rowData.fecha != null && rowData.fecha != "") ?  moment(rowData.fecha).format('DD/MM/YYYY') : "";
+                        }
+                    },
+                    { text: 'Contacto con otros', width: 150, align:'center',  cellsalign: 'center', dataField: 'contacto_con_otros'},
+                    { text: 'Proximidad Física', width: 150, align:'center',  cellsalign: 'center', dataField: 'proximidad_fisica'},
+                    { text: 'Exposicion ala Enfermedad', width: 150, align:'center',  cellsalign: 'center', dataField: 'exposicion_enfermedad'},
+                    { text: 'Trabajo en ambiente cerrado', width: 150, align:'center',  cellsalign: 'center', dataField: 'trabajo_ambiente_cerrado'},
+
+                    { text: 'Indice de Riesgo', width: 150, align:'center',  cellsalign: 'center',  dataField: 'indice_riesgo',
+                        cellsrenderer: function(row, column, value, rowData){
+                            return `<b>${rowData.indice_riesgo} </b>`;
+                        }
+                    },
+                ]
+            });
+
+
+
+
+
+        }
+
+    }
+
+    let funciones = {
         estadistics : function()
         {
             try{ 
@@ -470,29 +617,18 @@ $(function(){
         	let archivo = $(selector)[0];
         	return (archivo.files.length>0) ? archivo.files[0] : "no_archivo";
         },
+        convertirParaGraph: function(coleccion, atributo, tipovar){
+            
+            let valores = _.map(coleccion , function(item){
 
-        mostrar_info_empresa: function(){
-            let rowSelected = conT.dataTableTarget.jqxDataTable('getSelection');
-
-            if(rowSelected.length > 0)
-            {
-                var rowSel = rowSelected[0]; 
-                let html = `<div>
-                                <span style="display:block" class="fs14"><b> ${ (rowSel.activo) ? 'Empresa <span class="text-success-darker">ACTIVA</span> en sistema' : 'Empresa <span class="text-danger-darker"> ELIMINADA<span>'}</b></span>
-                                <span style="display:block"><b>Empresa:</b> ${(rowSel.nombre) }</span>
-                                <span style="display:block"><b>Rubro:</b> ${rowSel.rubro }</span>
-                                <span style="display:block"><b>Departamento:</b> ${ rowSel.departamento ? rowSel.departamento : '' }</span>
-                                <span style="display:block"><b>Municipio:</b> ${rowSel.municipio ? rowSel.municipio : ''}</span>
-                                <span style="display:block"><b>Dirección:</b> ${rowSel.direccion ? rowSel.direccion : ''}</span>
-                                <span style="display:block"><b>Responsable:</b> ${rowSel.responsable_nombre ? rowSel.responsable_nombre :''} ${rowSel.responsable_ap?rowSel.responsable_ap:''}</span>
-                                <span style="display:block"><b>Correo electronico:</b> ${rowSel.mail ? rowSel.mail : ''}</span>
-                                <span style="display:block"><b>Fecha registro:</b> ${moment(rowSel.fecha_creacion).format('DD/MM/YYYY') }</span>
-                                <span style="display:block"><b>Fecha última modicicación:</b> ${moment(rowSel.fecha_modificacion).format('DD/MM/YYYY') }</span>
-
-                            </div> ` ;
-                return html;
-            }
+                                if(tipovar == 'int') item[atributo] = parseInt(item[atributo])
+                            return item[atributo]
+                        }) ;
+            console.log(valores);
+            return valores;
         }
+
+        
 
         /* carga submenu para contenidos, se le debe enviar un array y el parametro del que se obtiene el submenu */
         // submenu: (lista, campo)=>{
@@ -529,7 +665,7 @@ $(function(){
 	    });
 
         $(conT.contenedor).on("click", "[__accion='ver_detalle']", function(){
-            $("[__emp_info]").html(funciones.mostrar_info_empresa());
+            emp.mostrar_info_empresa();
         })
     }
 

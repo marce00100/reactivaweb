@@ -4,8 +4,11 @@
 
 @section('header')
 
-{{-- <link rel="stylesheet" href="./public/libs_pub/jqwidgets5.5.0/jqwidgets/styles/jqx.base.css" type="text/css" /> --}}
 <link rel="stylesheet" href="./public/libs_pub/jqwidgets11/styles/jqx.base.css" type="text/css" />
+{{-- <link rel="stylesheet"href="./public/libs_pub/jqwidgets11/styles/jqx.material.css"  type="text/css" /> --}}
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+D:\www\laravel7\public\libs_pub\jqwidgets11\styles
 
 <style media="screen">
 .popup-basic {
@@ -42,9 +45,9 @@
                 		<h1 class="titulo-modulo">Generador de Contenidos</h1>
                 	</div>
                 	<div style="margin-bottom: 20px; text-align: center ">                		
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700; border-bottom: 3px orange solid ">COVID 19</span>
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700;  ">Riesgos por Rubro</span>
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700;  ">Seguridad Ocupacional</span>
+                		<span __submenu="0" class="submenu ">COVID 19</span>
+                		<span __submenu="1" class="submenu">Riesgos por Rubro</span>
+                		<span __submenu="2" class="submenu">Seguridad Ocupacional</span>
                 	</div>
                 	{{-- <div>
                 		<label class="field-label" for="ids_pilares">Tipo de Contenido </label>
@@ -60,7 +63,7 @@
                     </div> --}}
                     <div class="panel-heading  bg-dark ">
                         <div class="panel-title ">
-                            <i class="fa fa-puzzle-piece fa-2x" ></i><span __cabecera_dt>Contenidos de:</span> <span __cabecera_dt_est>COVID 19</span>
+                            <i class="fa fa-file-alt fa-2x" ></i> Información de  <span __cabecera_dt>COVID 19</span> <span __cabecera_dt_est></span>
                         </div>
                     </div>
                     <div class="panel-body pn">
@@ -72,7 +75,9 @@
                                 
                             </div>
                         </div>
-                        <div id="dataT"></div>
+                        <div style="max-height: 500px; overflow-y: scroll; padding: 0 0 40px 0">
+                            <div id="dataT" ></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,6 +131,8 @@
                                     		<span class="btn  bg-system  fa  fa-search " style="padding: 0px 2px;width: 100%; height:25px">
                                     		</span> 
                                     		<input type="file" __archivo_up  class="gui-file" style="padding: 0px;" title="Ningun Archivo Seleccionado">
+                                            <input __field="imagen_almacenada" id="imagen_almacenada" class="hidden" name="">
+                                            <input id="imagen_nueva" class="hidden" name="">
                                     	</label>
                                     </div>
 
@@ -185,23 +192,28 @@
 <script src="./public/libs_pub/min/jqwidgets-localization_custom.js"></script>
 <script type="text/javascript">
 $(function(){
-
-	let state = {
-		actual : 'inicio',
+	$scope = {
+        indice: 0,
+        data: [],
 	}
+
     let conT = {
     	contenedor: '#contenedor',
     	modal: "#modal",
         dataTableTarget : $("#dataT"),
         source : {},
 
-        fillTable : function() {
-            $.get(globalApp.urlBaseApi + 'obtener-full-contenidos', function(resp)
-            {
+        cargarDatos: function(){
+            $.get(`${globalApp.urlBase}api/obtener-full-contenidos`, function(resp){
+                $scope.data = resp.data;
+                conT.fillDataT();
+            });
+        },
+        fillDataT : function() {  
                 conT.source =
                 {
                     dataType: "json",
-                    localdata: resp.data[0].contenidos,
+                    localdata: $scope.data[$scope.indice].contenidos,
                     dataFields: [
                         { name: 'id', type: 'number' },
                         { name: 'titulo', type: 'string' },
@@ -271,35 +283,15 @@ $(function(){
                         },
 
                     ]
-                });
+               
                 // funciones.estadistics();
             });
         },
         refreshDataT: function(){
-            $.get(globalApp.urlBaseApi + 'obtener-full-contenidos', function(resp) {
+            $.get(globalApp.urlBase + 'api/obtener-full-contenidos', function(resp) {
                 conT.source.localdata = resp.data[0].contenidos;
                 conT.dataTableTarget.jqxDataTable("updateBoundData");
             })   
-        },
-        init : function(){
-            // $.get(globalApp.urlBaseApi + "getPilaresVinculadosAlPlan", {p:globalApp.idPlanActivo}, function(res){
-            //     opts = res.data;
-            //     opts.forEach(function(op){
-            //         $("#ids_pilares").append('<option value="' + op.id + '">' + op.nombre + ' - ' + op.descripcion + '</option>');
-            //     });
-            //     $("#ids_pilares").select2({
-            //         placeholder: 'Seleccione los pilares de la política',
-            //         dropdownParent: $('#form_cont'),
-            //         cache: false,
-            //         language: "es",
-            //         templateSelection: function (val) {
-            //             return $("<div class='list-group-item' style='width:100%;' title ='" + val.text + "'>" +val.text + "</div>");
-            //         },
-            //     });
-            // });
-
-
-            // $("").html(funciones.tTítuloipoPolitica());
         },
         showModal : function(){
             $(".state-error").removeClass("state-error")
@@ -325,7 +317,6 @@ $(function(){
             return objeto;
         },
         setData: function(obj){
-
             $("#id_contenido").val(obj.id);
             $("#titulo").val(obj.titulo);
             $("#url_redireccion").val(obj.url_redireccion);
@@ -333,12 +324,21 @@ $(function(){
             $("#activo").prop("checked", obj.activo );
             $("#texto").val(obj.texto);
 
+            $("[__imagen_label").html("Imagen: " + obj.imagen_almacenada);
+            $("#imagen_almacenada").val(obj.imagen_almacenada);
+            $("#imagen_nueva").val(obj.imagen_almacenada);
+
         },
         nuevo: function(){
             $("#tituloModal span").html(`Agregar ${funciones.tipoContenido()}`);
-            $('#form_cont input:text').val('');
+            $('#form_cont input').val('');
             $('#form_cont textarea').val('');
             $('#form_cont input:checkbox').val('');
+
+            $("[__imagen_label").html("Imgen");
+            $("#imagen_almacenada").val("");
+            $("#imagen_nueva").val("");
+
             conT.showModal();
         },
         editar: function(){
@@ -393,11 +393,11 @@ $(function(){
 
             let obj = conT.getData();
 
+            obj.imagen_almacenada = $("#imagen_nueva").val(); /* La imagen_almacenada se actualiza para ser anviada,  con la imagen que se ha cargado, si no se carga ninguna imagen , de entrada ambas tienen el mismo valor asi que siguen siendo iaguales */
+            console.log(obj);
 
-            let archivo = funciones.obtenerArchivo('[__archivo_up]');
-
-            var postDatosContenido = () => {
-            	$.post(globalApp.urlBaseApi + 'guardar-contenido', {contenido : obj}, function(resp){
+            postDatosContenido = () => {
+            	$.post(globalApp.urlBase + 'api/guardar-contenido', {contenido : obj}, function(resp){
             		conT.refreshDataT();
             		new PNotify({
             			title: resp.estado == 'ok' ? 'Guardado' : 'Error',
@@ -411,19 +411,18 @@ $(function(){
                             delay: 1500
                         });
             	});	
-            }
-            
+            }            
 
-            if(archivo != "no_archivo"){
-            	let formData = new FormData();
+            if( $("#imagen_almacenada").val() != $("#imagen_nueva").val() ){
+            	let archivo = funciones.obtenerArchivo('[__archivo_up]');
+                let formData = new FormData();
             	formData.append('archivo', archivo);
-            	formData.append('archivo_nombre_orig', archivo.name);
-
+            	formData.append('archivo_nombre', obj.imagen_almacenada); /* obj.imagen_seleccionada contiene el valor de la nueva imagen */
             	
             	$.ajax({
 		            type: "POST",
 		            enctype: 'multipart/form-data',
-		            url: globalApp.urlBaseApi + 'upload-file',
+		            url: globalApp.urlBase + 'api/upload-file',
 		            data: formData,
 		            processData: false,
 		            contentType: false,
@@ -436,7 +435,7 @@ $(function(){
 		            	$.magnificPopup.close(); 
 		            },
 		        });
-
+                
             }
             else{
             	postDatosContenido();
@@ -466,16 +465,22 @@ $(function(){
         /* obtiene el archivo cargado de un input:file */
         obtenerArchivo: selector => { 
         	let archivo = $(selector)[0];
-        	return (archivo.files.length>0) ? archivo.files[0] : "no_archivo";
+        	// return (archivo.files.length>0) ? archivo.files[0] : "no_archivo";
+            return archivo.files[0] ;
+        },
+
+        seleccionaSubMenu(){
+            if($scope.data.length > 0){
+                conT.fillDataT();
+                 $("[__cabecera_dt]").html($scope.data[$scope.indice].nombre);
+            }
+            $("[__submenu]").removeClass('seleccionado');
+            $(`[__submenu=${$scope.indice}]`).addClass('seleccionado');
+           
         }
 
-        /* carga submenu para contenidos, se le debe enviar un array y el parametro del que se obtiene el submenu */
-        // submenu: (lista, campo)=>{
-        // 	let html = "<div>"
-        // 	lista.forEach(item){
 
-        // 	}
-        // }
+
 
     }
 
@@ -492,12 +497,16 @@ $(function(){
 	    	conT[ $(elem).attr('__accion') ](); /* equivale a conT.nuevo*/
 	    });
 
+
+        /* SUBE ARCHIVO*/
 	    $(conT.modal).on('change', "[__archivo_up]", function(){
 	    	var archivo = $(this);
 	    	console.log(archivo[0].files[0])
 	    	console.log(archivo[0].files.length)
+
 	    	archivo.attr("title","Archivo SELECCIONADO " + archivo[0].files[0].name);
 	    	$("[__imagen_label]").html("Imagen: " +  archivo[0].files[0].name );
+            $("#imagen_nueva").val(archivo[0].files[0].name );
 	    });
 
 	    $(".cont_cancelar").click(function(){
@@ -507,6 +516,13 @@ $(function(){
 	    $(".cont_save").click(function(){
 	        conT.saveData();
 	    });
+
+        /* Al hacer clic en Submenu, actualizamos la variable $scope.indice  */
+        $(conT.contenedor).on('click',  '[__submenu]' , function(e){
+            let elem = e.currentTarget;
+            $scope.indice = $(elem).attr('__submenu');
+            funciones.seleccionaSubMenu();
+        });
     }
 
 
@@ -515,7 +531,8 @@ $(function(){
     let init = () => {
 
     	// $("#form_cont").validate(conT.validateRules());
-		conT.fillTable();
+		conT.cargarDatos();
+        funciones.seleccionaSubMenu()
 
     }
     

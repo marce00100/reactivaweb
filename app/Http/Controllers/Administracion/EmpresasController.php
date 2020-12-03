@@ -8,7 +8,7 @@ class EmpresasController extends MasterController
 {
 
     /* VISTA */
-    public function showEmpresas(){
+    public function showSeguimientoEmpresas(){
         return view('administracion.empresas');
     }
 
