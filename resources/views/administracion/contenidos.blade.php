@@ -49,18 +49,7 @@ D:\www\laravel7\public\libs_pub\jqwidgets11\styles
                 		<span __submenu="1" class="submenu">Riesgos por Rubro</span>
                 		<span __submenu="2" class="submenu">Seguridad Ocupacional</span>
                 	</div>
-                	{{-- <div>
-                		<label class="field-label" for="ids_pilares">Tipo de Contenido </label>
-                		<div class="section">
-                            <label class="field select">
-                                <select id="tipoContenido" name="tipoContenido" class="required" style="width:100%;">
-                                    
-                                </select>
-                                <i class="arrow"></i>                  
-                            </label>
-                        </div>
 
-                    </div> --}}
                     <div class="panel-heading  bg-dark ">
                         <div class="panel-title ">
                             <i class="fa fa-file-alt fa-2x" ></i> Información de  <span __cabecera_dt>COVID 19</span> <span __cabecera_dt_est></span>

@@ -42,24 +42,13 @@
                 		<h1 class="titulo-modulo">Generador de Noticias</h1>
                 	</div>
                 	<div style="margin-bottom: 20px; text-align: center ">                		
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700; border-bottom: 3px orange solid ">Noticias</span>
-                		<span style="padding: 5px 10px; margin:0 10px   ; font-weight: 700;  ">Promociones</span>
+                		{{-- <span __submenu="0" class="submenu ">Noticias</span>
+                		<span __submenu="1" class="submenu ">Promociones</span> --}}
                 	</div>
-                	{{-- <div>
-                		<label class="field-label" for="ids_pilares">Tipo de Contenido </label>
-                		<div class="section">
-                            <label class="field select">
-                                <select id="tipoContenido" name="tipoContenido" class="required" style="width:100%;">
-                                    
-                                </select>
-                                <i class="arrow"></i>                  
-                            </label>
-                        </div>
 
-                    </div> --}}
                     <div class="panel-heading  bg-dark ">
                         <div class="panel-title ">
-                            <i class="fa fa-puzzle-piece fa-2x" ></i><span __cabecera_dt>Noticias</span>
+                            <i class="fa fa-crow fa-2x" ></i><span __cabecera_dt>Noticias</span>
                         </div>
                     </div>
                     <div class="panel-body pn">
