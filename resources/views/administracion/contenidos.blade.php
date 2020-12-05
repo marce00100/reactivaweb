@@ -5,10 +5,10 @@
 @section('header')
 
 <link rel="stylesheet" href="./public/libs_pub/jqwidgets11/styles/jqx.base.css" type="text/css" />
-{{-- <link rel="stylesheet"href="./public/libs_pub/jqwidgets11/styles/jqx.material.css"  type="text/css" /> --}}
+<link rel="stylesheet"href="./public/libs_pub/jqwidgets11/styles/jqx.energyblue.css"  type="text/css" />
 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-D:\www\laravel7\public\libs_pub\jqwidgets11\styles
+
 
 <style media="screen">
 .popup-basic {
@@ -60,12 +60,12 @@ D:\www\laravel7\public\libs_pub\jqwidgets11\styles
                             <div  class="col-md-12" >
                                 <button  __accion="nuevo"   class="btn btn-sm btn-success dark m5 br4"><i class="fa fa-plus-circle text-white"></i> Agregar </button>
                                 <button  __accion="editar"  class="btn btn-sm btn-warning dark m5 br4"><i class="fa fa-edit text-white"></i> Editar</button>
-                                {{-- <button  __accion="eliminar" class="btn btn-sm btn-danger dark m5 br4"><i class="fa fa-minus-circle text-white"></i> Eliminar</button>   --}}                              
+                                <button  __accion="eliminar" class="btn btn-sm btn-danger dark m5 br4"><i class="fa fa-minus-circle text-white"></i> Eliminar</button>                                
                                 
                             </div>
                         </div>
-                        <div style="max-height: 500px; overflow-y: scroll; padding: 0 0 40px 0">
-                            <div id="dataT" ></div>
+                        <div >
+                            <div id="dataT" style="margin: 0 0 40px 0" ></div>
                         </div>
                     </div>
                 </div>
@@ -84,17 +84,16 @@ D:\www\laravel7\public\libs_pub\jqwidgets11\styles
                 <span class="panel-title text-white" id="tituloModal"><i class="fa fa-pencil"></i> <span>__</span></span>
             </div>
             <!-- end .panel-heading section -->
-            <form method="post" action="javascript:void(0)" id="form_cont" name="form_cont">
+
+            <form method="post" action="/" id="form_cont" name="form_cont">
             {{-- <form method="post" action="/" id="form_cont" name="form_cont"> --}}
                 <div class="panel-body mnw700 of-a">
-                    <div class="row">
-
-                            
+                    <div class="row">                            
                             <div class="row">
                                 <div class=" pl5 br-r mvn15">
                                     <h5 class="ml5 mt20 ph10 pb5 br-b fw700"><small class="pull-right fw600"> <span class="text-primary">-</span> </small> </h5>
 
-                                    <input class="hidden" name="id_contenido" id="id_contenido" __field="id">
+                                    <input class="hidden" name="id" id="id" __field="id">
 
                                     <div class="section">
                                         <label class="field-label" for="titulo">Título</label>
@@ -115,14 +114,25 @@ D:\www\laravel7\public\libs_pub\jqwidgets11\styles
                                     </div>
 
                                     <div class="section">
-                                    	<label __imagen_label class="field-label" >Imagen</label>
-                                    	<label class="field prepend-icon_ file" style="width: 80px;display: flex;">
-                                    		<span class="btn  bg-system  fa  fa-search " style="padding: 0px 2px;width: 100%; height:25px">
-                                    		</span> 
-                                    		<input type="file" __archivo_up  class="gui-file" style="padding: 0px;" title="Ningun Archivo Seleccionado">
-                                            <input __field="imagen_almacenada" id="imagen_almacenada" class="hidden" name="">
-                                            <input id="imagen_nueva" class="hidden" name="">
-                                    	</label>
+                                        <div style="border: 1px solid #ddd" class="pt10">
+                                            <div class="section row">
+                                                <div class="col-md-3" style="text-align:center">
+                                                    <label __imagen_label="" class="field-label">Imagen: </label>
+                                                    <label class="field prepend-icon_ file" style="">
+                                                        <span class="btn  bg-primary darker  fa  fa-search fa-lg " style="padding: 10px 2px;width: 150px;height: 10;margin: 0 auto;">
+                                                        </span> 
+                                                        <input type="file" __archivo_up="" class="gui-file" style="padding: 0px;" title="Ningun Archivo Seleccionado">
+                                                        <input __field="imagen_almacenada" id="imagen_almacenada" class="hidden" name="">
+                                                        <input id="imagen_nueva" class="hidden" name="">
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div style="width:204px; min-height: 100px; padding: 2px; background-color: black">    
+                                                        <img __imagen_img="" src="" alt="" style="width: 200px">
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="section">
@@ -196,6 +206,7 @@ $(function(){
             $.get(`${globalApp.urlBase}api/obtener-full-contenidos`, function(resp){
                 $scope.data = resp.data;
                 conT.fillDataT();
+                // conT.fillDataT();
             });
         },
         fillDataT : function() {  
@@ -211,21 +222,20 @@ $(function(){
                         { name: 'url_redireccion', type: 'string' },
                         { name: 'fecha_registro', type: 'date' },
                         { name: 'orden', type: 'number' },
+                        { name: 'tipo_contenido', type: 'number' },
                         { name: 'activo', type: 'number' },
                     ],
                     id: 'id',
                 };
 
                 var dataAdapter = new $.jqx.dataAdapter(conT.source);
-                var editDelRenderer = function (row, columnfield, value, defaulthtml, rowData) {
-                    html = `<a href="#"  class="m-l-10 m-r-10 m-t-10 sel_edit" title="Editar " ><i class="fa fa-edit fa-lg text-warning "></i></a>
-                            <a href="#"  class="m-l-10 m-r-10 m-t-10 sel_delete" title="Eliminar" ><i class="fa fa-minus-circle fa-lg text-danger "></i></a>`
-                    return html;
-                };
 
                 /* Aqui se configura el DT y se le asigna al Contenedor DIV*/
                 conT.dataTableTarget.jqxDataTable({
                     source: dataAdapter,
+                    theme: 'energyblue',
+                    height: 500,
+                    pageable: false,
                     altRows: false,
                     sortable: true,
                     width: "100%",
@@ -270,15 +280,13 @@ $(function(){
                         		return `<span style="color: ${ (activo == 1) ? 'blue' : 'red' }; font-weight: 700; "    > ${ (activo == 1) ?'SI' : 'NO'}</span>`
                         	}
                         },
-
                     ]
-               
-                // funciones.estadistics();
             });
         },
         refreshDataT: function(){
-            $.get(globalApp.urlBase + 'api/obtener-full-contenidos', function(resp) {
-                conT.source.localdata = resp.data[0].contenidos;
+            $.get(globalApp.urlBase + 'api/obtener-full-contenidos', function(resp) { 
+                $scope.data = resp.data;
+                conT.source.localdata = $scope.data[$scope.indice].contenidos;
                 conT.dataTableTarget.jqxDataTable("updateBoundData");
             })   
         },
@@ -301,23 +309,6 @@ $(function(){
                 midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
             });
         }, 
-        getData: function(){     	
-		    let objeto = globalApp.getData__fields();
-            return objeto;
-        },
-        setData: function(obj){
-            $("#id_contenido").val(obj.id);
-            $("#titulo").val(obj.titulo);
-            $("#url_redireccion").val(obj.url_redireccion);
-            $("#orden").val(obj.orden);
-            $("#activo").prop("checked", obj.activo );
-            $("#texto").val(obj.texto);
-
-            $("[__imagen_label").html("Imagen: " + obj.imagen_almacenada);
-            $("#imagen_almacenada").val(obj.imagen_almacenada);
-            $("#imagen_nueva").val(obj.imagen_almacenada);
-
-        },
         nuevo: function(){
             $("#tituloModal span").html(`Agregar ${funciones.tipoContenido()}`);
             $('#form_cont input').val('');
@@ -332,8 +323,7 @@ $(function(){
         },
         editar: function(){
             var rowSelected = conT.dataTableTarget.jqxDataTable('getSelection');
-            if(rowSelected.length > 0)
-            {
+            if(rowSelected.length > 0){
                 var rowSel = rowSelected[0]; 
                 conT.setData(rowSel);
                 $("#tituloModal span").html(`Modificar ${funciones.tipoContenido()}`);
@@ -342,6 +332,36 @@ $(function(){
             else{
                 swal("Seleccione el registro para modificar.");
             }
+        },
+        getData: function(){     	
+		    let objeto = globalApp.getData__fields();
+            objeto.imagen_almacenada = $("#imagen_nueva").val(); /* La imagen_almacenada se actualiza para ser anviada,  con la imagen que se ha cargado, si no se carga ninguna imagen , de entrada ambas tienen el mismo valor asi que siguen siendo iaguales */
+            objeto.tipo_contenido = $scope.data[$scope.indice].id_tipo_contenido; /* id del parametro que contiene el tipo_contenido*/
+            return objeto;
+        },
+        setData: function(obj){
+
+            // _.each(obj, function(val, key){
+            //     if( $(`[__field=${key}]`).attr('type') == 'chekbox')     
+            //         $(`[__field=${key}]`).prop('checked', (val == 1) ? true : false);
+            //     else
+            //         $(`[__field=${key}]`).val(val);
+            // })
+
+            $("#id").val(obj.id);
+            $("#titulo").val(obj.titulo);
+            $("#texto").val(obj.texto);
+            $("#url_redireccion").val(obj.url_redireccion);
+            $("#tipo_contenido").val(obj.tipo_contenido);
+            $("#orden").val(obj.orden);            
+            $("#activo").prop("checked", obj.activo );
+
+            $("#imagen_almacenada").val(obj.imagen_almacenada);
+
+            $("#imagen_nueva").val(obj.imagen_almacenada);
+            $("[__imagen_label]").html("Imagen: " +  obj.imagen_almacenada );
+            $("[__imagen_img]").attr("src", "./public/img/uploads/" + obj.imagen_almacenada);
+
         },
         validateRules: function(){
             var reglasVal = {
@@ -378,14 +398,10 @@ $(function(){
             }
             return reglasVal; 
         }, 
-        saveData: function(){       	
+        saveData: function(){  
+            let obj = conT.getData(); 
 
-            let obj = conT.getData();
-
-            obj.imagen_almacenada = $("#imagen_nueva").val(); /* La imagen_almacenada se actualiza para ser anviada,  con la imagen que se ha cargado, si no se carga ninguna imagen , de entrada ambas tienen el mismo valor asi que siguen siendo iaguales */
-            console.log(obj);
-
-            postDatosContenido = () => {
+            let postDatosContenido = () => {
             	$.post(globalApp.urlBase + 'api/guardar-contenido', {contenido : obj}, function(resp){
             		conT.refreshDataT();
             		new PNotify({
@@ -393,10 +409,7 @@ $(function(){
             			text: resp.mensaje,
             			shadow: true,
             			opacity: 0.9,
-                            // addclass: noteStack,
                             type: (resp.estado == 'ok') ? "success" : "danger",
-                            // stack: Stacks[noteStack],
-                            // width: findWidth(),
                             delay: 1500
                         });
             	});	
@@ -431,19 +444,48 @@ $(function(){
             	$.magnificPopup.close(); 
             } 
         },
-
+        eliminar: function(){
+            var rowSelected = conT.dataTableTarget.jqxDataTable('getSelection'); 
+            if(rowSelected.length > 0) {
+                var rowSel = rowSelected[0];
+                swal({
+                    title: `Está seguro de eliminar el registro seleccionado ? `,
+                    text: "Se borrara complatemente y ya no podrá recuperar este registro!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Si, eliminar!",
+                    closeOnConfirm: true
+                }, function(){
+                    $.post(globalApp.urlBase + 'api/eliminar-contenido-key', {'id': rowSel.id }, function(res){
+                        new PNotify({
+                                  title: (res.estado == 'ok') ? 'Eliminado' : 'Error!!' ,
+                                  text: res.mensaje,
+                                  shadow: true,
+                                  opacity: 0.9,
+                                  type:  (res.estado == 'ok') ? "success" : 'danger',
+                                  delay: 2000
+                              });
+                        conT.refreshDataT();
+                    });
+                });           
+            }
+            else{
+                swal("Seleccione el registro que desea eliminar.");
+            }
+        },
     }
 
     var funciones = {
         estadistics : function()
         {
-            try{ 
-                var politicas = conT.source.localdata;
-                $(".sp_est_politica").removeClass('badge bg-success bg-danger dark');
-                $(".sp_est_politica").addClass( (politicas.length > 0) ? 'badge bg-system dark' : 'badge bg-danger');
-                $(".sp_est_politica").html(politicas.length);
-            }
-            catch(e){}
+            // try{ 
+            //     var politicas = conT.source.localdata;
+            //     $(".sp_est_politica").removeClass('badge bg-success bg-danger dark');
+            //     $(".sp_est_politica").addClass( (politicas.length > 0) ? 'badge bg-system dark' : 'badge bg-danger');
+            //     $(".sp_est_politica").html(politicas.length);
+            // }
+            // catch(e){}
         },
 
 
@@ -487,24 +529,29 @@ $(function(){
 	    });
 
 
-        /* SUBE ARCHIVO*/
-	    $(conT.modal).on('change', "[__archivo_up]", function(){
-	    	var archivo = $(this);
-	    	console.log(archivo[0].files[0])
-	    	console.log(archivo[0].files.length)
+        /* SUBE A R C H I V O */
+        $(conT.modal).on('change', "[__archivo_up]", function(){
+            let inputFile = $(this);
 
-	    	archivo.attr("title","Archivo SELECCIONADO " + archivo[0].files[0].name);
-	    	$("[__imagen_label]").html("Imagen: " +  archivo[0].files[0].name );
-            $("#imagen_nueva").val(archivo[0].files[0].name );
-	    });
+            let archivo = inputFile[0].files[0];
+            inputFile.attr("title","Archivo SELECCIONADO " + archivo.name);
+            $("[__imagen_label]").html("Imagen: " +  archivo.name );
+            $("#imagen_nueva").val(archivo.name );
+
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                $("[__imagen_img]").attr('src', event.target.result );
+            }
+            reader.readAsDataURL(archivo);
+        });
 
 	    $(".cont_cancelar").click(function(){
 	        $.magnificPopup.close();
 	    });
 
-	    $(".cont_save").click(function(){
-	        conT.saveData();
-	    });
+	    // $(".cont_save").click(function(){
+	    //     conT.saveData();
+	    // });
 
         /* Al hacer clic en Submenu, actualizamos la variable $scope.indice  */
         $(conT.contenedor).on('click',  '[__submenu]' , function(e){
@@ -519,7 +566,7 @@ $(function(){
     
     let init = () => {
 
-    	// $("#form_cont").validate(conT.validateRules());
+    	$("#form_cont").validate(conT.validateRules());
 		conT.cargarDatos();
         funciones.seleccionaSubMenu()
 

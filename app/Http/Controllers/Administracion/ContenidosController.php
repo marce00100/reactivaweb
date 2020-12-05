@@ -30,7 +30,7 @@ class ContenidosController extends MasterController
 
   		$urlImagenPrefijo = url('/') . "/show-imagen/";
 
-  		$tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'contenido' AND activo ORDER BY orden"));
+  		$tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden"));
 
   		foreach ($tipoContenidos as $tipoCont) {
   			$contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada FROM contenidos 
@@ -56,16 +56,15 @@ class ContenidosController extends MasterController
     /* obtiene todos los datos del contenido es para usuarios administradores */
     public function obtenerfullContenidos()
     {
-        $all_contenidos = [];
-
+        $all_contenidos = []; 
         $urlImagenPrefijo = url('/') . "/show-imagen/";
 
-        $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'contenido' AND activo ORDER BY orden"));
+        $tipoContenidos = collect(\DB::select("SELECT id id_tipo_contenido, nombre as nombre_tipo_contenido, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden"));
 
         foreach ($tipoContenidos as $tipoCont) {
             $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, tipo_contenido, fecha_registro, 
                                                 orden, activo   FROM contenidos 
-                                                WHERE tipo_contenido = $tipoCont->id  ORDER BY orden"))
+                                                WHERE tipo_contenido = $tipoCont->id_tipo_contenido  ORDER BY orden"))
                             ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
                                 return $cont;
@@ -74,7 +73,6 @@ class ContenidosController extends MasterController
             $all_contenidos[] =$tipoCont;
         }
 
-
         return response()->json([
             'data'      => $all_contenidos,
             'estado'    => 'ok'
@@ -82,8 +80,7 @@ class ContenidosController extends MasterController
     }
 
 
-
-    /* API */
+    /* API POST */
     public function guardarContenido(Request $req)
     {
         $contReq = (object)$req->contenido;
@@ -95,8 +92,8 @@ class ContenidosController extends MasterController
         $contenido->texto = $contReq->texto ?? "";
         $contenido->imagen_almacenada = $contReq->imagen_almacenada ?? "";
         $contenido->url_redireccion = $contReq->url_redireccion ?? "";
-        $contenido->tipo_contenido = $contReq->tipo_contenido ?? 1;
-        $contenido->orden = $contReq->orden ?? 99999;
+        $contenido->tipo_contenido = $contReq->tipo_contenido ?? null;
+        $contenido->orden = $contReq->orden ?? 999;
         $contenido->activo = $contReq->activo ?? 1;
 
         if($contenido->id == null)
@@ -112,7 +109,23 @@ class ContenidosController extends MasterController
         ]);
     }
 
-
+    /* API POST */
+    public function deleteContenido(Request $r){
+        $id = $r->id;
+        try {
+            \DB::table('contenidos')->where('id', $id)->delete();
+            return response()->json([
+                'mensaje'   => 'El registro se eliminó',
+                'estado'    =>'ok',
+            ]); 
+        } catch (Exception $e) {
+            return response()->json([
+                'mensaje'   => 'Ocurrió un error al aliminar el registro',
+                'estado'    =>'error',
+            ]);            
+        }
+       
+    }
 
 
 
@@ -124,7 +137,7 @@ class ContenidosController extends MasterController
 
         $urlImagenPrefijo = url('/') . "/show-imagen/";
 
-        $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'noticia' AND activo ORDER BY orden"));
+        $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 
         foreach ($tipoContenidos as $tipoCont) {
             $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada FROM contenidos 
@@ -153,12 +166,12 @@ class ContenidosController extends MasterController
 
         $urlImagenPrefijo = url('/') . "/show-imagen/";
 
-        $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'noticia' AND activo ORDER BY orden"));
+        $tipoContenidos = collect(\DB::select("SELECT id id_tipo_noticia, nombre as nombre_tipo_noticia, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 
         foreach ($tipoContenidos as $tipoCont) {
             $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, tipo_contenido, fecha_registro, 
                                                 orden, activo   FROM contenidos 
-                                                WHERE tipo_contenido = $tipoCont->id  ORDER BY orden"))
+                                                WHERE tipo_contenido = $tipoCont->id_tipo_noticia  ORDER BY orden"))
                             ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
                                 return $cont;

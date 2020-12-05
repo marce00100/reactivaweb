@@ -151,7 +151,7 @@ $(function(){
         getData__fields: function(){
             let campos = $("[__field]");
             let objeto = {};
-            _.map(campos, function(elem){
+            _.each(campos, function(elem){
                 if($(elem).attr('type') == 'checkbox' )
                     objeto[ $(elem).attr('__field')] = $(elem).prop('checked') ? 1 : 0;
                 else
@@ -159,6 +159,7 @@ $(function(){
             });
             return objeto;
         },
+        
         generaOpciones: (listaOpciones, key, text) => {
             return _.reduce(listaOpciones, function(retorno, item){
                 return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
@@ -255,13 +256,17 @@ $(function(){
         });
     })
 
-
-    // var app = new Vue({
-    //       el: '#appVue',
-    //       data: function(){
-    //         return $scope;
-    //     }
-    // })
+        var  noteStack ="stack_top_right";
+        function findWidth() {
+            if (noteStack == "stack_bar_top") {
+                return "100%";
+            }
+            if (noteStack == "stack_bar_bottom") {
+                return "70%";
+            } else {
+                return "290px";
+            }
+        }
 
 })
 

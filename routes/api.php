@@ -42,7 +42,9 @@ Route::post('upload-file'	, 'Administracion\GeneralController@uploadFile');
 
 Route::get('obtener-todos-los-contenidos', 'Administracion\ContenidosController@obtenerTodosLosContenidos');
 Route::get('obtener-full-contenidos', 'Administracion\ContenidosController@obtenerfullContenidos');
+
 Route::post('guardar-contenido', 'Administracion\ContenidosController@guardarContenido');
+Route::post('eliminar-contenido-key', 'Administracion\ContenidosController@deleteContenido');
 
 Route::get('obtener-todas-las-noticias', 'Administracion\ContenidosController@obtenerTodasLasNoticias');
 Route::get('obtener-full-noticias', 'Administracion\ContenidosController@obtenerfullNoticias');
