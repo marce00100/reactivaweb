@@ -159,7 +159,7 @@ $(function(){
             });
             return objeto;
         },
-        
+
         generaOpciones: (listaOpciones, key, text) => {
             return _.reduce(listaOpciones, function(retorno, item){
                 return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
@@ -168,7 +168,7 @@ $(function(){
 
     }
 
-    globalApp = configuracion;
+    window.globalApp = configuracion;
 
 })
 
@@ -256,17 +256,7 @@ $(function(){
         });
     })
 
-        var  noteStack ="stack_top_right";
-        function findWidth() {
-            if (noteStack == "stack_bar_top") {
-                return "100%";
-            }
-            if (noteStack == "stack_bar_bottom") {
-                return "70%";
-            } else {
-                return "290px";
-            }
-        }
+       
 
 })
 

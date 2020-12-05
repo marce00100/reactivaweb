@@ -545,6 +545,7 @@ $(function(){
             reader.readAsDataURL(archivo);
         });
 
+        /* Cancel Modal*/
 	    $(".cont_cancelar").click(function(){
 	        $.magnificPopup.close();
 	    });

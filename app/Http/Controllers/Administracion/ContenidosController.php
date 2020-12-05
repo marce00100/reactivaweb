@@ -41,7 +41,7 @@ class ContenidosController extends MasterController
   								return $cont;
   						});
   			$tipoCont->contenidos = $contenidos; 				
-  			$all_contenidos[] =$tipoCont;
+  			$all_contenidos[] = $tipoCont;
   		}
 
 
