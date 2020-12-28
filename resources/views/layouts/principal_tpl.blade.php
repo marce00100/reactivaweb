@@ -21,15 +21,18 @@
     <link rel="stylesheet" type="text/css" href="./public/libs_pub/select2-4.0.12/dist/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="./public/libs_pub/bower_components/sweetalert/sweetalert.css">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" type="text/css" href="./public/libs_pub/sty-02/assets/skin/default_skin/css/theme.css"> 
+
     <link rel="stylesheet" type="text/css" href="./public/css/webapp.css"> 
 
 
     
 
     <!-- Favicon -->
-    {{-- <link rel="shortcut icon" type="image/png" sizes="32x32" href="./public/libs_pub/sty-02/assets/img/f1icon2.png"> --}}
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./public/img/webapp/logo-reactiva.png">
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./public/img/webapp/logo-reactiva-re.png">
 
     <style media="screen">        
 
@@ -74,15 +77,16 @@
             <div class="" style="padding: 15px 0px 0px 0px">
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-contenidos" class="text-white">Contenidos </a> </span>
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-noticias" class="text-white">Noticias </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-recomendaciones" class="text-white">Recomendaciones</a> </span>
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./seguimiento-empresas" class="text-white">ver Empresas </a> </span>
-                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Ajustes </a> </span>
-                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Estadisticas </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./config-parametros" class="text-white">Ajustes </a> </span>
+                {{-- <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Estadisticas </a> </span> --}}
             </div>
             
 
         </ul>         
     </div>
-    <!-- End: Header -->
+    {{-- End: Header --}}
 
 
    <!-- Start: Content-Wrapper -->
@@ -132,6 +136,8 @@
 <script type="text/javascript" src="./public/libs_pub/bower_components/sweetalert/sweetalert.min.js"></script>
 <script type="text/javascript" src="./public/libs_pub/bower_components/sweetalert/jquery.sweet-alert.custom.js"></script> 
 
+<script type="text/javascript" src="./.config.js"></script> 
+
 
 
 <script type="text/javascript">
@@ -142,10 +148,70 @@
 
 $(function(){
 
-    var configuracion =  {
-        urlBase: "http://localhost/www/laravel7/",
+    /* ************ FUNCIONES GLOBALES ******************/
+    var globalFunctions =  {
+        showModal : function(modal){
+            $(".state-error").removeClass("state-error")
+            $("#form_cont em").remove();
+                $.magnificPopup.open({
+                removalDelay: 200, //delay removal by X to allow out-animation,
+                focus: '#titulo',
+                items: {
+                    src: modal
+                },
+                callbacks: {
+                    beforeOpen: function(e) {
+                        var Animation = "mfp-zoomIn";
+                        this.st.mainClass = Animation;
+                    }
+                },
+            });
+        }, 
+        /* fields: {rules{ field:{required:true},... }, messages:{ field: {required: "mensaje"} }  }    
+        todos los campos del form enviados (field) , seran reriddos,
+        |  functionSave = functionSave   Funcion donde se salva  normalmente será del tipo conT.saveData() 
+        */
+        validateRules: function(fields, functionSave){
+            var reglasVal = {
+                    errorClass: "state-error",
+                    validClass: "state-success",
+                    errorElement: "em",
 
-        /* ************ FUNCIONES GLOBALES ******************/
+                    rules : fields.rules,
+                    messages : fields.messages,
+
+                    highlight: function(element, errorClass, validClass) {
+                            $(element).closest('.field').addClass(errorClass).removeClass(validClass);
+                    },
+                    unhighlight: function(element, errorClass, validClass) {
+                            $(element).closest('.field').removeClass(errorClass).addClass(validClass);
+                    },
+                    errorPlacement: function(error, element) {
+                        if (element.is(":radio") || element.is(":checkbox")) {
+                                element.closest('.option-group').after(error);
+                        } else {
+                                error.insertAfter(element.parent());
+                        }
+                    },
+                    submitHandler: function(form) {
+                        functionSave();
+                    }
+            }
+            return reglasVal; 
+        }, 
+        /*   Normalmente será la respueta de una API*/
+        showMensajeFlotante: function(mensajecorto, estado, mensajelargo){
+            new PNotify({
+                title: estado == 'ok' ? mensajecorto : 'Error',
+                text: mensajelargo,
+                shadow: true,
+                opacity: 0.9,
+                    type: (estado == 'ok') ? "success" : "danger",
+                    delay: 2500
+            });
+
+        },
+
 
         /* retorna un objeto con los  field:valor*/
         getData__fields: function(){
@@ -160,17 +226,66 @@ $(function(){
             return objeto;
         },
 
-        generaOpciones: (listaOpciones, key, text) => {
-            return _.reduce(listaOpciones, function(retorno, item){
-                return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
-            } , `<option>-- SELECCIONE --</option>`);
+        /* Coloca los valores a los fields desde un objeto*/
+        setData__fields: function(obj){ 
+            _.each(obj, function(val, key){
+                let tipo = $(`[__field=${key}]`).attr('type');
+
+                if( tipo == 'checkbox')     
+                    $(`[__field=${key}]`).prop('checked', (val == 1) ? true : false);
+                else
+                    $(`[__field=${key}]`).val(val);
+            })
+        },
+
+        /* Crea los Options de un Select
+            listaOpciones : array de objetos
+            key: Nombre de valor que sera el vualue
+            text: Que atributo del objeto sera el texto
+            primera opcion: si se tiene un "Selecciones opcion" o nada (el primer valor sera la primera opcion)
+        */
+        generaOpciones: (listaOpciones, key, text, primera_opcion) => {
+            if(primera_opcion)
+                return _.reduce(listaOpciones, function(retorno, item){
+                            return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
+                        } , `<option value="${primera_opcion}">${primera_opcion} </option>`);                
+            else            
+                return _.reduce(listaOpciones, function(retorno, item){
+                    return  retorno + `<option value="${item[key]}">${item[text]} </option>`;
+                } , `<!-->` );
         },
 
     }
 
-    window.globalApp = configuracion;
+    window.globalApp = globalFunctions;
+    $.extend(window.globalApp, config_params ); /* Config_params es del archivo de .config.js */
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 */* *************************** TEST *************************** */
 
@@ -259,7 +374,6 @@ $(function(){
        
 
 })
-
 
 </script>
 @stack('script-head')

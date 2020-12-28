@@ -4,6 +4,214 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"ur",
+				"urlBase"
+			],
+			[
+				"imag",
+				"imagen_nueva"
+			],
+			[
+				"ima",
+				"imagen_nueva"
+			],
+			[
+				"s",
+				"scroll\toverflow-y"
+			],
+			[
+				"ove",
+				"overflow-y\tproperty"
+			],
+			[
+				"im",
+				"imagen_almacenada"
+			],
+			[
+				"sele",
+				"seleccionaSubMenu"
+			],
+			[
+				"conso",
+				"console.log"
+			],
+			[
+				"add",
+				"addclass"
+			],
+			[
+				"remo",
+				"removeClass〔function〕"
+			],
+			[
+				"__",
+				"__submenu"
+			],
+			[
+				"deco",
+				"text-decoration\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"mostra",
+				"mostrar_indices_tabla〔function〕"
+			],
+			[
+				"expo",
+				"exposicion_enfermedad"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"emprea",
+				"empresa_sel"
+			],
+			[
+				"sta",
+				"state"
+			],
+			[
+				"id",
+				"id_emp"
+			],
+			[
+				"ro",
+				"rowSelected"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"fecha",
+				"fecha_modificacion"
+			],
+			[
+				"respo",
+				"responsable_nombre"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"bor",
+				"border-bottom\tproperty"
+			],
+			[
+				"id_",
+				"id_empresa"
+			],
+			[
+				"norm",
+				"$normalsalud〔variable〕"
+			],
+			[
+				"persona",
+				"$personal〔variable〕"
+			],
+			[
+				"respu",
+				"respusta"
+			],
+			[
+				"person",
+				"personal_epp"
+			],
+			[
+				"no",
+				"normalsalud"
+			],
+			[
+				"pregun",
+				"pregunta_orden"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"archi",
+				"$archivo_nombre_orig〔variable〕"
+			],
+			[
+				"local",
+				"$localizacionArchTemp〔variable〕"
+			],
+			[
+				"ext",
+				"$extension〔variable〕"
+			],
+			[
+				"archivo",
+				"archivo_nombre"
+			],
+			[
+				"glob",
+				"globalApp.urlBaseApi"
+			],
+			[
+				"form",
+				"formData"
+			],
+			[
+				"mod",
+				"modal"
+			],
+			[
+				"conte",
+				"contenedor"
+			],
+			[
+				"frm",
+				"form_cont"
+			],
+			[
+				"url",
+				"urlImg"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"cells",
+				"cellsrenderer〔function〕"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"urlB",
+				"urlBaseApi"
+			],
+			[
 				"bac",
 				"background-color\tproperty"
 			],
@@ -16,20 +224,12 @@
 				"align-left"
 			],
 			[
-				"fon",
-				"font-size\tproperty"
-			],
-			[
 				"mar",
 				"margin\tproperty"
 			],
 			[
 				"clo",
 				"close"
-			],
-			[
-				"text",
-				"texto_fila"
 			],
 			[
 				"filaA",
@@ -68,10 +268,6 @@
 				"formularioObject"
 			],
 			[
-				"add",
-				"addClass〔function〕"
-			],
-			[
 				"nota",
 				"notacontrol"
 			],
@@ -94,14 +290,6 @@
 			[
 				"para",
 				"parametros"
-			],
-			[
-				"form",
-				"form1"
-			],
-			[
-				"conte",
-				"contenedor"
 			],
 			[
 				"row",
@@ -272,10 +460,6 @@
 				"bg-light\t admin-forms.css"
 			],
 			[
-				"id_",
-				"id_formulario"
-			],
-			[
 				"mi",
 				"min-height\tproperty"
 			],
@@ -294,10 +478,6 @@
 			[
 				"max",
 				"max-height\tproperty"
-			],
-			[
-				"id",
-				"id_padre"
 			],
 			[
 				"codi",
@@ -332,209 +512,72 @@
 				"scopeModels"
 			],
 			[
-				"archi",
-				"archivos"
-			],
-			[
 				"cli",
 				"click"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"tipo_",
-				"tipo_contenido"
-			],
-			[
-				"columna",
-				"columna_orden"
-			],
-			[
-				"nom",
-				"nomre_archivo"
-			],
-			[
-				"ad",
-				"addClass〔function〕"
-			],
-			[
-				"obj",
-				"objCol"
-			],
-			[
-				"oblit",
-				"obligatorios〔variable〕"
-			],
-			[
-				"obliga",
-				"obligatorios"
-			],
-			[
-				"quest-",
-				"quest-input-validate"
-			],
-			[
-				"remo",
-				"removeClass"
-			],
-			[
-				"tip",
-				"tipoDato"
-			],
-			[
-				"inp",
-				"input:first"
-			],
-			[
-				"input",
-				"inputDate"
-			],
-			[
-				"has",
-				"hasClass〔function〕"
-			],
-			[
-				"__cl",
-				"__cl_config"
-			],
-			[
-				"tala",
-				"tabla-row"
-			],
-			[
-				"contenido",
-				"contenido-horizontal"
-			],
-			[
-				"pull",
-				"pull-right"
-			],
-			[
-				"acciones_",
-				"acciones_secc_orden"
-			],
-			[
-				"user",
-				"username"
-			],
-			[
-				"ob",
-				"objSend"
-			],
-			[
-				"esta",
-				"estadoPassword"
-			],
-			[
-				"fun",
-				"funcionPersistente"
-			],
-			[
-				"modal",
-				"modal-us"
-			],
-			[
-				"con",
-				"contenedor"
-			],
-			[
-				"ro",
-				"rowData"
-			],
-			[
-				"pa",
-				"padding\tproperty"
-			],
-			[
-				"op",
-				"opacity\tproperty"
-			],
-			[
-				"Route",
-				"Route::group\tCreate a Group of Routes"
-			],
-			[
-				"valO",
-				"valObligatorio〔variable〕"
-			],
-			[
-				"col-sm",
-				"col-sm-12"
-			],
-			[
-				"form-",
-				"form-horizontal\t urban.css"
-			],
-			[
-				"pt",
-				"pt30\t urban.css"
-			],
-			[
-				"quest",
-				"quest-h2\t app.css"
-			],
-			[
-				"teto",
-				"texto_fila"
-			],
-			[
-				"fila",
-				"fila_agregada"
-			],
-			[
-				"mod",
-				"modFrm"
-			],
-			[
-				"bolque",
-				"bloqueDom"
-			],
-			[
-				"se",
-				"setData"
-			],
-			[
-				"wid",
-				"width\tproperty"
-			],
-			[
-				"filas",
-				"filasPredef"
-			],
-			[
-				"planill",
-				"plantillaData"
-			],
-			[
-				"plant",
-				"plantillaData"
-			],
-			[
-				"__o",
-				"__op"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "routes/api.php",
+			"file": "app/Http/Controllers/Administracion/EvalController.php",
 			"settings":
 			{
-				"buffer_size": 1956,
-				"line_ending": "Unix"
+				"buffer_size": 10724,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "@extends('layouts.principal_tpl')\n\n\n\n@section('header')\n\n<link rel=\"stylesheet\" href=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/styles/jqx.base.css\" type=\"text/css\" />\n\n<style media=\"screen\">\n.popup-basic {\n  position: relative;\n  background: #FFF;\n  width: auto;\n  max-width: 900px;\n  margin: 40px auto;\n}\n##.admin-form .panel-heading{\n    background-color: #fafafa;\n    border-color: transparent -moz-use-text-color #ddd;\n    border-radius: 0;\n    border-style: solid none;\n    border-width: 1px 0;\n    color: #999;\n    height: auto;\n    overflow: hidden;\n    padding: 3px 15px 2px;\n    position: relative;\n}\n\n</style>\n@endsection\n\n@section('content')\n\n    <!--  ===========================================    begin: .tray-center    =============================================================== -->\n    <div class=\"tray tray-center p40 va-t posr\" id=\"div_politicas\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"panel panel-visible\" id=\"spy2\">\n                    <div class=\"panel-heading  bg-dark \">\n                        <div class=\"panel-title \">\n                            <i class=\"fa fa-puzzle-piece fa-2x\" ></i><span class=\"sp_politica\"></span> <span class=\"sp_est_politica\"></span>\n                        </div>\n                    </div>\n                    <div class=\"panel-body pn\">\n                        <div class=\"row\">\n                            <div  class=\"col-md-12\" >\n                                <button id=\"pol_nuevo\" type=\"button\" class=\"btn btn-sm btn-success dark m5 br4\"><i class=\"fa fa-plus-circle text-white\"></i> Agregar </button>\n                                <button id=\"pol_editar\" type=\"button\" class=\"btn btn-sm btn-warning dark m5 br4\"><i class=\"fa fa-edit text-white\"></i> Editar</button>\n                                <button id=\"pol_eliminar\" type=\"button\" class=\"btn btn-sm btn-danger dark m5 br4\"><i class=\"fa fa-minus-circle text-white\"></i> Eliminar</button>                                \n                                \n                            </div>\n                        </div>\n                        <div id=\"dataT\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n      <!-- end: .tray-center -->\n\n\n\n\n    <!-- -----------------------------------------          Modal  --------------------------------------------------- -->\n    <div id=\"modal-basico\"  class=\"white-popup-block popup-basic admin-form mfp-with-anim mfp-hide\">\n        <div class=\"panel\">\n            <div class=\"panel-heading bg-dark\">\n                <span class=\"panel-title text-white\" id=\"tituloModal\"><i class=\"fa fa-pencil\"></i> <span>__</span></span>\n            </div>\n            <!-- end .panel-heading section -->\n            <form method=\"post\" action=\"/\" id=\"form-pol\" name=\"form-pol\">\n                {{-- <input type=\"hidden\" name=\"mod_id\" id=\"mod_id\" value=\"\"> --}}\n\n                <div class=\"panel-body mnw700 of-a\">\n                    <div class=\"row\">\n\n                            <input class=\"hidden\" name=\"id_pol\" id=\"id_pol\" >\n                            <div class=\"row\">\n                                <div class=\" pl5 br-r mvn15\">\n                                    <h5 class=\"ml5 mt20 ph10 pb5 br-b fw700\">Defina su <span class=\"sp_politica\"></span><small class=\"pull-right fw600\"> <span class=\"text-primary\">-</span> </small> </h5>\n                                    <div class=\"section\">\n                                        <label class=\"field-label sp_politica\" for=\"atribucion\"></label>\n                                        <label for=\"politica\" class=\"field prepend-icon\">\n                                            <input type=\"text\" class=\"gui-input\" id=\"politica\" name=\"politica\" placeholder=\"Politica sectorial / institucional \">\n                                            <label for=\"politica\" class=\"field-icon\"><i class=\"glyphicons glyphicons-riflescope\"></i>\n                                            </label>\n                                        </label>\n                                    </div>\n\n                                    <div class=\"section\">\n                                        <label class=\"field-label\" for=\"ids_pilares\">Pilares según sus atribuciones </label>\n                                        <label class=\"field select\">\n                                            <select id=\"ids_pilares\" name=\"ids_pilares\" class=\"required\" multiple=\"multiple\"  style=\"width:100%;\">\n                                                {{-- <option value=\"\">...</option> --}}\n                                            </select>\n                                            <i class=\"arrow\"></i>                  \n                                        </label>\n                                    </div>\n                                </div>\n                            </div>\n                    </div>\n                </div>\n                <div class=\"panel-footer\">\n                    <button type=\"submit\" class=\"button btn-primary\">Guardar</button>\n                    <a href=\"#\"  id=\"atr_cancelar\"  class=\"button btn-danger ml25 sp_cancelar\">Cancelar</a>\n                </div>\n            </form>\n        </div>\n        <!-- end: .panel -->\n    </div>\n\n\n@endsection\n\n@push('script-head')\n\n\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxcore.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxbuttons.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxscrollbar.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdata.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdatatable.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxdraw.js\"> </script>\n<script type=\"text/javascript\" src=\"./public/libs_pub/jqwidgets5.5.0/jqwidgets/jqxchart.core.js\"> </script>\n\n<script src=\"./public/js/jqwidgets-localization.js\"></script>\n<script type=\"text/javascript\">\n$(function(){\n    let conT = {\n        dataTable : $(\"#dataT\"),\n        source : {},\n\n        fillTable : function() {\n            $.get(globalApp.urlBaseApi + 'obtener-todos-los-contenidos', function(resp)\n            {\n                conT.source =\n                {\n                    dataType: \"json\",\n                    localdata: resp.data,\n                    dataFields: [\n                        { name: 'id', type: 'number' },\n                        { name: 'politica', type: 'string' },\n                        { name: 'ids_pilares', type: 'string' },\n                        { name: 'pilares', type: 'object' },\n                    ],\n                    id: 'id',\n                };\n                var dataAdapter = new $.jqx.dataAdapter(conT.source);\n                var editDelRenderer = function (row, columnfield, value, defaulthtml, rowData) {\n                    html = `<a href=\"#\"  class=\"m-l-10 m-r-10 m-t-10 sel_edit\" title=\"Editar \" ><i class=\"fa fa-edit fa-lg text-warning \"></i></a>\n                            <a href=\"#\"  class=\"m-l-10 m-r-10 m-t-10 sel_delete\" title=\"Eliminar\" ><i class=\"fa fa-minus-circle fa-lg text-danger \"></i></a>`\n                    return html;\n                };\n                conT.dataTable.jqxDataTable({\n                    source: dataAdapter,\n                    altRows: false,\n                    sortable: true,\n                    width: \"100%\",\n                    filterable: false,\n                    filterMode: 'simple',\n                    selectionMode: 'singleRow',\n                    localization: getLocalization('es'),\n                    columns: [\n                        { text: 'Política ', dataField: 'politica', align:'center'},\n                        { text: 'Pilares Asociados', dataField: 'id', align:'center',\n                                cellsrenderer: function(row, column, value, rowData){\n                                    var pilares = rowData.pilares;\n                                    html = \"\";\n                                    pilares.forEach(function(pilar){\n                                        html += `<div class='br-b m10 pv5 row'>\n                                                    <div class=\"col-md-2\"><img width=\"40\" class=\"\"  src=\"/img/${pilar.logo}\"/></div>\n                                                    <div class=\"col-md-10\"><b>${pilar.nombre}</b> - ${pilar.descripcion}</div>\n                                                </div>`\n                                    });\n                                   return html;\n                            } \n                        },\n                        { text: ' ', width: 50, cellsrenderer: editDelRenderer},\n                    ]\n                });\n                funciones.estadistics();\n            });\n        },\n        refreshList: function(){\n            $.get(globalSP.urlApi + 'listPoliticasPilares', {p:globalSP.idPlanActivo}, function(resp) {\n                conT.source.localdata = resp.data;\n                conT.dataTable.jqxDataTable(\"updateBoundData\");\n                funciones.estadistics()\n            })   \n        },\n        init : function(){\n            $.get(globalSP.urlApi + \"getPilaresVinculadosAlPlan\", {p:globalSP.idPlanActivo}, function(res){\n                opts = res.data;\n                opts.forEach(function(op){\n                    $(\"#ids_pilares\").append('<option value=\"' + op.id + '\">' + op.nombre + ' - ' + op.descripcion + '</option>');\n                });\n                $(\"#ids_pilares\").select2({\n                    placeholder: 'Seleccione los pilares de la política',\n                    dropdownParent: $('#form-pol'),\n                    cache: false,\n                    language: \"es\",\n                    templateSelection: function (val) {\n                        return $(\"<div class='list-group-item' style='width:100%;' title ='\" + val.text + \"'>\" +val.text + \"</div>\");\n                    },\n                });\n            });\n\n\n            $(\".sp_politica\").html(funciones.tipoPolitica());\n        },\n        showModal : function(){\n            $(\".state-error\").removeClass(\"state-error\")\n            $(\"#form-pol em\").remove();\n                $.magnificPopup.open({\n                removalDelay: 500, //delay removal by X to allow out-animation,\n                focus: '#politica',\n                items: {\n                    src: \"#modal-pol\"\n                },\n                // overflowY: 'hidden', //\n                callbacks: {\n                    beforeOpen: function(e) {\n                        var Animation = \"mfp-zoomIn\";\n                        this.st.mainClass = Animation;\n                    }\n                },\n                midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.\n            });\n        }, \n        getDataForm: function(){\n            var obj = {\n                id: $(\"#id_pol\").val(),\n                politica: $(\"#politica\").val(),\n                ids_pilares: $(\"#ids_pilares\").val(),\n                _token : $('input[name=_token]').val(),\n                id_plan : globalSP.idPlanActivo,\n                p: globalSP.idPlanActivo\n            }\n            return obj;\n        },\n        setDataForm: function(obj){\n            $(\"#id_pol\").val(obj.id);\n            $(\"#politica\").val(obj.politica);\n            $(\"#ids_pilares\").val(obj.ids_pilares).change();\n        },\n        nuevo: function(){\n            $(\"#tituloModal span\").html(`Agregar ${funciones.tipoPolitica()}`);\n            $('#form-pol input:text').val('');\n            $(\"#ids_pilares\").val('').change();\n            conT.showModal();\n        },\n        editar: function(){\n            var rowSelected = conT.dataTable.jqxDataTable('getSelection');\n            if(rowSelected.length > 0)\n            {\n                var rowSel = rowSelected[0]; \n                conT.setDataForm(rowSel);\n                $(\"#tituloModal span\").html(`Modificar ${funciones.tipoPolitica()}`);\n                conT.showModal();\n            }\n            else{\n                swal(\"Seleccione el registro para modificar.\");\n            }\n        },\n        eliminar: function(){\n            var rowSelected = conT.dataTable.jqxDataTable('getSelection');\n            if(rowSelected.length > 0)\n            {\n                var rowSel = rowSelected[0];\n                conT.delete(rowSel.id);             \n            }\n            else{\n                swal(\"Seleccione el registro que desea eliminar.\");\n            }\n        },\n        validateRules: function(){\n            var reglasVal = {\n                    errorClass: \"state-error\",\n                    validClass: \"state-success\",\n                    errorElement: \"em\",\n\n                    rules: {\n                        politica: { required: true },\n                        ids_pilares:  { required: true },\n                    },\n\n                    messages:{\n                        politica: { required: 'Debe escribir su política sectorial/institucional' },\n                        ids_pilares:  { required: 'Seleccionar los pilares asociados a la política' },\n                    },\n\n                    highlight: function(element, errorClass, validClass) {\n                            $(element).closest('.field').addClass(errorClass).removeClass(validClass);\n                    },\n                    unhighlight: function(element, errorClass, validClass) {\n                            $(element).closest('.field').removeClass(errorClass).addClass(validClass);\n                    },\n                    errorPlacement: function(error, element) {\n                        if (element.is(\":radio\") || element.is(\":checkbox\")) {\n                                element.closest('.option-group').after(error);\n                        } else {\n                                error.insertAfter(element.parent());\n                        }\n                    },\n                    submitHandler: function(form) {\n                        conT.saveData();\n                    }\n            }\n            return reglasVal; \n        }, \n        saveData: function(){\n            var obj = conT.getDataForm();\n            $.post(globalSP.urlApi + 'savePolitica', obj, function(resp){\n                conT.refreshList();\n                new PNotify({\n                            title: resp.estado == 'success' ? 'Guardado' : 'Error',\n                            text: resp.msg,\n                            shadow: true,\n                            opacity: 1,\n                            addclass: noteStack,\n                            type: (resp.estado == 'success') ? \"success\" : \"danger\",\n                            stack: Stacks[noteStack],\n                            width: findWidth(),\n                            delay: 1500\n                        });\n                $.magnificPopup.close();  \n            });\n             \n        },\n        delete: function(id){\n            swal({\n                  title: `Está seguro de eliminar  la ${funciones.tipoPolitica()}?`,\n                  text: \"No podrá recuperar este registro!\",\n                  type: \"warning\",\n                  showCancelButton: true,\n                  confirmButtonColor: \"#DD6B55\",\n                  confirmButtonText: \"Si, eliminar!\",\n                  closeOnConfirm: true\n                }, function(){\n                    $.post(globalSP.urlApi + 'deletePolitica', {'id': id, _token : $('input[name=_token]').val(), }, function(res){\n                        new PNotify({\n                                  title: !res.error ? 'Eliminado' : 'Error!!' ,\n                                  text: res.msg,\n                                  shadow: true,\n                                  opacity: 1,\n                                  addclass: noteStack,\n                                  type: !res.error ? \"success\" : 'danger',\n                                  stack: Stacks[noteStack],\n                                  width: findWidth(),\n                                  delay: 1400\n                              });\n                        conT.refreshList();\n                    });\n                });\n        },\n\n    }\n\n    var funciones = {\n        estadistics : function()\n        {\n            try{ \n                var politicas = conT.source.localdata;\n                $(\".sp_est_politica\").removeClass('badge bg-success bg-danger dark');\n                $(\".sp_est_politica\").addClass( (politicas.length > 0) ? 'badge bg-system dark' : 'badge bg-danger');\n                $(\".sp_est_politica\").html(politicas.length);\n\n                obj ={\n                    id_menu : globalSP.menu.PoliticaSectorial,\n                    p: globalSP.idPlanActivo,\n                    _token : $('input[name=_token]').val(),\n                    agregar: (politicas.length > 0)   ? '1' : '0' ,\n                }\n                $.post(globalSP.urlApi + 'actualizaEtapas', obj, function() {});\n\n            }\n            catch(e){}\n        },\n        tipoPolitica: function(){\n            tipoPolitica = globalSP.planActivo.cod_tipo_plan == 'PSDI' ? 'Política Sectorial' : 'Política Institucional';\n            return tipoPolitica;\n        }\n    }\n\n\n    // globalSP.activarMenu(globalSP.menu.PoliticaSectorial);\n    // globalSP.cargarGlobales(function(){\n    //     conT.init();\n    // });\n    // globalSP.setBreadcrumb('Politica', 'Politica');\n\n    \n\n    //-------------------- de las Politicas --------------------------------\n    conT.fillTable();\n    \n\n    $(\"#form-pol\").validate(conT.validateRules());\n\n    $(\"#pol_nuevo\").click(function(){\n        conT.nuevo();\n    });\n\n    $(\"#div_politicas\").on('click','.sel_edit, #pol_editar', function(){\n        conT.editar();\n    });\n\n    $(\"#div_politicas\").on('click','.sel_delete, #pol_eliminar', function(){\n        conT.eliminar();\n    });\n\n\n\n    $(\".sp_cancelar\").click(function(){\n        $.magnificPopup.close();\n    });\n\n})\n\n\t\n\t\n\n</script>\n\n@endpush",
-			"file": "resources/views/administracion/contenidos.blade.php",
-			"file_size": 18588,
-			"file_write_time": 132511954210057271,
+			"file": "app/Http/Controllers/Administracion/GeneralController.php",
 			"settings":
 			{
-				"buffer_size": 18122,
+				"buffer_size": 3395,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Administracion/ContenidosController.php",
+			"settings":
+			{
+				"buffer_size": 7241,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/administracion/contenidos.blade.php",
+			"settings":
+			{
+				"buffer_size": 26450,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/administracion/noticias.blade.php",
+			"settings":
+			{
+				"buffer_size": 29221,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Administracion/EmpresasController.php",
+			"settings":
+			{
+				"buffer_size": 2822,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/administracion/empresas.blade.php",
+			"settings":
+			{
+				"buffer_size": 30185,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -543,7 +586,70 @@
 			"file": "resources/views/layouts/principal_tpl.blade.php",
 			"settings":
 			{
-				"buffer_size": 7530,
+				"buffer_size": 10819,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 842,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 179,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/img/uploads/rutas-api-docs.js",
+			"settings":
+			{
+				"buffer_size": 24952,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 862,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/api.php",
+			"settings":
+			{
+				"buffer_size": 3032,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/webapp.css",
+			"settings":
+			{
+				"buffer_size": 3872,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/libs_pub/sty-02/assets/skin/default_skin/css/theme.css",
+			"settings":
+			{
+				"buffer_size": 559684,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -562,7 +668,11 @@
 		[
 			[
 				"pack",
-				"Package Control: List Packages"
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -615,10 +725,6 @@
 			[
 				"syn compo",
 				"Set Syntax: Vue Component"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"pa",
@@ -701,6 +807,12 @@
 	"expanded_folders":
 	[
 		"/D/www/laravel7",
+		"/D/www/laravel7/app",
+		"/D/www/laravel7/app/Http",
+		"/D/www/laravel7/app/Http/Controllers",
+		"/D/www/laravel7/app/Http/Controllers/Administracion",
+		"/D/www/laravel7/public",
+		"/D/www/laravel7/public/css",
 		"/D/www/laravel7/resources",
 		"/D/www/laravel7/resources/views",
 		"/D/www/laravel7/resources/views/administracion",
@@ -709,6 +821,14 @@
 	],
 	"file_history":
 	[
+		"/D/www/laravel7/resources/views/layouts/moduloplanificacion.blade.php",
+		"/D/www/laravel7/resources/views/administracion/contenidos.blade.php",
+		"/D/www/laravel7/app/Http/Controllers/Administracion/GeneralController.php",
+		"/D/www/laravel7/app/Http/Controllers/Administracion/EvalController.php",
+		"/D/www/laravel7/resources/views/administracion/noticias.blade.php",
+		"/D/www/laravel7/app/Http/Controllers/Administracion/EmpresasController.php",
+		"/D/www/laravel7/public/css/webapp.css",
+		"/D/www/laravel7/app/Http/Controllers/MasterController.php",
 		"/D/www/plat_form1 - copia/resources/views/principal_view.blade.php",
 		"/D/www/pipspie_v/app/Http/Controllers/ModuloPlanificacion/PlanesController.php",
 		"/C/Users/marce/AppData/Local/Temp/scp29339/var/www/html/curzar/wp-content/plugins/xyz-cod/xyz-cod.php",
@@ -828,25 +948,21 @@
 		"/C/Sublime Text Build 3/Data/Packages/User/formato_myHtmlDentroJS.sublime-syntax",
 		"/C/Sublime Text Build 3/Data/Packages/User/ColorHighlighter.sublime-settings",
 		"/C/Sublime Text Build 3/Data/Packages/Babel/JavaScript (Babel).sublime-syntax",
-		"/C/Sublime Text Build 3/Data/Packages/User/formato_html_in_JS.sublime-syntax",
-		"/D/www/plat_form1/node_modules/friendly-errors-webpack-plugin/src/transformers/babelSyntax.js",
-		"/D/www/plat_form1/node_modules/jquery/dist/jquery.slim.js",
-		"/D/www/plat_form1/config/database.php",
-		"/D/www/plat_form1/resources/js/components/elems/thumb_admforms.vue",
-		"/D/www/plat_form1/public/js/app.js",
-		"/D/www/plat_form1/resources/js/components/vw_adm_formularios.vue",
-		"/D/www/plat_form1/resources/js/components/vw_bandeja_quest.vue",
-		"/D/www/plat_form1/resources/js/components/pagina2.vue"
+		"/C/Sublime Text Build 3/Data/Packages/User/formato_html_in_JS.sublime-syntax"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 121.0,
 		"where_history":
 		[
+			"D:\\www\\laravel7\\public\\libs_pub",
+			"D:\\www\\laravel7\\resources",
+			"D:\\www\\laravel7\\resources\\views\\administracion",
+			"D:\\www\\laravel7\\public"
 		]
 	},
 	"find_state":
@@ -854,13 +970,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"pol.",
-			"pol",
-			"globalApp",
-			"fillPolitics",
-			"dtPoliticas",
-			"type=\"text/css\"",
-			"lib_pubs"
+			"pt10",
+			"pt-",
+			"__imagen_img",
+			"file",
+			"obtenerArchivo",
+			"console",
+			"consol",
+			"obtenerArchivo",
+			"sm",
+			"md",
+			"urlApi",
+			"Eliminar",
+			"eliminar",
+			"refreshDataT",
+			"refre",
+			"</script>",
+			"saveData",
+			"indice",
+			"id_contenido",
+			"refreshDataT",
+			"darkblue",
+			"material",
+			"material-purple",
+			"ui-lightness",
+			"material",
+			"550",
+			"jqwidgets11",
+			"var QueryString = function(){",
+			"tipoContenido",
+			"setData",
+			"id_contenido",
+			"fillTable",
+			"style=\"padding: 5px 10px; margin:0 10px   ; font-weight: 700; border-bottom: 3px orange solid \"",
+			"cargarDatos",
+			"seleccionaSubMenu",
+			"obtenerArchivo",
+			"file",
+			"\");\n",
+			"file_sel_new",
+			"imagen_almacenada",
+			"archivo_seleccionado",
+			"postDatosContenido",
+			"no_archivo",
+			"__imagen_label",
+			"no_archivo",
+			"imagen_almacenada",
+			"__archivo_up",
+			"hidden",
+			"seleccionaSubMenu",
+			"fillData",
+			"urlBaseWeb",
+			"urlBaseApi + \"",
+			"urlBaseApi + '",
+			"urlBaseApi",
+			"urlBaseApi + \"",
+			"urlBaseApi + '",
+			"urlBaseApi + \"",
+			"urlBaseApi",
+			"menu-principal",
+			"<a",
+			"mr10 h-120  p15 bg-dark",
+			"class=\"mr10 h-120  p15 bg-dark\"",
+			"style=\"padding: 5px 10px; margin:0 10px   ; font-weight: 700;  \"",
+			"style",
+			"fillTable",
+			"gestion",
+			"Gestion",
+			"gestion",
+			"api",
+			"dataAdapter",
+			"source",
+			"indRiesgosDT",
+			"dataT",
+			"datat",
+			"dataT",
+			"empresa_indices",
+			"plugins",
+			"body {",
+			"body{",
+			"hjuuu",
+			".fs",
+			"text",
+			"conso",
+			"rowSel.mail",
+			"block\">",
+			": $",
+			":",
+			"div_principal",
+			"format",
+			"->",
+			"DD/MM/YYYY",
+			"empresa",
+			"funciones",
+			"dataTableTarget",
+			"solid",
+			"margin-top",
+			"fecha_registro",
+			"width: 60,",
+			"Departamento",
+			"adicionales",
+			"20px 10px",
+			"20px",
+			"10px",
+			"<span",
+			"span",
+			"state",
+			"categoria",
+			"btnGuardarEmpresa",
+			"'btnGuardarEmpresa",
+			"},",
+			"valor",
+			",",
+			" }",
+			"valor",
+			"pregYResp",
+			"id_opcion",
+			"respReq",
+			"valor",
+			", valor: 10",
+			"btnGuardarPregunta",
+			"preg_orden",
+			"contenedor",
+			"Contenedor",
+			"contenedor",
+			"contenedor_principal",
+			"postDatos",
+			"sp_cancelar",
+			"atr_cancelar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -868,6 +1105,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"urlBase + \"api/",
+			"urlBase + 'api/"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -878,28 +1117,1435 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/api.php",
+					"file": "app/Http/Controllers/Administracion/EvalController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1956,
+						"buffer_size": 10724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								974,
+								974
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1129,
+										1130
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										970,
+										971
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/Administracion/GeneralController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3147,
+								3147
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3384,
+										3385
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2966,
+										2967
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1008.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/Administracion/ContenidosController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1437,
+								1437
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1540,
+										1541
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										565,
+										566
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/administracion/contenidos.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26351,
+								26368
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										26369,
+										26370
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										26368,
+										26369
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2370.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/views/administracion/noticias.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28234,
+								28234
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										28417,
+										28418
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										27906,
+										27907
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Controllers/Administracion/EmpresasController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										240,
+										241
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										239,
+										240
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resources/views/administracion/empresas.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1081,
+								1081
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3262,
+										3265
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1079,
+										1082
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 346.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/views/layouts/principal_tpl.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6595,
+								6595
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6925,
+										6926
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6524,
+										6525
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1619.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								841,
+								841
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "public/img/uploads/rutas-api-docs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24952,
+								24952
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/User/formato_myHtmlDentroJS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7485.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
 							"auto_complete_triggers":
 							[
 								{
@@ -992,24 +2638,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "resources/views/administracion/contenidos.blade.php",
+					"buffer": 12,
+					"file": "routes/api.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18122,
+						"buffer_size": 3032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6410,
-								6410
+								1889,
+								1904
 							]
 						],
 						"settings":
@@ -1033,24 +2679,24 @@
 								{
 									"1":
 									[
-										6838,
-										6839
+										1904,
+										1905
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										6409,
-										6410
+										1852,
+										1853
 									]
 								},
 								"unmatched":
@@ -1116,36 +2762,34 @@
 								"bh_round_content"
 							],
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1323.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "resources/views/layouts/principal_tpl.blade.php",
+					"buffer": 13,
+					"file": "public/css/webapp.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7530,
+						"buffer_size": 3872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5643,
-								5643
+								945,
+								945
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"auto_complete_triggers":
 							[
 								{
@@ -1164,8 +2808,8 @@
 								{
 									"1":
 									[
-										5642,
-										5643
+										999,
+										1000
 									]
 								},
 								"icon":
@@ -1180,8 +2824,8 @@
 								{
 									"1":
 									[
-										5535,
-										5536
+										872,
+										873
 									]
 								},
 								"unmatched":
@@ -1246,16 +2890,134 @@
 								"bh_round_close",
 								"bh_round_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Widget - One Dark.tmTheme",
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1254.0,
+						"translation.y": 288.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "public/libs_pub/sty-02/assets/skin/default_skin/css/theme.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367314,
+								367318
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Widget - One Dark.tmTheme",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 211850.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -1263,7 +3025,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 20.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1278,11 +3040,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.677376212458,
 			1.0
 		],
 		"rows":
@@ -1324,7 +3093,7 @@
 	"project": "ProySublime.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1417,14 +3186,30 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		]
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 303.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 2
 	}
 }

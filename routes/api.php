@@ -46,7 +46,7 @@ Route::get('obtener-full-contenidos', 'Administracion\ContenidosController@obten
 Route::post('guardar-contenido', 'Administracion\ContenidosController@guardarContenido');
 Route::post('eliminar-contenido-key', 'Administracion\ContenidosController@deleteContenido');
 
-Route::get('obtener-todas-las-noticias', 'Administracion\ContenidosController@obtenerTodasLasNoticias');
+Route::get('obtener-arbol-noticias', 'Administracion\ContenidosController@obtenerTodasLasNoticias');
 Route::get('obtener-full-noticias', 'Administracion\ContenidosController@obtenerfullNoticias');
 
 
@@ -65,5 +65,16 @@ Route::get('obtener-indices-empresa/{id_emp}', 'Administracion\EvalController@ob
 
 /* ------------- EPP --------------*/
 Route::get('obtener-arbol-epp/{normalsalud}', 'Administracion\EvalController@obtenerArbolEpp');
-// Route::get('obtener-arbol-epp_salud', 'Administracion\EvalController@obtenerArbolEppSalud');
 Route::post('guardar-respuestas-epp', 'Administracion\EvalController@guardarRespuestasEPP');
+
+
+/* ------------- RECOMENDACIONES --------------*/
+Route::get('obtener-recomendaciones', 'Administracion\RecomendacionesController@obtenerRecomendaciones');
+Route::get('obtener-fullrecomendaciones', 'Administracion\RecomendacionesController@obtenerFullRecomendaciones');
+Route::post('guardar-recomendacion', 'Administracion\RecomendacionesController@guardarRecomendacion');
+
+/* ------------- CONFIGURACION PARAMETROS --------------*/
+Route::get('get-params', 'Administracion\ParamsController@obtenerParams');
+Route::post('save-parametro', 'Administracion\ParamsController@saveParametro');
+Route::post('delete-parametro', 'Administracion\ParamsController@deleteParametro');
+

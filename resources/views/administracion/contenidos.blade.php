@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="./public/libs_pub/jqwidgets11/styles/jqx.base.css" type="text/css" />
 <link rel="stylesheet"href="./public/libs_pub/jqwidgets11/styles/jqx.energyblue.css"  type="text/css" />
 
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
 
 <style media="screen">
 .popup-basic {
@@ -145,9 +143,9 @@
                                     </div>
 
                                     <div class="section">
-                                        <label class="field-label" for="orden"></label>
+                                        <label class="field-label" for="orden">Posición en la que aparece</label>
                                         <label for="orden" class="field prepend-icon">
-                                            <input  type="number" class="gui-input w200" id="orden" __field="orden" name="orden" placeholder="Orden en aparecer">
+                                            <input  type="number" class="gui-input w200" id="orden" __field="orden" name="orden" placeholder="Posición">
                                             <label for="orden" class="field-icon"><i class="fa fa-list-ol"></i>
                                             </label>
                                         </label>
@@ -246,7 +244,7 @@ $(function(){
                     columns: [
                         { text: 'Titulo ', width: 250, align:'center',  cellsalign: 'left', dataField: 'titulo',
                         	cellsrenderer: function(row, column, value, rowData){
-	                   			return `<a __accion="editar" style="color:black; cursor:pointer; text-decoration:none">
+	                   			return `<a __accion="editar" href="javascript:void(0);" style="color:black; cursor:pointer; text-decoration:none">
 	                   			<i class="fa fa-edit fa-lg text-warning "></i>   	
 	                   			<b>${rowData.titulo}</b></a>`
                             } 

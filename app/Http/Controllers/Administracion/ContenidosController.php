@@ -59,12 +59,13 @@ class ContenidosController extends MasterController
         $all_contenidos = []; 
         $urlImagenPrefijo = url('/') . "/show-imagen/";
 
-        $tipoContenidos = collect(\DB::select("SELECT id id_tipo_contenido, nombre as nombre_tipo_contenido, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden"));
+        $tipoContenidos = collect(\DB::select("SELECT id id_tipo_contenido, nombre as nombre_tipo_contenido, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden "));
 
         foreach ($tipoContenidos as $tipoCont) {
-            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, tipo_contenido, fecha_registro, 
-                                                orden, activo   FROM contenidos 
-                                                WHERE tipo_contenido = $tipoCont->id_tipo_contenido  ORDER BY orden"))
+            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, 
+                                                tipo_contenido, fecha_registro, orden, activo   FROM contenidos 
+                                                WHERE tipo_contenido = $tipoCont->id_tipo_contenido  
+                                                ORDER BY orden "))
                             ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
                                 return $cont;
@@ -140,8 +141,9 @@ class ContenidosController extends MasterController
         $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 
         foreach ($tipoContenidos as $tipoCont) {
-            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada FROM contenidos 
-                                                WHERE tipo_contenido = $tipoCont->id AND activo ORDER BY orden"))
+            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, fecha_registro as fecha
+                                                FROM contenidos 
+                                                WHERE tipo_contenido = $tipoCont->id AND activo ORDER BY orden , fecha_registro DESC"))
                             ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
                                 unset($cont->imagen_almacenada);
@@ -169,9 +171,11 @@ class ContenidosController extends MasterController
         $tipoContenidos = collect(\DB::select("SELECT id id_tipo_noticia, nombre as nombre_tipo_noticia, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 
         foreach ($tipoContenidos as $tipoCont) {
-            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, tipo_contenido, fecha_registro, 
-                                                orden, activo   FROM contenidos 
-                                                WHERE tipo_contenido = $tipoCont->id_tipo_noticia  ORDER BY orden"))
+            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada, 
+                                                tipo_contenido, fecha_registro,  orden, activo   
+                                                FROM contenidos 
+                                                WHERE tipo_contenido = $tipoCont->id_tipo_noticia  
+                                                ORDER BY orden , fecha_registro desc"))
                             ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
                                 return $cont;

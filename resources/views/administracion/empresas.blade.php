@@ -12,20 +12,20 @@
 .popup-basic {
   position: relative;
   background: #FFF;
-  width: auto;
-  max-width: 900px;
+  max-width: 85%;
   margin: 40px auto;
+  padding: 0 ;
 }
-##.admin-form .panel-heading{
-    background-color: #fafafa;
+.admin-form .panel-heading{
+    background-color: #fafafa !important;
     border-color: transparent -moz-use-text-color #ddd;
     border-radius: 0;
     border-style: solid none;
     border-width: 1px 0;
-    color: #999;
-    height: auto;
+    color: #333;
+    height: 40px;
     overflow: hidden;
-    padding: 3px 15px 2px;
+    padding: 2px 15px;
     position: relative;
 }
 
@@ -49,34 +49,9 @@
                         </div>
                     </div>
 
-                    <div class="panel-body pn">
-                        <div class="row">
-                            <div  class="col-md-12" >
-                                {{-- <button  __accion="nuevo"   class="btn btn-sm btn-success dark m5 br4"><i class="fa fa-plus-circle text-white"></i> Agregar </button>
-                                <button  __accion="editar"  class="btn btn-sm btn-warning dark m5 br4"><i class="fa fa-edit text-white"></i> Editar</button> --}}
-                                {{-- <button  __accion="eliminar" class="btn btn-sm btn-danger dark m5 br4"><i class="fa fa-minus-circle text-white"></i> Eliminar</button>   --}}                              
-                                
-                            </div>
-                        </div>
+                    <div __contenedor_dataT id="contenedor_dataT" class="panel-body pn">
                         <div id="dataT"></div>                        
                     </div>
-
-                    <div style="margin-top: 15px">
-                        <div class="row pt15" style="border-top: solid 3px grey">
-                            <div __emp_info class="col-sm-4">
-                            </div>
-                            <div __emp_riesgo_now class="col-sm-8" style="text-align: center;">
-                                <div id="divGraph"></div>
-                                
-                            </div>
-                                
-                        </div>
-                        <div __emp_tabla_riesgo class="mt20">
-                            {{-- <h3>Tabla de los indices por fechas</h3> --}}
-                            <div id="indRiesgosDT"></div>
-                        </div>                        
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -89,85 +64,36 @@
     <!-- -----------------------------------------          Modal  --------------------------------------------------- -->
     <div id="modal"  class="white-popup-block popup-basic admin-form mfp-with-anim mfp-hide">
         <div class="panel">
-            <div class="panel-heading bg-dark">
-                <span class="panel-title text-white" id="tituloModal"><i class="fa fa-pencil"></i> <span>__</span></span>
+            <div class="panel-heading">
+                <i class="fa fa-house-damage fa-lg"></i> <span style="margin: 0 5px; font-size:16px; color:#777; ">Información de la empresa</span style="margin: 0 5px; font-size:16px; color:#333; ">
             </div>
-            <!-- end .panel-heading section -->
-            <form method="post" action="javascript:void(0)" id="form_cont" name="form_cont">
-            {{-- <form method="post" action="/" id="form_cont" name="form_cont"> --}}
-                <div class="panel-body mnw700 of-a">
-                    <div class="row">
 
-                            
-                            <div class="row">
-                                <div class=" pl5 br-r mvn15">
-                                    <h5 class="ml5 mt20 ph10 pb5 br-b fw700"><small class="pull-right fw600"> <span class="text-primary">-</span> </small> </h5>
+            <div class="panel-body mnw700 of-a">
 
-                                    <input class="hidden" name="id_contenido" id="id_contenido" __field="id">
+                <div __contenedor_dataEmp id="contenedor_dataEmp" class="bg-white mt15 " >
+                    <div __emp_header ></div>
+                    <div class="row pt15" >
+                        <div __emp_info class="col-sm-4">
+                        </div>
+                        <div __emp_riesgo_now class="col-sm-8" style="text-align: center;">
+                            <div id="divGraph"></div>                                
+                        </div>
 
-                                    <div class="section">
-                                        <label class="field-label" for="titulo">Título</label>
-                                        <label for="titulo" class="field prepend-icon">
-                                            <input type="text" required="" class="gui-input" id="titulo" __field="titulo" name="titulo" placeholder="Título">
-                                            <label for="titulo" class="field-icon"><i class="glyphicons glyphicons-riflescope"></i>
-                                            </label>
-                                        </label>
-                                    </div>
-
-                                    <div class="section">
-                                    	<label class="field-label" for="texto">Texto</label>
-                                    	<label for="texto" class="field prepend-icon">
-                                    		<textarea class="gui-textarea" required="" id="texto" __field="texto" name="texto"  placeholder="Texto" rows="2"></textarea>
-                                    		<label for="texto" class="field-icon"><i class=" glyphicons glyphicons-notes"></i>
-                                    		</label>
-                                    	</label>
-                                    </div>
-
-                                    <div class="section">
-                                    	<label __imagen_label class="field-label" >Imagen</label>
-                                    	<label class="field prepend-icon_ file" style="width: 80px;display: flex;">
-                                    		<span class="btn  bg-system  fa  fa-search " style="padding: 0px 2px;width: 100%; height:25px">
-                                    		</span> 
-                                    		<input type="file" __archivo_up  class="gui-file" style="padding: 0px;" title="Ningun Archivo Seleccionado">
-                                    	</label>
-                                    </div>
-
-                                    <div class="section">
-                                        <label class="field-label" for="atribucion">Link a url</label>
-                                        <label for="url_redireccion" class="field prepend-icon">
-                                            <input type="text" class="gui-input" id="url_redireccion" __field="url_redireccion" name="url_redireccion" placeholder="Url de link">
-                                            <label for="url_redireccion" class="field-icon"><i class="fa fa-link"></i>
-                                            </label>
-                                        </label>
-                                    </div>
-
-                                    <div class="section">
-                                        <label class="field-label" for="orden"></label>
-                                        <label for="orden" class="field prepend-icon">
-                                            <input  type="number" class="gui-input w200" id="orden" __field="orden" name="orden" placeholder="Orden en aparecer">
-                                            <label for="orden" class="field-icon"><i class="fa fa-list-ol"></i>
-                                            </label>
-                                        </label>
-                                    </div>
-
-                                    <div class="row m10 ml20 ">
-	                                    <label class="switch switch-sm block mt5 switch-success switch-round ">
-	                                    	<span><strong>Activo</strong></span>
-	                                    	<input type="checkbox" name="activo" id="activo" __field="activo" value="">
-	                                    	<label class="fs11" for="activo" data-on="SI" data-off="NO"></label>
-	                                    	
-	                                    </label>
-	                                </div>
-
-                                </div>
-                            </div>
                     </div>
+                    <div __emp_tabla_riesgo class="mt20">
+                        <div id="indRiesgosDT"></div>
+                    </div>                        
                 </div>
-                <div class="panel-footer">
-                    <button type="submit" class="button btn-primary cont_save">Guardar</button>
-                    <a href="#"  id="atr_cancelar"  class="button btn-danger ml25 cont_cancelar">Cancelar</a>
-                </div>
-            </form>
+
+            </div>
+
+            <div class="panel-footer">
+                <a __btn_cerrar class="btn btn-info btn-sm ml25 cont_cancelar " href="#" id="atr_cancelar">
+                    Cerrar
+                </a>
+            </div>
+
+
         </div>
         <!-- end: .panel -->
     </div>
@@ -321,146 +247,24 @@ $(function(){
                 midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
             });
         }, 
-        getData: function(){     	
-		    let objeto = globalApp.getData__fields();
-            return objeto;
-        },
-        setData: function(obj){
 
-            $("#id_contenido").val(obj.id);
-            $("#titulo").val(obj.titulo);
-            $("#url_redireccion").val(obj.url_redireccion);
-            $("#orden").val(obj.orden);
-            $("#activo").prop("checked", obj.activo );
-            $("#texto").val(obj.texto);
-
-        },
-        nuevo: function(){
-            $("#tituloModal span").html(`Agregar ${funciones.tipoContenido()}`);
-            $('#form_cont input:text').val('');
-            $('#form_cont textarea').val('');
-            $('#form_cont input:checkbox').val('');
-            conT.showModal();
-        },
-        editar: function(){
-            var rowSelected = conT.dataTableTarget.jqxDataTable('getSelection');
-            if(rowSelected.length > 0)
-            {
-                var rowSel = rowSelected[0]; 
-                conT.setData(rowSel);
-                $("#tituloModal span").html(`Modificar ${funciones.tipoContenido()}`);
-                conT.showModal();
-            }
-            else{
-                swal("Seleccione el registro para modificar.");
-            }
-        },
-        validateRules: function(){
-            var reglasVal = {
-                    errorClass: "state-error",
-                    validClass: "state-success",
-                    errorElement: "em",
-
-                    rules: {
-                        titulo: { required: true },
-                        texto:  { required: true },
-                    },
-
-                    messages:{
-                        titulo: { required: 'campo obligatorio' },
-                        texto:  { required: 'campo obligatorio' },
-                    },
-
-                    highlight: function(element, errorClass, validClass) {
-                            $(element).closest('.field').addClass(errorClass).removeClass(validClass);
-                    },
-                    unhighlight: function(element, errorClass, validClass) {
-                            $(element).closest('.field').removeClass(errorClass).addClass(validClass);
-                    },
-                    errorPlacement: function(error, element) {
-                        if (element.is(":radio") || element.is(":checkbox")) {
-                                element.closest('.option-group').after(error);
-                        } else {
-                                error.insertAfter(element.parent());
-                        }
-                    },
-                    submitHandler: function(form) {
-                        conT.saveData();
-                    }
-            }
-            return reglasVal; 
-        }, 
-        saveData: function(){       	
-
-            let obj = conT.getData();
-
-
-            let archivo = funciones.obtenerArchivo('[__archivo_up]');
-
-            var postDatosContenido = () => {
-            	$.post(globalApp.urlBase + 'api/guardar-contenido', {contenido : obj}, function(resp){
-            		conT.refreshDataT();
-            		new PNotify({
-            			title: resp.estado == 'ok' ? 'Guardado' : 'Error',
-            			text: resp.mensaje,
-            			shadow: true,
-            			opacity: 0.9,
-                            // addclass: noteStack,
-                            type: (resp.estado == 'ok') ? "success" : "danger",
-                            // stack: Stacks[noteStack],
-                            // width: findWidth(),
-                            delay: 1500
-                        });
-            	});	
-            }
-            
-
-            if(archivo != "no_archivo"){
-            	let formData = new FormData();
-            	formData.append('archivo', archivo);
-            	formData.append('archivo_nombre_orig', archivo.name);
-
-            	
-            	$.ajax({
-		            type: "POST",
-		            enctype: 'multipart/form-data',
-		            url: globalApp.urlBase + 'api/upload-file',
-		            data: formData,
-		            processData: false,
-		            contentType: false,
-		            cache: false,
-		            timeout: 600000,
-		            success: function (data) {
-
-		            	obj.imagen_almacenada = archivo.name;
-		            	postDatosContenido();
-		            	$.magnificPopup.close(); 
-		            },
-		        });
-
-            }
-            else{
-            	postDatosContenido();
-            	$.magnificPopup.close(); 
-            } 
-        },
 
     }
 
     var emp = {
-        mostrar_info_empresa: function(){
+        mostrarInfoEmpresa: function(){
             let rowSelected = conT.dataTableTarget.jqxDataTable('getSelection');
 
             if(rowSelected.length > 0)
             {
                 let rowSel = rowSelected[0]; 
                 state.empresa_sel = rowSel;                
-
-                let html = `<div>
-                                <h3>Informacion de la Empresa</h3>
+                let emp_header_html = `
+                                <h2 class="text-center text-primary darker ">${(rowSel.nombre) }</h2>
+                                <h3 class="text-center text-info darker">Rubro: ${rowSel.rubro }</h3>`;
+                let emp_info_html = `<div class="mt30 ml10" style="color:#333">                                
                                 <span style="display:block" class="fs14"><b> ${ (rowSel.activo) ? 'Empresa <span class="text-success-darker">ACTIVA</span> en sistema' : 'Empresa <span class="text-danger-darker"> ELIMINADA<span>'}</b></span>
-                                <span style="display:block"><b>Empresa:</b> ${(rowSel.nombre) }</span>
-                                <span style="display:block"><b>Rubro:</b> ${rowSel.rubro }</span>
+                                <br>
                                 <span style="display:block"><b>Departamento:</b> ${ rowSel.departamento ? rowSel.departamento : '' }</span>
                                 <span style="display:block"><b>Municipio:</b> ${rowSel.municipio ? rowSel.municipio : ''}</span>
                                 <span style="display:block"><b>Dirección:</b> ${rowSel.direccion ? rowSel.direccion : ''}</span>
@@ -468,10 +272,10 @@ $(function(){
                                 <span style="display:block"><b>Correo electronico:</b> ${rowSel.mail ? rowSel.mail : ''}</span>
                                 <span style="display:block"><b>Fecha registro:</b> ${moment(rowSel.fecha_creacion).format('DD/MM/YYYY') }</span>
                                 <span style="display:block"><b>Fecha última modicicación:</b> ${moment(rowSel.fecha_modificacion).format('DD/MM/YYYY') }</span>
-
                                 </div> ` ;
 
-                $("[__emp_info]").html(html);  
+                $(conT.contenedor + " [__emp_header]").html(emp_header_html);  
+                $(conT.contenedor + " [__emp_info]").html(emp_info_html);  
 
                 $.get(globalApp.urlBase + 'api/obtener-indices-empresa/' + rowSel.id, function(res){
                     state.empresa_sel_indices = res.data.empresa_indices_riesgo;
@@ -535,8 +339,6 @@ $(function(){
 
                 }
 
-                console.log(objG)
-
                 // Highcharts.chart('#divGraph', objG )
                 
             $('#divGraph').highcharts(objG);
@@ -586,37 +388,11 @@ $(function(){
                     },
                 ]
             });
-
-
-
-
-
         }
-
     }
 
     let funciones = {
-        estadistics : function()
-        {
-            try{ 
-                var politicas = conT.source.localdata;
-                $(".sp_est_politica").removeClass('badge bg-success bg-danger dark');
-                $(".sp_est_politica").addClass( (politicas.length > 0) ? 'badge bg-system dark' : 'badge bg-danger');
-                $(".sp_est_politica").html(politicas.length);
-            }
-            catch(e){}
-        },
 
-
-        tipoContenido: () => {
-            return "Contenido";
-        },
-
-        /* obtiene el archivo cargado de un input:file */
-        obtenerArchivo: selector => { 
-        	let archivo = $(selector)[0];
-        	return (archivo.files.length>0) ? archivo.files[0] : "no_archivo";
-        },
         convertirParaGraph: function(coleccion, atributo, tipovar){
             
             let valores = _.map(coleccion , function(item){
@@ -626,17 +402,8 @@ $(function(){
                         }) ;
             console.log(valores);
             return valores;
-        }
+        },
 
-        
-
-        /* carga submenu para contenidos, se le debe enviar un array y el parametro del que se obtiene el submenu */
-        // submenu: (lista, campo)=>{
-        // 	let html = "<div>"
-        // 	lista.forEach(item){
-
-        // 	}
-        // }
 
     }
 
@@ -648,25 +415,19 @@ $(function(){
     
   	let listen = ()=>{
 
-	    $(conT.modal).on('change', "[__archivo_up]", function(){
-	    	var archivo = $(this);
-	    	console.log(archivo[0].files[0])
-	    	console.log(archivo[0].files.length)
-	    	archivo.attr("title","Archivo SELECCIONADO " + archivo[0].files[0].name);
-	    	$("[__imagen_label]").html("Imagen: " +  archivo[0].files[0].name );
-	    });
-
-	    $(".cont_cancelar").click(function(){
-	        $.magnificPopup.close();
-	    });
-
-	    $(".cont_save").click(function(){
-	        conT.saveData();
-	    });
-
         $(conT.contenedor).on("click", "[__accion='ver_detalle']", function(){
-            emp.mostrar_info_empresa();
-        })
+            emp.mostrarInfoEmpresa();
+            conT.showModal();
+        });
+
+        $(".cont_cancelar").click(function(){
+            $.magnificPopup.close();
+        });
+
+
+
+
+
     }
 
 

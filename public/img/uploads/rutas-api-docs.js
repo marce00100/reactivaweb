@@ -822,3 +822,108 @@ RUTA_GUARDAR_RESPUESTAS_EPP= {
 
 
 
+RUTA_OBTENER_LAS NOTICIAS = { 
+	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-arbol-noticias",
+	metodo: "get",
+	comentarios:"devuelve un array ordenado de los encabezados, o tipos de noticias ; y cada uno compuesto por un array de sus contenidos que vienen a ser las noticias y promociones, ordenados por prioridad",
+	respuesta: 
+	{
+		"data": [
+			{
+				"id": 12,
+				"nombre": "Noticias",
+				"orden": 1,
+				"contenidos": [
+				{
+					"id": 15,
+					"titulo": "Bolivia y otros nueve países recibirán la vacuna contra la Covid-19 de manera gratuita",
+					"texto": "El mundo tiene todas las esperanzas y atención puestas en los avances de las vacunas contra la pandemia y los gobiernos se anotan para adquirirlas.En las últimas horas la Organización Panamericana de la Salud (OPS) aseguró que se encamina la distribución gratuita de la cura a 10  países, entre ellos Bolivia.\n\nDurante la sesión informativa semanal sobre la evolución del Covid-19 en la región, el subdirector de la Organización Panamericana de la Salud, Jarbas Barbosa, explicó esta decisión de entregar sin cargo las inmunizaciones a esos países.\n\n\"En nuestra región tenemos 27 países que van a pagar por las vacunas, y diez países que van a recibir la vacuna sin pagar porque bajo criterios económicos son los países más pobres o porque por su pequeña población tienen más dificultad de acceso. Son criterios del Banco Mundial que está utilizando la Alianza para las Vacunas Gavi, que lidera el COVAX\", afirmó.\n\nLas diez naciones que recibirán la vacuna sin necesidad de pago son: Bolivia, Dominica, El Salvador, Granada, Guyana, Haití, Honduras, Nicaragua, Santa Lucía y San Vicente y las Granadinas, informó hoy la ONU a través de su portal de noticias.\n\nBarbosa también indicó que ya se ha iniciado la primera fase del proceso de licitación del Mecanismo del cual se encargan conjuntamente la Organización Panamericana de la Salud, a través de su Fondo Rotatorio, y la división de insumos de Unicef.",
+					"url_redireccion": "https://www.lostiempos.com/actualidad/pais/20201202/ops-bolivia-otros-nueve-paises-recibiran-vacuna-contra-covid-19-manera",
+					"fecha": "2020-12-08",
+					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/1_pag_23_vida_ministerio_de_sanidad-observatorio_de_la_sanidad_492712330_152526917_1024x576_0.jpg"
+				},
+				{
+					"id": 14,
+					"titulo": "Bolivia supera los 9.000 fallecidos por Covid-19",
+					"texto": "Una cifra nada alentadora. En casi nueve meses de pandemia por coronavirus, hoy Bolivia reporta 9.002 fallecidos a causa de la enfermedad que, hasta la fecha ha contagiado a 145.846 bolivianos.\n\nDurante la presente jornada, el Ministerio de Salud reportó 189 nuevos casos positivos y cinco decesos.\n\nLa distribución por departamento de los nuevos casos va de la siguiente manera: Santa Cruz con 96; Potosí con 27; La Paz con 21; Chuquisaca y Cochabamba con 14 cada uno; nueve en Tarija; seis en Oruro; dos en Beni y Pando no reportó casos.\n\nLos cinco decesos corresponden al departamento cruceño.",
+					"url_redireccion": "",
+					"fecha": "2020-12-09",
+					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/coronavirus_1125196067_1140x520.jpeg"
+				},
+				{
+					"id": 12,
+					"titulo": "Reino Unido comienza vacunación masiva contra la covid-19",
+					"texto": "Una mujer de 90 años se convirtió en la primera persona en recibir la vacuna contra la covid-19 en Reino Unido, como parte de un programa de vacunación masiva en el país destinada a poner fina a la pandemia de coronavirus.\n\nFue el \"mejor regalo temprano de cumpleaños\", dijo Margaret Keenan, quien celebra su aniversario 91 la semana próxima.\n\n\"No puedo agradecer lo suficiente (...) al personal del NHS (Servicio Nacional de Salud de Reino Unido) que me ha cuidado tremendamente, y mi consejo para cualquiera a quien se le ofrezca la vacuna es que se la ponga; si me la pueden dar a mí a los 90, te la puedes poner tú también\", dijo en referencia al hecho de que no es obligatoria.\n\nLa vacuna, que requiere de una primera dosis y un refuerzo a los 21 días, es la desarrollada por Pfizer/BioNTech.",
+					"url_redireccion": "https://www.bbc.com/mundo/noticias-55212779",
+					"fecha": "2020-12-08",
+					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/_115954470_vacuprimera.jpg"
+				},
+				{
+					"id": 13,
+					"titulo": "Bolivia se prepara para un posible rebrote de COVID-19",
+					"texto": "BOLIVIA - Bolivia avanza en la reactivación de las actividades económicas, mostrando casi un retorno a la normalidad, sin embargo el peligro que representa el COVID-19 no se ha ido.\n\nLa Voz de América constató que muchos bolivianos dejan cada vez más de lado las medidas de bioseguridad y el distanciamiento social recomendados para evitar la propagación de contagios.",
+					"url_redireccion": "",
+					"fecha": "2020-11-27",
+					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/bolivia.webp"
+				}
+				]
+			},
+			{
+				"id": 13,
+				"nombre": "Promociones y publicidad",
+				"orden": 2,
+				"contenidos": []
+			}
+		],
+		"estado": "ok"
+		}
+
+
+
+
+
+
+}
+
+RUTA_OBTENER_RECOMENDACIONES = { 
+	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-recomendaciones",
+	metodo: "get",
+	comentarios:"devuelve un array ordenado de los las recomendaciones",
+	respuesta: 
+	{
+		"data": [
+					{
+						"id": 1,
+						"riesgo": "Riesgo bajo de exposición ",
+						"recomendacion": "Para aquellos rubros que no tienen contacto frecuente con el público en general, la proximidad física de más de 1,5 metros se puede planificar, o ya se encuentra instalada, y la probabilidad de entrar en contacto con una persona infectada es baja, el empleador implantará/continuará con las medidas de control propias del riesgo ocupacional convencional, detalladas por el ministerio de trabajo, empleo y previsión social (29). \r\nMedidas de ingeniería: En la medida de lo posible, se crearán separaciones físicas entre trabajadores, para cumplir el distanciamiento físico en todo momento.\r\nMedidas de organización: Horarios de ingreso escalonados, división de grupos de trabajo en “cohortes independientes” , disminuir la cantidad de personas que participan en reuniones (no más de 10), incentivar el uso de exteriores para realizar actividades.\r\nMedidas administrativas: Protocolos de ingreso a los lugares de trabajo (toma de temperatura, pesquisa de síntomas), una persona responsable del monitoreo del cumplimiento de las medidas de mitigación individuales, desinfección sistematizada de las instalaciones, con una frecuencia de tiempo determinada.\r\nEquipo de Protección Personal: En este nivel, se recomienda el uso obligatorio de máscaras quirúrgicas, o máscaras de tela, utilizadas adecuadamente (cobertura de boca y nariz constante). Si la labor antes de COVID-19 requería algún otro EPP, continuar utilizándolo de forma regular.\r\n",
+						"recomendacion_corta": "En este nivel, se recomienda el uso obligatorio de máscaras quirúrgicas, o máscaras de tela, utilizadas adecuadamente (cobertura de boca y nariz constante). Si la labor antes de COVID-19 requería algún otro EPP, continuar utilizándolo de forma regular."
+					},
+					{
+						"id": 2,
+						"riesgo": "Riesgo medio de exposición",
+						"recomendacion": "Este nivel requiere contacto directo con otras personas para funcionar, y en algunas ocasiones, la distancia de al menos 1,5 metros no se puede respetar, por el medio/alto flujo de personas nuevas con las cuales necesitan entrar en contacto, la exposición a la enfermedad es moderada.\r\nMedidas de ingeniería: Analizar factibilidad de instalar barreras físicas, por ejemplo, ventanas o separadores de vidrio, plástico o plexiglás entre los visitantes y trabajadores o entre trabajadores entre sí. Muy efectiva en áreas de recepción (escritorios de información, cajeros, entrega de productos, etc.). En otras ocasiones, la instalación de cortinas o sistemas de succión de aire podrían resultar útiles.\r\nMedidas de organización: El éxito del seguimiento de directrices sobre protocolos o políticas de bioseguridad dependerá del compromiso de todo el personal, y que estas estrategias se utilicen de forma consistente. Permitir el ingreso de clientes solamente si tienen mascara facial que cubra boca y nariz. Si no lo tuvieran, el establecimiento deberá ofrecer uno desechable. \r\nMedidas administrativas: Controlar la temperatura corporal de todos los clientes antes del ingreso, y no permitir el ingreso a aquellos clientes con una temperatura > 38 ° C. Mantener a los clientes informados sobre las normas de seguridad, a través de carteles, boletines, spots en televisión, o en mensajes automatizados. Considerar estrategias que minimicen contacto cara a cara (compras desde el automóvil, comunicación por teléfono, teletrabajo). Instaurar una estrategia para que los trabajadores tengan disponibles profesionales en salud para consultas (enfermera en el lugar de trabajo, servicios de telemedicina, etc.)\r\nEquipo de Protección Personal: Para seleccionar el EPP, considerar factores como función, habilidad de descontaminarlo, donde desecharlo, costo, y cuán bien se ajusta al cuerpo. Evaluar la costo-efectividad de tener EPP que se usa constantemente por un período largo de tiempo, versus un EPP más durable pero potencialmente más costoso. La selección del EPP será específica a la actividad. En general, será una combinación de guantes, bata, máscara facial y/o escudo facial o gafas protectoras. Estas combinaciones dependerán del tipo de tarea, de la evaluación de riesgo del empleador, y los tipos de exposición al riesgo. En raras ocasiones se requerirá el uso de respiradores (por ejemplo, N95 ). \r\n",
+						"recomendacion_corta": "Para seleccionar el EPP, considerar factores como función, habilidad de descontaminarlo, donde desecharlo, costo, y cuán bien se ajusta al cuerpo. Evaluar la costo-efectividad de tener EPP que se usa constantemente por un período largo de tiempo, versus un EPP más durable pero potencialmente más costoso. La selección del EPP será específica a la actividad"
+					},
+					{"etc", "etc"},
+			]
+		"estado": "ok",
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

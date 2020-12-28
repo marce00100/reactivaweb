@@ -43,6 +43,7 @@ class EvalController extends MasterController
     public function guardarRespuestasPreguntasRiesgo(Request $request)
     {
         $idEmpresa = $request->id_empresa;
+        $fecha = $this->now(); //$request->fecha;
         $respuestasReq = $request->respuestas;
 
         // /* eliminar es para llenar  DATOS*/

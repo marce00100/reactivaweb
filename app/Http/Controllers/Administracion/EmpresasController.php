@@ -17,10 +17,18 @@ class EmpresasController extends MasterController
         $empresas = \DB::select("SELECT e.*, p.nombre rubro, rdep.nombre departamento, rmun.nombre municipio   
                                 FROM  empresas e, parametros p, regiones rdep, regiones rmun 
                                 WHERE e.id_rubro = p.id AND e.id_departamento = rdep.id AND e.id_municipio = rmun.id ");
+
+        // $empresas = \DB::select("SELECT e.*, p.nombre rubro, rdep.nombre departamento, rmun.nombre municipio   
+        //                         FROM  empresas e 
+        //                         LEFT JOIN parametros p ON e.id_rubro = p.id
+        //                         LEFT JOIN regiones rdep ON e.id_departamento = rdep.id
+        //                         LEFT JOIN regiones rmun ON e.id_municipio = rmun.id  ");
         return response()->json([
             'data' => $empresas
         ]);
     }
+
+
 
     /* API */
     public function guardarEmpresa(Request $e)
@@ -28,15 +36,7 @@ class EmpresasController extends MasterController
 
         $empresaEnviada = (object)$e;
 
-        // $empresaId = $e->id;
-        // $empresaVer = $e->ver; /* ver va a ser un Token de seguridad */
 
-        // if($empresaEnviada->id != $empresaId ){
-        //     return response()->json([
-        //         'mensaje' => 'Error, no corresponde la Empresa',
-        //         'estado' => 'error'
-        //     ]);
-        // }
         if(!$empresaEnviada->nombre || !$empresaEnviada->id_rubro){
             return response()->json([
                 'mensaje' => 'Error, Nombre y Rubro es obligatorio',

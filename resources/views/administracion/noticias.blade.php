@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="./public/libs_pub/jqwidgets11/styles/jqx.base.css" type="text/css" />
 <link rel="stylesheet"href="./public/libs_pub/jqwidgets11/styles/jqx.energyblue.css"  type="text/css" />
 
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 <style media="screen">
     .popup-basic {
@@ -115,7 +114,6 @@
                                     <h5 class="ml5 mt20 ph10 pb5 br-b fw700">
                                         <small class="pull-right fw600">
                                             <span class="text-primary">
-                                                -
                                             </span>
                                         </small>
                                     </h5>
@@ -182,14 +180,12 @@
                                             </label>
                                         </div>
                                         <div class="section">
-                                            <label class="field-label" for="orden"></label>
+                                            <label class="field-label" for="orden">Prioridad</label>
                                             <label class="field prepend-icon" for="orden">
-                                                <input __field="orden" class="gui-input w200" id="orden" name="orden" placeholder="Orden en aparecer" type="number">
-                                                    <label class="field-icon" for="orden">
-                                                        <i class="fa fa-list-ol">
-                                                        </i>
-                                                    </label>
-                                                </input>
+                                                <select __field="orden" class="gui-input" id="orden" name="orden">
+                                                    <option value=2>Normal</option>
+                                                    <option value=1>Alta</option>
+                                                </select>
                                             </label>
                                         </div>
                                         <div class="row m10 ml20 ">
@@ -218,7 +214,7 @@
                             Cancelar
                         </a>
                     </div>
-                </form>
+
             </form>
         </div>
         <!-- end: .panel -->
@@ -282,6 +278,7 @@
                     theme: 'energyblue',
                     height: 350,
                     pageable: false,
+                    columnsResize: true,
                     altRows: false,
                     sortable: true,
                     width: "100%",
@@ -292,7 +289,7 @@
                     columns: [
                         { text: 'Titulo ', width: 250, align:'center',  cellsalign: 'left', dataField: 'titulo',
                             cellsrenderer: function(row, column, value, rowData){
-                                return `<a __accion="editar" style="color:black; cursor:pointer; text-decoration:none">
+                                return `<a __accion="editar" href="javascript:void(0);" style="color:black; cursor:pointer; text-decoration:none">
                                 <i class="fa fa-edit fa-lg text-warning "></i>      
                                 <b>${rowData.titulo}</b></a>`
                             } 
@@ -319,7 +316,11 @@
                             }
                         },
                         // { text: 'Fecha Registro', width: 150, align:'center',  cellsalign: 'center', dataField : 'fecha_registro'},
-                        { text: 'Orden', width: 50, align:'center',  cellsalign: 'center', dataField : 'orden'},
+                        { text: 'Prioridad', width: 120, align:'center',  cellsalign: 'center', dataField : 'orden',
+                            cellsrenderer: function(row, column, value, rowData){
+                                return (rowData.orden == 1) ? 'Alta' : 'Normal';
+                            }
+                        },
                         { text: 'Activo', width: 50, align:'center',  cellsalign: 'center',  dataField: 'activo',
                             cellsrenderer: function(row, column, value, rowData) {
                                 let activo = rowData.activo;

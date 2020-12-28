@@ -18,6 +18,20 @@ class GeneralController extends MasterController
 		// return response($img)->header('Content-type','image/png');
 	}
 
+	/* route WEB - GET */
+	/* Muestra o descarga cualquier archivo de cualquier carpeta dentro de raiz, la url debe estar concatenada con QueryString donde uri es la ruta incluyendo el archivo
+	| @file : contiene la ruta de directorios incluyendo el archivo y su extension
+	*/
+	 //  	public function viewFile(Request $request)
+	 //  	{
+	 //  		$req = object($request);
+	 //  		return response($req->file);
+	 //        return response()->file(public_path() . $req->file);
+
+	// 	// $img = file_get_contents(public_path('/img/uploads/covid.jpg'));
+	// 	// return response($img)->header('Content-type','image/png');
+	// }
+
 	/* API de ruta */
   	public function listarRubros()
   	{
