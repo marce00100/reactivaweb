@@ -49,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div __contenedor_dataT id="contenedor_dataT" class="panel-body pn">
+                    <div __contenedor_dataT id="contenedor_dataT" class="panel-body pn" style="min-height: 300px; max-height: 500px; overflow-y: scroll; padding: 0 0 50px 0">
                         <div id="dataT"></div>                        
                     </div>
                 </div>
@@ -65,7 +65,7 @@
     <div id="modal"  class="white-popup-block popup-basic admin-form mfp-with-anim mfp-hide">
         <div class="panel">
             <div class="panel-heading">
-                <i class="fa fa-house-damage fa-lg"></i> <span style="margin: 0 5px; font-size:16px; color:#777; ">Información de la empresa</span style="margin: 0 5px; font-size:16px; color:#333; ">
+                <i class="fas fa-bolt fa-lg"></i> <span style="margin: 0 5px; font-size:16px; color:#777; ">Información de la empresa</span style="margin: 0 5px; font-size:16px; color:#333; ">
             </div>
 
             <div class="panel-body mnw700 of-a">

@@ -11,7 +11,7 @@ class ParamsController extends MasterController
 	/* VISTA */
   	public function showConfigParametros()
   	{
-  		  return view('administracion.params');
+        return view('administracion.params');
   	}
         
 

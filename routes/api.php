@@ -55,6 +55,8 @@ Route::get('obtener-full-noticias', 'Administracion\ContenidosController@obtener
 Route::get('obtener-empresas', 'Administracion\EmpresasController@obtenerEmpresas');
 Route::post('guardar-empresa', 'Administracion\EmpresasController@guardarEmpresa');
 
+/* -------------- Test - Seeds for testing -----------------*/
+Route::get('seeds-empresa-riesgos', 'Administracion\TestController@seedsEmpresaRiesgos');
 
 /* ------------- Indice Riesgo --------------*/
 Route::get('obtener-arbol-preguntas-riesgo', 'Administracion\EvalController@obtenerArbolPreguntasRiesgo');
@@ -77,4 +79,8 @@ Route::post('guardar-recomendacion', 'Administracion\RecomendacionesController@g
 Route::get('get-params', 'Administracion\ParamsController@obtenerParams');
 Route::post('save-parametro', 'Administracion\ParamsController@saveParametro');
 Route::post('delete-parametro', 'Administracion\ParamsController@deleteParametro');
+
+/* ------------- PIVOT  ESTADISTICAS---------------------------------------*/
+Route::post('indice-promedio-rubro', 'Administracion\EstadisticasController@indicePromedioRubro');
+Route::post('datos-var-est', 'Administracion\TableroController@datosVarEst');
 

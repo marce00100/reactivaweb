@@ -42,23 +42,17 @@ class EvalController extends MasterController
     /* request es un array con las respuestas */
     public function guardarRespuestasPreguntasRiesgo(Request $request)
     {
-        $idEmpresa = $request->id_empresa;
-        $fecha = $this->now(); //$request->fecha;
-        $respuestasReq = $request->respuestas;
+        $res = $this->saveEpresaRiesgo($request);
+        return response()->json($res);
+    }
 
-        // /* eliminar es para llenar  DATOS*/
-        // $idEmpresa = "65432";
-        // $fecha = '2020-10-30';
-        // $respuestasReq = [
-        //     ['id_opcion'=>22], // 22-24
-        //     ['id_opcion'=>27], // 25-28
-        //     ['id_opcion'=>30], // 29-30 
-        //     ['id_opcion'=>34], // 31-34
-        //     ['id_opcion'=>35], // 35-36
-        //     ['id_opcion'=>39], // 37-40
-        //     ['id_opcion'=>43], // 41-43
-        //     ['id_opcion'=>44], // 44-46
-        // ];
+    /* Metodo de CLASE */
+    public function saveEpresaRiesgo($request){
+        $idEmpresa = $request->id_empresa;
+        $fecha = $request->fecha ?? $this->now(); 
+        $respuestasReq = $request->respuestas;
+        
+        // return response()->json(['dataResp' => $respuestasReq]);
 
         try {
 
@@ -69,18 +63,18 @@ class EvalController extends MasterController
                                 $pregYResp = collect(\DB::select("SELECT pp.id preg_id, pp.nombre pregunta, pp.orden pregunta_orden, 
                                                 ph.id opcion_id, ph.nombre opcion_nombre, ph.valor valor  
                                             FROM parametros ph, parametros pp WHERE ph.id_padre = pp.id 
-                                            AND ph.id = {$respReq->id_opcion} " ))->first();
+                                            AND ph.id = {$respReq->id_opcion} " ))->first();   //TODO verificar funcionamiento quizas es error  desde origen $request 
                                 /* Se crea un objeto con los datos ademas de agregarle el valor y orden de la anterior consulta*/
-                                $respuestaPreg              = new \stdClass();
-                                $respuestaPreg->id          = $respReq->id ?? null;
-                                $respuestaPreg->id_empresa  = $idEmpresa;
-                                $respuestaPreg->id_p_pregunta_riesgo_op = $respReq->id_opcion;
-                                $respuestaPreg->valor       = $pregYResp->valor;
-                                $respuestaPreg->fecha       = $this->now();
-                                $respReq->id = $this->guardarObjetoTabla($respuestaPreg, 'empresas_respuestas_riesgo');
+                                $respRiesgo                  = new \stdClass();
+                                $respRiesgo->id              = $respReq->id ?? null;
+                                $respRiesgo->id_empresa      = $idEmpresa;
+                                $respRiesgo->id_p_pregunta_riesgo_op = $respReq->id_opcion;
+                                $respRiesgo->valor           = $pregYResp->valor;
+                                $respRiesgo->fecha           = $fecha;
+                                $respReq->id = $this->guardarObjetoTabla($respRiesgo, 'empresas_respuestas_riesgo');
 
-                                $respuestaPreg->pregunta_orden       = $pregYResp->pregunta_orden;
-                                return $respuestaPreg;
+                                $respRiesgo->pregunta_orden       = $pregYResp->pregunta_orden;
+                                return $respRiesgo;
 
                             }) ;
 
@@ -107,7 +101,7 @@ class EvalController extends MasterController
 
             $resumenCalculos = new \stdClass(); 
             $resumenCalculos->id_empresa                = $idEmpresa;
-            $resumenCalculos->fecha                     = $this->now();
+            $resumenCalculos->fecha                     = $fecha;
             $resumenCalculos->indice_riesgo             = $indiceRiesgo;
             $resumenCalculos->proximidad_fisica         = $indice1;
             $resumenCalculos->exposicion_enfermedad     = $indice2;
@@ -117,19 +111,19 @@ class EvalController extends MasterController
             if(count($respuestasReq) > 0){
                 $primerElem = (object)$respuestasReq[0];
 
-                if(isset($primerElem->id) ) //update
+                if(isset($primerElem->id) ) // update
                 { //
                     $idUltimoResumenCalculo = collect(\DB::select("SELECT id FROM empresa_indice_riesgo 
                                                         WHERE id_empresa = {$idEmpresa} ORDER BY id"))->last();
                     $resumenCalculos->id = $idUltimoResumenCalculo;                    
                 }   
-                else //nsert          
+                else // insert          
                     $resumenCalculos->id = null;
 
                 $respEnv->id = $this->guardarObjetoTabla($resumenCalculos, 'empresas_indice_riesgo');
             }
 
-            return response()->json([ 
+            return [ 
                 'estado' => 'ok', 
                 'mensaje' => "Se guardaron sus respuestas corretamente",
                 'data' => $respuestasEnviadas,
@@ -139,10 +133,10 @@ class EvalController extends MasterController
                 // 'exposicioEnfermedad' => $indice3,
                 // 'trabajoAmbCerrado' => $indice4,
                 // 'indice_riesgo' => $indiceRiesgo,
-            ]);
+            ];
             
         } catch (Exception $e) {
-            return response()->json([ 'estado' =>"error", 'mensaje' => $e->getMessage() ]);
+            return [ 'estado' =>"error", 'mensaje' => $e->getMessage() ];
         }
 
     }

@@ -1,3 +1,5 @@
+
+
 /****************************************** EXPLICACION Leer antes  IMPORTANTE ***************************************
 |	Documento de rutas APIS 
 |	En Este documento estara de manera de ejemplo las RUTAS API 
@@ -20,7 +22,7 @@
 |		prefijo: 			api/,
 |		ruta-peticion: 		listar-rubros/ 
 |
-|		Entonces la ruta que nunca cambia en el caso de las APIs es: http://fdbb661.online-server.cloud/reactivaweb/api/ 
+|		Entonces la ruta que nunca cambia en el caso de las APIs es: https://reactivaweb.org/admin/api/ 
 |		Recomendacion : Es cnveniente que esta se declare en una variable global, por si en algun caso se cambia de dominio o nombre de webAplication
 |		solo modificar esa variable global.
 |
@@ -30,7 +32,7 @@
 
 
 LISTAR_RUBROS = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/listar-rubros",
+	ruta:  "https://reactivaweb.org/admin/api/listar-rubros",
 	metodo: "get",
 	comentarios:"",
 	respuesta: 
@@ -81,7 +83,7 @@ LISTAR_RUBROS = {
 }
 
 LISTAR_DEPARTAMENTOS = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/listar-departamentos",
+	ruta:  "https://reactivaweb.org/admin/api/listar-departamentos",
 	metodo: "get",
 	comentarios:"",
 	respuesta: 
@@ -138,7 +140,7 @@ LISTAR_DEPARTAMENTOS = {
 }
 
 LISTAR_PROVINCIAS_DE_DEPARTAMENTO = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/listar-provincias-de-departamento/9",
+	ruta:  "https://reactivaweb.org/admin/api/listar-provincias-de-departamento/9",
 	metodo: "get",
 	comentarios:"Despues de listar-provincias-de-departamento se debe colocar el id del departamento del que se requiere sus provincias",
 	respuesta: 
@@ -191,7 +193,7 @@ LISTAR_PROVINCIAS_DE_DEPARTAMENTO = {
 
 
 LISTAR-MUNICIPIOS-DE-PROVINCIA = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/listar-municipios-de-provincia/112",
+	ruta:  "https://reactivaweb.org/admin/api/listar-municipios-de-provincia/112",
 	metodo: "get",
 	comentarios:"se debe colocar el id de provincia del que se requiere sus munis",
 	respuesta: 
@@ -225,7 +227,7 @@ LISTAR-MUNICIPIOS-DE-PROVINCIA = {
 
 
 LISTAR-MUNICIPIOS-DE-DEPARTAMENTO = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/listar-provincias-de-departamento/{id}",
+	ruta:  "https://reactivaweb.org/admin/api/listar-provincias-de-departamento/{id}",
 	metodo: "get",
 	comentarios:"se debe colocar el id de depto  del que se requiere sus munis",
 	respuesta: 
@@ -277,7 +279,7 @@ LISTAR-MUNICIPIOS-DE-DEPARTAMENTO = {
 
 
 OBTENER-DEPARTAMENTOS-CON-MUNICIPIOS = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-departamentos-con-municipios",
+	ruta:  "https://reactivaweb.org/admin/api/obtener-departamentos-con-municipios",
 	metodo: "get",
 	comentarios:"se debe colocar el id de depto  del que se requiere sus munis",
 	respuesta: 
@@ -398,7 +400,7 @@ OBTENER-DEPARTAMENTOS-CON-MUNICIPIOS = {
 
 
 RUTA_OBTENER_TODOS_LOS_CONTENIDOS = { 
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-todos-los-contenidos",
+	ruta:  "https://reactivaweb.org/admin/api/obtener-todos-los-contenidos",
 	metodo: "get",
 	comentarios:"devuelve un array de los encabezados, o tipos de contenidos ; y cada uno compuesto por un array de sus contenidos o informaciones",
 	respuesta: 
@@ -414,28 +416,28 @@ RUTA_OBTENER_TODOS_LOS_CONTENIDOS = {
 						"titulo": "¿Qué es el SARS - COV 2 ?",
 						"texto": "La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan síntomas de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización.La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan síntomas de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización.\r\n",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/covid.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/covid.jpg"
 					},
 					{
 						"id": 2,
 						"titulo": "¿Cúales son los modos de Transmisión del SARS - COV 2?\r\n",
 						"texto": "Una persona puede contraer la COVID‑19 por contacto con otra que esté infectada por el virus. La enfermedad se propaga principalmente de persona a persona a través de las gotículas que salen despedidas de la nariz o la boca de una persona infectada al toser, estornudar o hablar. Estas gotículas son relativamente pesadas, no llegan muy lejos y caen rápidamente al suelo. Una persona puede contraer la COVID‑19 si inhala las gotículas procedentes de una persona infectada por el virus. Por eso es importante mantenerse al menos a un metro de distancia de los demás. Estas gotículas pueden caer sobre los objetos y superficies que rodean a la persona, como mesas, pomos y barandillas, de modo que otras personas pueden infectarse si tocan esos objetos o superficies y luego se tocan los ojos, la nariz o la boca. Por ello es importante lavarse las manos frecuentemente con agua y jabón o con un desinfectante a base de alcohol. ",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/102.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/102.jpg"
 					},
 					{
 						"id": 3,
 						"titulo": "¿Cúales son los signos y sintomas del COVID-19?\r\n",
 						"texto": "Los síntomas más habituales de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas menos frecuentes que afectan a algunos pacientes son los dolores y molestias, la congestión nasal, el dolor de cabeza, la conjuntivitis, el dolor de garganta, la diarrea, la pérdida del gusto o el olfato y las erupciones cutáneas o cambios de color en los dedos de las manos o los pies. Estos síntomas suelen ser leves y comienzan gradualmente. Algunas de las personas infectadas solo presentan síntomas levísimos.\r\n\r\nLa mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin necesidad de tratamiento hospitalario. Alrededor de 1 de cada 5 personas que contraen la COVID‑19 acaba presentando un cuadro grave y experimenta dificultades para respirar. Las personas mayores y las que padecen afecciones médicas previas como hipertensión arterial, problemas cardiacos o pulmonares, diabetes o cáncer tienen más probabilidades de presentar cuadros graves. Sin embargo, cualquier persona puede contraer la COVID‑19 y caer gravemente enferma. Las personas de cualquier edad que tengan fiebre o tos y además respiren con dificultad, sientan dolor u opresión en el pecho o tengan dificultades para hablar o moverse deben solicitar atención médica inmediatamente. Si es posible, se recomienda llamar primero al profesional sanitario o centro médico para que estos remitan al paciente al establecimiento sanitario adecuado.",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/103.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/103.jpg"
 					},
 					{
 						"id": 4,
 						"titulo": "¿Qué Tipos de Riesgo Existen?\r\n",
 						"texto": "¿Qué clases de Riesgos Laborales existen?\r\nRiesgos Físicos. Sin duda, los riesgos físicos engloban una gran cantidad de riesgos derivados que los podríamos catalogar como subriesgos. ...\r\nRiesgos Químicos. ...\r\nRiesgos Biológicos. ...\r\nRiesgos Psicosociales. ...\r\nRiesgos Ambientales. ...\r\nRiesgos Mecánicos. ...\r\nRiesgos Ergonómicos.",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/104.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/104.jpg"
 					}
 				]
 			},
@@ -449,21 +451,21 @@ RUTA_OBTENER_TODOS_LOS_CONTENIDOS = {
 						"titulo": "Riesgo Salud",
 						"texto": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/201.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/201.jpg"
 					},
 					{
 						"id": 6,
 						"titulo": "Riesgo en Sector Transporte",
 						"texto": "Se cree ampliamente que la historia de Lorem Ipsum se origina con Cicerón en el siglo I aC y su texto De Finibus bonorum et malorum. Esta obra filosófica, también conocida como En los extremos del bien y del mal, se dividió en cinco libros. El Lorem Ipsum que conocemos hoy se deriva de partes del primer libro Liber Primus y su discusión sobre el hedonismo, cuyas palabras habían sido alteradas, añadidas y eliminadas para convertirlas en un latín sin sentido e impropio. No se sabe exactamente cuándo el texto recibió su forma tradicional actual. Sin embargo, las referencias a la frase \"Lorem Ipsum\" se pueden encontrar en la Edición de la Biblioteca Clásica Loeb de 1914 del De Finibus en las secciones 32 y 33. Fue en esta edición del De Finibus en la que H. Rackman tradujo el texto",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/202.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/202.jpg"
 					},
 					{
 						"id": 7,
 						"titulo": "Riesgo en Mineria",
 						"texto": "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure\"",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/203.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/203.jpg"
 					}
 				]
 			},
@@ -477,28 +479,28 @@ RUTA_OBTENER_TODOS_LOS_CONTENIDOS = {
 						"titulo": "Sobre este generador",
 						"texto": "Purus semper vehicula eu cum libero a pellentesque pharetra porttitor luctus, primis facilisi imperdiet iaculis netus pulvinar tristique ultrices congue. Pellentesque cubilia fermentum eros ultricies convallis, arcu justo ante nascetur aliquet, faucibus senectus habitasse turpis. Taciti metus commodo nostra curae tempus parturient aenean ultricies ac facilisi volutpat ad facilisis risus accumsan nam litora, ne",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/301.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/301.jpg"
 					},
 					{
 						"id": 9,
 						"titulo": "How does the system generate all this custom conten",
 						"texto": "Designers at the digital agency Boom have imagined a better way. They’ve created a free text generator that replaces lorem ipsum with useful, topical prose that you can build in list or paragraph form, and in plain text or HTML. So if you’re creating a cooking site, you can generate text about hamburgers or tacos.",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/302.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/302.jpg"
 					},
 					{
 						"id": 10,
 						"titulo": "¿Cuál es el mejor teléfono de Samsung?",
 						"texto": "El Samsung Galaxy S20 Plus es el mejor celular que puedes comprar a día de hoy, aunque el Galaxy S20 es tan similar que hemos fusionado en una entrada aunque sea más pequeño y algo menos capaz que el S20 Plus. Por qué es el mejor celular: Es la relación valor-precio lo que permite a Samsung ganar sobre Apple",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/303.jpg"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/303.jpg"
 					},
 					{
 						"id": 11,
 						"titulo": "\r\niPhone SE - Apple",
 						"texto": "El iPhone SE viene con el chip A13 Bionic, modo Retrato, video 4K, Touch ID, pantalla Retina HD y una batería de gran duración en un diseño de 4.7”.",
 						"url_redireccion": null,
-						"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/304.png"
+						"url_imagen": "https://reactivaweb.org/admin/show-imagen/304.png"
 					}
 				]
 			}
@@ -508,7 +510,7 @@ RUTA_OBTENER_TODOS_LOS_CONTENIDOS = {
 }
 
 RUTA-GUARDAR-EMPRESA = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/guardar-empresa",
+	ruta:  "https://reactivaweb.org/admin/api/guardar-empresa",
 	metodo: "POST",
 	comentarios:"Sirve para guardar la empresa en su primera intervencion (INSERT) y tambien para actualizar los datos completos de la empresa posteriormente( UPDATE)",
 	envia: 
@@ -520,10 +522,11 @@ RUTA-GUARDAR-EMPRESA = {
 		responsable_nombre : "Jorge Raul",
 		responsable_ap : "Lopez Quinteros",
 		mail : "cualquier@cosa.com", /* verificar si tiene el formato correcto en appMovil*/
-		activo : 1, /* 1,0 -- si esta vigente 1, si se de de baja 0 , si no se envia por defecto se almacena 1*/
+		activo : 1, /* 1,0 -- si esta vigente 1, si se de de baja 0 , si no se envia por defecto se almacena 0*/
 		id_departamento : 3, /* integer */
 		id_municipio : 125, /* integer */
-
+		envio_automatico: 1, /* 1= si 0 = no , si no se envia por defecto 0*/
+		anonimato: 0, /* 1= si 0 = no , si no se envia por defecto 0*/
 	}
 	respuesta: {mensaje:"Se ingreso correctamente o Error: error generado por el server ", estado: "ok o error" }
 
@@ -593,7 +596,7 @@ RUTA_OBTENER_PREGUNTAS_CON_RRSPUESTAS = {
 }
 
 RUTA-GUARDAR-RESPUESTAS-PREGUNTAS-RIESGO = {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/guardar-respuestas-preguntas-riesgo",
+	ruta:  "https://reactivaweb.org/admin/api/guardar-respuestas-preguntas-riesgo",
 	metodo: "POST",
 	comentarios:"Sirve para guardar las respuestas seleccionadas (el id de la opcion y el valor) de las preguntas del indice de riesgo",
 	envia_al_server: /* Se envia el id_empresa y un array con Ids de todas las respuestas seleccionadas y su valor, ya no es necesario el id de la pregunta */
@@ -794,7 +797,7 @@ RUTA_OBTENER_ARBOL_EPP____Para_salud = {
 			
 	
 RUTA_GUARDAR_RESPUESTAS_EPP= {
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/guardar-respuestas-epp",
+	ruta:  "https://reactivaweb.org/admin/api/guardar-respuestas-epp",
 	metodo: "POST",
 	comentarios:"Sirve para guardar las respuestas llenadas de un epp , se manda un array de un epp con los valores y fechas , de varios dias",
 	envia_al_server: /* Se envia el id_empresa y un array con Ids de todas las respuestas seleccionadas y su valor, ya no es necesario el id de la pregunta */
@@ -823,7 +826,7 @@ RUTA_GUARDAR_RESPUESTAS_EPP= {
 
 
 RUTA_OBTENER_LAS NOTICIAS = { 
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-arbol-noticias",
+	ruta:  "https://reactivaweb.org/admin/api/obtener-arbol-noticias",
 	metodo: "get",
 	comentarios:"devuelve un array ordenado de los encabezados, o tipos de noticias ; y cada uno compuesto por un array de sus contenidos que vienen a ser las noticias y promociones, ordenados por prioridad",
 	respuesta: 
@@ -840,7 +843,7 @@ RUTA_OBTENER_LAS NOTICIAS = {
 					"texto": "El mundo tiene todas las esperanzas y atención puestas en los avances de las vacunas contra la pandemia y los gobiernos se anotan para adquirirlas.En las últimas horas la Organización Panamericana de la Salud (OPS) aseguró que se encamina la distribución gratuita de la cura a 10  países, entre ellos Bolivia.\n\nDurante la sesión informativa semanal sobre la evolución del Covid-19 en la región, el subdirector de la Organización Panamericana de la Salud, Jarbas Barbosa, explicó esta decisión de entregar sin cargo las inmunizaciones a esos países.\n\n\"En nuestra región tenemos 27 países que van a pagar por las vacunas, y diez países que van a recibir la vacuna sin pagar porque bajo criterios económicos son los países más pobres o porque por su pequeña población tienen más dificultad de acceso. Son criterios del Banco Mundial que está utilizando la Alianza para las Vacunas Gavi, que lidera el COVAX\", afirmó.\n\nLas diez naciones que recibirán la vacuna sin necesidad de pago son: Bolivia, Dominica, El Salvador, Granada, Guyana, Haití, Honduras, Nicaragua, Santa Lucía y San Vicente y las Granadinas, informó hoy la ONU a través de su portal de noticias.\n\nBarbosa también indicó que ya se ha iniciado la primera fase del proceso de licitación del Mecanismo del cual se encargan conjuntamente la Organización Panamericana de la Salud, a través de su Fondo Rotatorio, y la división de insumos de Unicef.",
 					"url_redireccion": "https://www.lostiempos.com/actualidad/pais/20201202/ops-bolivia-otros-nueve-paises-recibiran-vacuna-contra-covid-19-manera",
 					"fecha": "2020-12-08",
-					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/1_pag_23_vida_ministerio_de_sanidad-observatorio_de_la_sanidad_492712330_152526917_1024x576_0.jpg"
+					"url_imagen": "https://reactivaweb.org/admin/show-imagen/1_pag_23_vida_ministerio_de_sanidad-observatorio_de_la_sanidad_492712330_152526917_1024x576_0.jpg"
 				},
 				{
 					"id": 14,
@@ -848,7 +851,7 @@ RUTA_OBTENER_LAS NOTICIAS = {
 					"texto": "Una cifra nada alentadora. En casi nueve meses de pandemia por coronavirus, hoy Bolivia reporta 9.002 fallecidos a causa de la enfermedad que, hasta la fecha ha contagiado a 145.846 bolivianos.\n\nDurante la presente jornada, el Ministerio de Salud reportó 189 nuevos casos positivos y cinco decesos.\n\nLa distribución por departamento de los nuevos casos va de la siguiente manera: Santa Cruz con 96; Potosí con 27; La Paz con 21; Chuquisaca y Cochabamba con 14 cada uno; nueve en Tarija; seis en Oruro; dos en Beni y Pando no reportó casos.\n\nLos cinco decesos corresponden al departamento cruceño.",
 					"url_redireccion": "",
 					"fecha": "2020-12-09",
-					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/coronavirus_1125196067_1140x520.jpeg"
+					"url_imagen": "https://reactivaweb.org/admin/show-imagen/coronavirus_1125196067_1140x520.jpeg"
 				},
 				{
 					"id": 12,
@@ -856,7 +859,7 @@ RUTA_OBTENER_LAS NOTICIAS = {
 					"texto": "Una mujer de 90 años se convirtió en la primera persona en recibir la vacuna contra la covid-19 en Reino Unido, como parte de un programa de vacunación masiva en el país destinada a poner fina a la pandemia de coronavirus.\n\nFue el \"mejor regalo temprano de cumpleaños\", dijo Margaret Keenan, quien celebra su aniversario 91 la semana próxima.\n\n\"No puedo agradecer lo suficiente (...) al personal del NHS (Servicio Nacional de Salud de Reino Unido) que me ha cuidado tremendamente, y mi consejo para cualquiera a quien se le ofrezca la vacuna es que se la ponga; si me la pueden dar a mí a los 90, te la puedes poner tú también\", dijo en referencia al hecho de que no es obligatoria.\n\nLa vacuna, que requiere de una primera dosis y un refuerzo a los 21 días, es la desarrollada por Pfizer/BioNTech.",
 					"url_redireccion": "https://www.bbc.com/mundo/noticias-55212779",
 					"fecha": "2020-12-08",
-					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/_115954470_vacuprimera.jpg"
+					"url_imagen": "https://reactivaweb.org/admin/show-imagen/_115954470_vacuprimera.jpg"
 				},
 				{
 					"id": 13,
@@ -864,7 +867,7 @@ RUTA_OBTENER_LAS NOTICIAS = {
 					"texto": "BOLIVIA - Bolivia avanza en la reactivación de las actividades económicas, mostrando casi un retorno a la normalidad, sin embargo el peligro que representa el COVID-19 no se ha ido.\n\nLa Voz de América constató que muchos bolivianos dejan cada vez más de lado las medidas de bioseguridad y el distanciamiento social recomendados para evitar la propagación de contagios.",
 					"url_redireccion": "",
 					"fecha": "2020-11-27",
-					"url_imagen": "http://fdbb661.online-server.cloud/reactivaweb/show-imagen/bolivia.webp"
+					"url_imagen": "https://reactivaweb.org/admin/show-imagen/bolivia.webp"
 				}
 				]
 			},
@@ -886,7 +889,7 @@ RUTA_OBTENER_LAS NOTICIAS = {
 }
 
 RUTA_OBTENER_RECOMENDACIONES = { 
-	ruta:  "http://fdbb661.online-server.cloud/reactivaweb/api/obtener-recomendaciones",
+	ruta:  "https://reactivaweb.org/admin/api/obtener-recomendaciones",
 	metodo: "get",
 	comentarios:"devuelve un array ordenado de los las recomendaciones",
 	respuesta: 
@@ -909,21 +912,26 @@ RUTA_OBTENER_RECOMENDACIONES = {
 		"estado": "ok",
 	}
 
-
-
-
-
-
 }
 
+RUTA_OBTENER_PROMEDIOS_ESTADISTICOS = { 
+	ruta:  "https://reactivaweb.org/admin/api/indice-promedio-rubro",
+	metodo: "post",
+	comentarios:"devuelve un objeto con el promedio de indices de riesgo del rubro de la empresa",
+	envia_al_server: /* Se envia el id_empresa en un objeto */
+	{
+            id_empresa: "mype100400", /* varchar , OBLIGATORIO*/            
+     },
+	respuesta: 
+	{
+		empresas_calculadas: 54
+		id_rubro: 8
+		maximo_indice_riesgo: "123.63"
+		promedio_indice_riesgo: "79.750000"
+		rubro: "Turismo"
+	}
 
-
-
-
-
-
-
-
+}
 
 
 

@@ -75,12 +75,12 @@
         </ul> 
         <ul class="nav navbar-nav navbar-right">
             <div class="" style="padding: 15px 0px 0px 0px">
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./seguimiento-empresas" class="text-white">Ver Empresas </a> </span>
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-contenidos" class="text-white">Contenidos </a> </span>
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-noticias" class="text-white">Noticias </a> </span>
                 <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./gestion-recomendaciones" class="text-white">Recomendaciones</a> </span>
-                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./seguimiento-empresas" class="text-white">ver Empresas </a> </span>
-                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./config-parametros" class="text-white">Ajustes </a> </span>
-                {{-- <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="#" class="text-white">Estadisticas </a> </span> --}}
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./config-parametros" class="text-white">Ajustar parámetros </a> </span>
+                <span ><a __menu_mod="gestion-contenido" class="menu-principal" href="./est-pvt" class="text-white">Estadísticas </a> </span>
             </div>
             
 
@@ -130,7 +130,7 @@
 {{-- <script type="text/javascript" src="./public/libs_pub/admindesigns/vendor/plugins/slick/slick.min.js"></script> --}}
 
 <script type="text/javascript" src="./public/libs_pub/select2-4.0.12/dist/js/select2.full.min.js"></script>
-<script type="text/javascript" src="./public/libs_pub/lodash/lodash.min.js"></script>
+{{-- <script type="text/javascript" src="./public/libs_pub/lodash/lodash.min.js"></script> --}}
 <script type="text/javascript" src="./public/libs_pub/moment/min/moment.min.js"></script>
 
 <script type="text/javascript" src="./public/libs_pub/bower_components/sweetalert/sweetalert.min.js"></script>
@@ -263,117 +263,6 @@ $(function(){
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/* *************************** TEST *************************** */
-
-$(function(){
-
-
-    /* ******* guardar-respuestas-preguntas-riesgo ******/
-
-    // $("#main_content").prepend("<button id='btnGuardarPreguntas'>TEST guardar respuestas de preguntas</button>");   
-    $("#main_content").on('click', '#btnGuardarPreguntas', function(){
-        
-        console.log("PRESS GUARDAR PREG");
-        let url = ruta + 'guardar-respuestas-preguntas-riesgo';
-        // let url = 'http://fdbb661.online-server.cloud/reactivaweb/api/guardar-respuestas-preguntas-riesgo';
-        let objEnvio ={
-            id_empresa:'654321',
-            respuestas:[
-                {id_opcion:24}, // 22-24
-                {id_opcion:28}, // 25-28
-                {id_opcion:29}, // 29-30 
-                {id_opcion:31}, // 31-34
-                {id_opcion:36 }, // 35-36
-                {id_opcion:39 }, // 37-40
-                {id_opcion:43}, // 41-43
-                {id_opcion:46}, // 44-46
-            ]
-        }
-
-        $.post(url, objEnvio, function(res){                       
-            console.log("guardado BIEEEN");
-        });
-    });
-
-    /* ******* guardar-empresa' ******/
-
-    // $("#main_content").prepend("<button id='btnGuardarEmpresa'>TEST guardar respuestas de preguntas</button>");   
-    $("#main_content").on('click', '#btnGuardarEmpresa', function(){   
-        console.log("PRESS GUARDAR EMPRESAA");
-        let url = ruta + 'guardar-respuestas-preguntas-riesgo';
-        // let url = 'http://fdbb661.online-server.cloud/reactivaweb/api/guardar-empresa';
-        
-        let objEnvio ={
-            id: "ojoktf",   /* generado con UID, OBLIGATORIO, varchar*/
-            nombre: "Textil KIO", /* varchar , OBLIGATORIO*/
-            id_rubro: 3,  /* int , OBLIGATORIO, id del rubro*/
-            direccion : "Calle Olivos N 54",
-            responsable_nombre : "Jorge Raul",
-            responsable_ap : "Lopez Quinteros",
-            mail : "cualquier@cosa.com", /* verificar si tiene el formato correcto en appMovil*/
-            activo : 1, /* 1,0 -- si esta vigente 1, si se de de baja 0 , si no se envia por defecto se almacena 1*/
-            id_departamento : 3, /* integer */
-            id_municipio : 125, /* integer */
-        }
-
-        $.post(url, objEnvio, function(res){                       
-
-        });
-    })
-
-
-    /******************* guardar-respuestas-epp *********************/
-
-    // $("#main_content").prepend("<button id='btnGuardarEPP'>TEST guardar respuestas EPP</button>");   
-    $("#main_content").on('click', '#btnGuardarEPP', function(){   
-        console.log("PRESS GUARDAR RESPUESTASS EPPPPPP");
-        // let url = ruta + 'guardar-respuestas-epp';
-        let url = 'http://fdbb661.online-server.cloud/reactivaweb/api/guardar-respuestas-epp';
-        
-        let objEnvio ={
-            id_empresa: "EMP0908-258", /* varchar , OBLIGATORIO*/
-            id_epp_opcion: 58,  /* int , OBLIGATORIO, es el id de la opcion epp que ha llenado  */
-            categoria_epp : "epp", /* varchar  OBLIGAORIO , valores pueden ser  [epp o personal */
-            respuestas: [
-                {valor:58 , fecha_epp:'2020-10-22'},
-                {valor:20 , fecha_epp:'2020-10-23'},
-                {valor:12 , fecha_epp:'2020-10-24'},
-                {valor:21 , fecha_epp:'2020-10-25'},
-                {valor:20 , fecha_epp:'2020-10-26'},
-            ]
-        }
-
-        $.post(url, objEnvio, function(res){                      
-        });
-    })
-
-       
-
-})
 
 </script>
 @stack('script-head')
