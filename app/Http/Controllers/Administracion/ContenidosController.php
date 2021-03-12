@@ -8,11 +8,12 @@ use Illuminate\Http\Request;
 
 class ContenidosController extends MasterController
 {
-	/* VISTA */
-  	public function showGestionContenidos()
-  	{
-  		  return view('administracion.contenidos');
-  	}
+    private $rutaUrl = "https://reactivaweb.org/admin";
+    /* VISTA */
+    public function showGestionContenidos()
+    {
+          return view('administracion.contenidos');
+    }
         
 
     /* VISTA */
@@ -22,34 +23,34 @@ class ContenidosController extends MasterController
     }  
 
 
-  	/* API */
+    /* API */
     /* Obtiene solo los datos importantes para usuarios del celular */
-  	public function obtenerTodosLosContenidos()
-  	{
-  		$all_contenidos = [];
+    public function obtenerTodosLosContenidos()
+    {
+        $all_contenidos = [];
 
-  		$urlImagenPrefijo = url('/') . "/show-imagen/";
+        $urlImagenPrefijo = $this->rutaUrl . "/show-imagen/";
 
-  		$tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden"));
+        $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden"));
 
-  		foreach ($tipoContenidos as $tipoCont) {
-  			$contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada FROM contenidos 
-  												WHERE tipo_contenido = $tipoCont->id AND activo ORDER BY orden"))
-  							->map(function($cont) use ($urlImagenPrefijo){
+        foreach ($tipoContenidos as $tipoCont) {
+            $contenidos = collect(\DB::select("SELECT id, titulo, texto, url_redireccion, imagen_almacenada FROM contenidos 
+                                                WHERE tipo_contenido = $tipoCont->id AND activo ORDER BY orden"))
+                            ->map(function($cont) use ($urlImagenPrefijo){
                                 $cont->url_imagen = ($cont->imagen_almacenada != "" || $cont->imagen_almacenada != null) ? $urlImagenPrefijo . $cont->imagen_almacenada : "";
-  								unset($cont->imagen_almacenada);
-  								return $cont;
-  						});
-  			$tipoCont->contenidos = $contenidos; 				
-  			$all_contenidos[] = $tipoCont;
-  		}
+                                unset($cont->imagen_almacenada);
+                                return $cont;
+                        });
+            $tipoCont->contenidos = $contenidos;                
+            $all_contenidos[] = $tipoCont;
+        }
 
 
-  		return response()->json([
-  			'data' 		=> $all_contenidos,
-  			'estado'	=> 'ok'
-  		]);   		
-  	}
+        return response()->json([
+            'data'      => $all_contenidos,
+            'estado'    => 'ok'
+        ]);         
+    }
 
 
     /* API */
@@ -57,7 +58,7 @@ class ContenidosController extends MasterController
     public function obtenerfullContenidos()
     {
         $all_contenidos = []; 
-        $urlImagenPrefijo = url('/') . "/show-imagen/";
+        $urlImagenPrefijo =  $this->rutaUrl . "/show-imagen/";
 
         $tipoContenidos = collect(\DB::select("SELECT id id_tipo_contenido, nombre as nombre_tipo_contenido, orden FROM parametros WHERE dominio = 'tipo_contenido' AND activo ORDER BY orden "));
 
@@ -136,7 +137,7 @@ class ContenidosController extends MasterController
     {
         $all_contenidos = [];
 
-        $urlImagenPrefijo = url('/') . "/show-imagen/";
+        $urlImagenPrefijo = $this->rutaUrl . "/show-imagen/";
 
         $tipoContenidos = collect(\DB::select("SELECT id, nombre, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 
@@ -166,7 +167,7 @@ class ContenidosController extends MasterController
     {
         $all_contenidos = [];
 
-        $urlImagenPrefijo = url('/') . "/show-imagen/";
+        $urlImagenPrefijo = $this->rutaUrl . "/show-imagen/";
 
         $tipoContenidos = collect(\DB::select("SELECT id id_tipo_noticia, nombre as nombre_tipo_noticia, orden FROM parametros WHERE dominio = 'tipo_noticia' AND activo ORDER BY orden"));
 

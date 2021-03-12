@@ -130,7 +130,7 @@
 {{-- <script type="text/javascript" src="./public/libs_pub/admindesigns/vendor/plugins/slick/slick.min.js"></script> --}}
 
 <script type="text/javascript" src="./public/libs_pub/select2-4.0.12/dist/js/select2.full.min.js"></script>
-{{-- <script type="text/javascript" src="./public/libs_pub/lodash/lodash.min.js"></script> --}}
+<script type="text/javascript" src="./public/libs_pub/lodash/lodash.min.js"></script>
 <script type="text/javascript" src="./public/libs_pub/moment/min/moment.min.js"></script>
 
 <script type="text/javascript" src="./public/libs_pub/bower_components/sweetalert/sweetalert.min.js"></script>
